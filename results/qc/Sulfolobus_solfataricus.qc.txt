@@ -1,0 +1,5 @@
+Species=Sulfolobus_solfataricus
+Sequences=1
+Min_len=3033
+Max_len=3033
+Mean_len=3033.00

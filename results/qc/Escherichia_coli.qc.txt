@@ -1,0 +1,5 @@
+Species=Escherichia_coli
+Sequences=1
+Min_len=2904
+Max_len=2904
+Mean_len=2904.00

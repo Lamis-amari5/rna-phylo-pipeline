@@ -1,0 +1,5 @@
+Species=Thermoproteus_tenax
+Sequences=1
+Min_len=3047
+Max_len=3047
+Mean_len=3047.00

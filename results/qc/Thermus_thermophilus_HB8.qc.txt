@@ -1,0 +1,5 @@
+Species=Thermus_thermophilus_HB8
+Sequences=1
+Min_len=2914
+Max_len=2914
+Mean_len=2914.00

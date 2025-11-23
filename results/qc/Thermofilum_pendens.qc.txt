@@ -1,0 +1,5 @@
+Species=Thermofilum_pendens
+Sequences=1
+Min_len=3066
+Max_len=3066
+Mean_len=3066.00

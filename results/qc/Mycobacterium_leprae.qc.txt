@@ -1,0 +1,5 @@
+Species=Mycobacterium_leprae
+Sequences=1
+Min_len=3122
+Max_len=3122
+Mean_len=3122.00

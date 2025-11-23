@@ -1,0 +1,24 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+split_by_species        1
+total                   1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:39:15 2025]
+localrule split_by_species:
+    input: data/seqs-RNA.fasta.txt
+    output: results/per_species
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:39:15 2025]
+Finished jobid: 0 (Rule: split_by_species)
+1 of 1 steps (100%) done
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T013914.973510.snakemake.log

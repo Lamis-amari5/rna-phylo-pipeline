@@ -1,0 +1,5 @@
+Species=Xenopus_laevis
+Sequences=1
+Min_len=4244
+Max_len=4244
+Mean_len=4244.00

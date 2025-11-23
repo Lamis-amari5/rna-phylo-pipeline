@@ -1,0 +1,5 @@
+Species=Arabidopsis_thaliana
+Sequences=1
+Min_len=3539
+Max_len=3539
+Mean_len=3539.00

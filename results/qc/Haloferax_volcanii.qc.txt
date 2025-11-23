@@ -1,0 +1,5 @@
+Species=Haloferax_volcanii
+Sequences=1
+Min_len=2912
+Max_len=2912
+Mean_len=2912.00

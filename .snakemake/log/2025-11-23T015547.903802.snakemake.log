@@ -1,0 +1,121 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+annotate            50
+iqtree_build        58
+mafft_align         58
+quality_check       49
+total              216
+
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 01:55:48 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    jobid: 121
+    benchmark: benchmarks/mafft_Bacillus_subtilis_23S_.txt
+    reason: Missing output files: results/aligned/Bacillus_subtilis_23S_.aln.fasta; Code has changed since last execution
+    wildcards: species=Bacillus_subtilis_23S_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:55:48 2025]
+localrule mafft_align:
+    input: results/annotated/Oryza_sativa_.fasta
+    output: results/aligned/Oryza_sativa_.aln.fasta
+    jobid: 151
+    benchmark: benchmarks/mafft_Oryza_sativa_.txt
+    reason: Missing output files: results/aligned/Oryza_sativa_.aln.fasta
+    wildcards: species=Oryza_sativa_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:55:48 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Astasia_longa_.fasta
+    output: results/qc/Chloroplast_Astasia_longa_.qc.txt
+    jobid: 7
+    reason: Missing output files: results/qc/Chloroplast_Astasia_longa_.qc.txt
+    wildcards: species=Chloroplast_Astasia_longa_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:55:48 2025]
+localrule quality_check:
+    input: results/per_species/Xenopus_laevis_.fasta
+    output: results/qc/Xenopus_laevis_.qc.txt
+    jobid: 59
+    reason: Missing output files: results/qc/Xenopus_laevis_.qc.txt
+    wildcards: species=Xenopus_laevis_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:55:48 2025]
+Finished jobid: 7 (Rule: quality_check)
+1 of 216 steps (0.5%) done
+Select jobs to execute...
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=18024)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=8068)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 01:55:48 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 121
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    shell:
+        if not exist results\aligned mkdir results\aligned && mafft --auto results/annotated/Bacillus_subtilis_23S_.fasta > results/aligned/Bacillus_subtilis_23S_.aln.fasta
+        (command exited with non-zero exit code)
+[Sun Nov 23 01:55:48 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 151
+    input: results/annotated/Oryza_sativa_.fasta
+    output: results/aligned/Oryza_sativa_.aln.fasta
+    shell:
+        if not exist results\aligned mkdir results\aligned && mafft --auto results/annotated/Oryza_sativa_.fasta > results/aligned/Oryza_sativa_.aln.fasta
+        (command exited with non-zero exit code)
+Execute 1 jobs...
+[Sun Nov 23 01:55:48 2025]
+localrule quality_check:
+    input: results/per_species/Thermus_thermophilus_HB8_.fasta
+    output: results/qc/Thermus_thermophilus_HB8_.qc.txt
+    jobid: 57
+    reason: Missing output files: results/qc/Thermus_thermophilus_HB8_.qc.txt
+    wildcards: species=Thermus_thermophilus_HB8_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:55:48 2025]
+Finished jobid: 59 (Rule: quality_check)
+2 of 216 steps (1%) done
+[Sun Nov 23 01:55:48 2025]
+Finished jobid: 57 (Rule: quality_check)
+3 of 216 steps (1%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 01:55:48 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 121
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    shell:
+        if not exist results\aligned mkdir results\aligned && mafft --auto results/annotated/Bacillus_subtilis_23S_.fasta > results/aligned/Bacillus_subtilis_23S_.aln.fasta
+        (command exited with non-zero exit code)
+[Sun Nov 23 01:55:48 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 151
+    input: results/annotated/Oryza_sativa_.fasta
+    output: results/aligned/Oryza_sativa_.aln.fasta
+    shell:
+        if not exist results\aligned mkdir results\aligned && mafft --auto results/annotated/Oryza_sativa_.fasta > results/aligned/Oryza_sativa_.aln.fasta
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T015547.903802.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

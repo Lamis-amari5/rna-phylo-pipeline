@@ -1,0 +1,5 @@
+Species=Prorocentrum_micans
+Sequences=1
+Min_len=3562
+Max_len=3562
+Mean_len=3562.00

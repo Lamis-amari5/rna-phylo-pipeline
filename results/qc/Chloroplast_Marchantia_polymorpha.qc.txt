@@ -1,0 +1,5 @@
+Species=Chloroplast_Marchantia_polymorpha
+Sequences=1
+Min_len=2863
+Max_len=2863
+Mean_len=2863.00

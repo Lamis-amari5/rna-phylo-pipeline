@@ -1,0 +1,5 @@
+Species=Crithidia_fasciculata
+Sequences=1
+Min_len=4076
+Max_len=4076
+Mean_len=4076.00

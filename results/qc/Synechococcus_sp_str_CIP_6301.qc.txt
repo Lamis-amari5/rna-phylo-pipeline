@@ -1,0 +1,5 @@
+Species=Synechococcus_sp_str_CIP_6301
+Sequences=1
+Min_len=2886
+Max_len=2886
+Mean_len=2886.00

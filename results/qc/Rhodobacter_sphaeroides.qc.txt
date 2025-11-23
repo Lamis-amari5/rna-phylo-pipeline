@@ -1,0 +1,5 @@
+Species=Rhodobacter_sphaeroides
+Sequences=1
+Min_len=2880
+Max_len=2880
+Mean_len=2880.00

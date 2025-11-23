@@ -1,0 +1,2411 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Updating checkpoint dependencies.
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+annotate            58
+iqtree_build        58
+mafft_align         58
+quality_check       58
+total              233
+
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Herdmania_momus.fasta
+    output: results/qc/Herdmania_momus.qc.txt
+    jobid: 110
+    reason: Missing output files: results/qc/Herdmania_momus.qc.txt; Code has changed since last execution
+    wildcards: species=Herdmania_momus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Archaeoglobus_fulgidus.fasta
+    output: results/qc/Archaeoglobus_fulgidus.qc.txt
+    jobid: 10
+    reason: Missing output files: results/qc/Archaeoglobus_fulgidus.qc.txt; Code has changed since last execution
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Sulfolobus_solfataricus.fasta
+    output: results/qc/Sulfolobus_solfataricus.qc.txt
+    jobid: 190
+    reason: Missing output files: results/qc/Sulfolobus_solfataricus.qc.txt
+    wildcards: species=Sulfolobus_solfataricus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Trypanosoma_brucei.fasta
+    output: results/qc/Trypanosoma_brucei.qc.txt
+    jobid: 230
+    reason: Missing output files: results/qc/Trypanosoma_brucei.qc.txt
+    wildcards: species=Trypanosoma_brucei
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 110 (Rule: quality_check)
+1 of 233 steps (0.4%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 10 (Rule: quality_check)
+2 of 233 steps (1%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 190 (Rule: quality_check)
+3 of 233 steps (1%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Chlorella_ellipsoidea.fasta
+    output: results/qc/Chloroplast_Chlorella_ellipsoidea.qc.txt
+    jobid: 30
+    reason: Missing output files: results/qc/Chloroplast_Chlorella_ellipsoidea.qc.txt
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Frankia_sp.fasta
+    output: results/qc/Frankia_sp.qc.txt
+    jobid: 90
+    reason: Missing output files: results/qc/Frankia_sp.qc.txt
+    wildcards: species=Frankia_sp
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Rattus_norvegicus.fasta
+    output: results/qc/Rattus_norvegicus.qc.txt
+    jobid: 162
+    reason: Missing output files: results/qc/Rattus_norvegicus.qc.txt
+    wildcards: species=Rattus_norvegicus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 230 (Rule: quality_check)
+4 of 233 steps (2%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 30 (Rule: quality_check)
+5 of 233 steps (2%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 90 (Rule: quality_check)
+6 of 233 steps (3%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Pseudomonas_cepacia.fasta
+    output: results/qc/Pseudomonas_cepacia.qc.txt
+    jobid: 158
+    reason: Missing output files: results/qc/Pseudomonas_cepacia.qc.txt
+    wildcards: species=Pseudomonas_cepacia
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Rhodobacter_sphaeroides.fasta
+    output: results/qc/Rhodobacter_sphaeroides.qc.txt
+    jobid: 170
+    reason: Missing output files: results/qc/Rhodobacter_sphaeroides.qc.txt
+    wildcards: species=Rhodobacter_sphaeroides
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Flexibacter_flexilis.fasta
+    output: results/qc/Flexibacter_flexilis.qc.txt
+    jobid: 82
+    reason: Missing output files: results/qc/Flexibacter_flexilis.qc.txt
+    wildcards: species=Flexibacter_flexilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 162 (Rule: quality_check)
+7 of 233 steps (3%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 158 (Rule: quality_check)
+8 of 233 steps (3%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 170 (Rule: quality_check)
+9 of 233 steps (4%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Drosophila_melanogaster.fasta
+    output: results/qc/Drosophila_melanogaster.qc.txt
+    jobid: 70
+    reason: Missing output files: results/qc/Drosophila_melanogaster.qc.txt
+    wildcards: species=Drosophila_melanogaster
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Thermofilum_pendens.fasta
+    output: results/qc/Thermofilum_pendens.qc.txt
+    jobid: 210
+    reason: Missing output files: results/qc/Thermofilum_pendens.qc.txt
+    wildcards: species=Thermofilum_pendens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Tetrahymena_thermophila.fasta
+    output: results/qc/Tetrahymena_thermophila.qc.txt
+    jobid: 202
+    reason: Missing output files: results/qc/Tetrahymena_thermophila.qc.txt
+    wildcards: species=Tetrahymena_thermophila
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 82 (Rule: quality_check)
+10 of 233 steps (4%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 70 (Rule: quality_check)
+11 of 233 steps (5%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 210 (Rule: quality_check)
+12 of 233 steps (5%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Euglena_gracilis.fasta
+    output: results/qc/Euglena_gracilis.qc.txt
+    jobid: 78
+    reason: Missing output files: results/qc/Euglena_gracilis.qc.txt
+    wildcards: species=Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Prorocentrum_micans.fasta
+    output: results/qc/Prorocentrum_micans.qc.txt
+    jobid: 150
+    reason: Missing output files: results/qc/Prorocentrum_micans.qc.txt
+    wildcards: species=Prorocentrum_micans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Methanospirillum_hungatii.fasta
+    output: results/qc/Methanospirillum_hungatii.qc.txt
+    jobid: 122
+    reason: Missing output files: results/qc/Methanospirillum_hungatii.qc.txt; Code has changed since last execution
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 202 (Rule: quality_check)
+13 of 233 steps (6%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 78 (Rule: quality_check)
+14 of 233 steps (6%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 150 (Rule: quality_check)
+15 of 233 steps (6%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Mus_musculus.fasta
+    output: results/qc/Mus_musculus.qc.txt
+    jobid: 130
+    reason: Missing output files: results/qc/Mus_musculus.qc.txt; Code has changed since last execution
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Oryza_sativa.fasta
+    output: results/qc/Chloroplast_Oryza_sativa.qc.txt
+    jobid: 50
+    reason: Missing output files: results/qc/Chloroplast_Oryza_sativa.qc.txt
+    wildcards: species=Chloroplast_Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Halococcus_morrhuae.fasta
+    output: results/qc/Halococcus_morrhuae.qc.txt
+    jobid: 102
+    reason: Missing output files: results/qc/Halococcus_morrhuae.qc.txt
+    wildcards: species=Halococcus_morrhuae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 122 (Rule: quality_check)
+16 of 233 steps (7%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 130 (Rule: quality_check)
+17 of 233 steps (7%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 50 (Rule: quality_check)
+18 of 233 steps (8%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 102 (Rule: quality_check)
+19 of 233 steps (8%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:20:25 2025]
+localrule annotate:
+    input: results/per_species/Halococcus_morrhuae.fasta, results/qc/Halococcus_morrhuae.qc.txt
+    output: results/annotated/Halococcus_morrhuae.fasta
+    jobid: 101
+    reason: Missing output files: results/annotated/Halococcus_morrhuae.fasta; Input files updated by another job: results/qc/Halococcus_morrhuae.qc.txt
+    wildcards: species=Halococcus_morrhuae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule annotate:
+    input: results/per_species/Rattus_norvegicus.fasta, results/qc/Rattus_norvegicus.qc.txt
+    output: results/annotated/Rattus_norvegicus.fasta
+    jobid: 161
+    reason: Missing output files: results/annotated/Rattus_norvegicus.fasta; Input files updated by another job: results/qc/Rattus_norvegicus.qc.txt
+    wildcards: species=Rattus_norvegicus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule quality_check:
+    input: results/per_species/Physarum_polycephalum.fasta
+    output: results/qc/Physarum_polycephalum.qc.txt
+    jobid: 142
+    reason: Missing output files: results/qc/Physarum_polycephalum.qc.txt
+    wildcards: species=Physarum_polycephalum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+localrule annotate:
+    input: results/per_species/Mus_musculus.fasta, results/qc/Mus_musculus.qc.txt
+    output: results/annotated/Mus_musculus.fasta
+    jobid: 129
+    reason: Missing output files: results/annotated/Mus_musculus.fasta; Input files updated by another job: results/qc/Mus_musculus.qc.txt
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 101 (Rule: annotate)
+20 of 233 steps (9%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 142 (Rule: quality_check)
+21 of 233 steps (9%) done
+[Sun Nov 23 19:20:25 2025]
+Finished jobid: 161 (Rule: annotate)
+22 of 233 steps (9%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:26 2025]
+localrule mafft_align:
+    input: results/annotated/Halococcus_morrhuae.fasta
+    output: results/aligned/Halococcus_morrhuae.aln.fasta
+    log: logs/mafft_Halococcus_morrhuae.log
+    jobid: 100
+    benchmark: benchmarks/mafft_Halococcus_morrhuae.txt
+    reason: Missing output files: results/aligned/Halococcus_morrhuae.aln.fasta; Input files updated by another job: results/annotated/Halococcus_morrhuae.fasta
+    wildcards: species=Halococcus_morrhuae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+localrule mafft_align:
+    input: results/annotated/Rattus_norvegicus.fasta
+    output: results/aligned/Rattus_norvegicus.aln.fasta
+    log: logs/mafft_Rattus_norvegicus.log
+    jobid: 160
+    benchmark: benchmarks/mafft_Rattus_norvegicus.txt
+    reason: Missing output files: results/aligned/Rattus_norvegicus.aln.fasta; Input files updated by another job: results/annotated/Rattus_norvegicus.fasta
+    wildcards: species=Rattus_norvegicus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+localrule quality_check:
+    input: results/per_species/Crithidia_fasciculata.fasta
+    output: results/qc/Crithidia_fasciculata.qc.txt
+    jobid: 62
+    reason: Missing output files: results/qc/Crithidia_fasciculata.qc.txt
+    wildcards: species=Crithidia_fasciculata
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+Finished jobid: 129 (Rule: annotate)
+23 of 233 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:26 2025]
+localrule annotate:
+    input: results/per_species/Frankia_sp.fasta, results/qc/Frankia_sp.qc.txt
+    output: results/annotated/Frankia_sp.fasta
+    jobid: 89
+    reason: Missing output files: results/annotated/Frankia_sp.fasta; Input files updated by another job: results/qc/Frankia_sp.qc.txt
+    wildcards: species=Frankia_sp
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+Finished jobid: 62 (Rule: quality_check)
+24 of 233 steps (10%) done
+[Sun Nov 23 19:20:26 2025]
+Finished jobid: 89 (Rule: annotate)
+25 of 233 steps (11%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:26 2025]
+localrule annotate:
+    input: results/per_species/Flexibacter_flexilis.fasta, results/qc/Flexibacter_flexilis.qc.txt
+    output: results/annotated/Flexibacter_flexilis.fasta
+    jobid: 81
+    reason: Missing output files: results/annotated/Flexibacter_flexilis.fasta; Input files updated by another job: results/qc/Flexibacter_flexilis.qc.txt
+    wildcards: species=Flexibacter_flexilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+localrule annotate:
+    input: results/per_species/Crithidia_fasciculata.fasta, results/qc/Crithidia_fasciculata.qc.txt
+    output: results/annotated/Crithidia_fasciculata.fasta
+    jobid: 61
+    reason: Missing output files: results/annotated/Crithidia_fasciculata.fasta; Input files updated by another job: results/qc/Crithidia_fasciculata.qc.txt
+    wildcards: species=Crithidia_fasciculata
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+Finished jobid: 81 (Rule: annotate)
+26 of 233 steps (11%) done
+[Sun Nov 23 19:20:26 2025]
+Finished jobid: 61 (Rule: annotate)
+27 of 233 steps (12%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:26 2025]
+localrule mafft_align:
+    input: results/annotated/Flexibacter_flexilis.fasta
+    output: results/aligned/Flexibacter_flexilis.aln.fasta
+    log: logs/mafft_Flexibacter_flexilis.log
+    jobid: 80
+    benchmark: benchmarks/mafft_Flexibacter_flexilis.txt
+    reason: Missing output files: results/aligned/Flexibacter_flexilis.aln.fasta; Input files updated by another job: results/annotated/Flexibacter_flexilis.fasta
+    wildcards: species=Flexibacter_flexilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:26 2025]
+localrule mafft_align:
+    input: results/annotated/Crithidia_fasciculata.fasta
+    output: results/aligned/Crithidia_fasciculata.aln.fasta
+    log: logs/mafft_Crithidia_fasciculata.log
+    jobid: 60
+    benchmark: benchmarks/mafft_Crithidia_fasciculata.txt
+    reason: Missing output files: results/aligned/Crithidia_fasciculata.aln.fasta; Input files updated by another job: results/annotated/Crithidia_fasciculata.fasta
+    wildcards: species=Crithidia_fasciculata
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:31 2025]
+Finished jobid: 160 (Rule: mafft_align)
+28 of 233 steps (12%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:31 2025]
+localrule annotate:
+    input: results/per_species/Prorocentrum_micans.fasta, results/qc/Prorocentrum_micans.qc.txt
+    output: results/annotated/Prorocentrum_micans.fasta
+    jobid: 149
+    reason: Missing output files: results/annotated/Prorocentrum_micans.fasta; Input files updated by another job: results/qc/Prorocentrum_micans.qc.txt
+    wildcards: species=Prorocentrum_micans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:31 2025]
+Finished jobid: 60 (Rule: mafft_align)
+29 of 233 steps (12%) done
+[Sun Nov 23 19:20:31 2025]
+Finished jobid: 149 (Rule: annotate)
+30 of 233 steps (13%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:31 2025]
+localrule annotate:
+    input: results/per_species/Physarum_polycephalum.fasta, results/qc/Physarum_polycephalum.qc.txt
+    output: results/annotated/Physarum_polycephalum.fasta
+    jobid: 141
+    reason: Missing output files: results/annotated/Physarum_polycephalum.fasta; Input files updated by another job: results/qc/Physarum_polycephalum.qc.txt
+    wildcards: species=Physarum_polycephalum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:31 2025]
+localrule annotate:
+    input: results/per_species/Tetrahymena_thermophila.fasta, results/qc/Tetrahymena_thermophila.qc.txt
+    output: results/annotated/Tetrahymena_thermophila.fasta
+    jobid: 201
+    reason: Missing output files: results/annotated/Tetrahymena_thermophila.fasta; Input files updated by another job: results/qc/Tetrahymena_thermophila.qc.txt
+    wildcards: species=Tetrahymena_thermophila
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:31 2025]
+Finished jobid: 141 (Rule: annotate)
+31 of 233 steps (13%) done
+[Sun Nov 23 19:20:31 2025]
+Finished jobid: 201 (Rule: annotate)
+32 of 233 steps (14%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:31 2025]
+localrule mafft_align:
+    input: results/annotated/Physarum_polycephalum.fasta
+    output: results/aligned/Physarum_polycephalum.aln.fasta
+    log: logs/mafft_Physarum_polycephalum.log
+    jobid: 140
+    benchmark: benchmarks/mafft_Physarum_polycephalum.txt
+    reason: Missing output files: results/aligned/Physarum_polycephalum.aln.fasta; Input files updated by another job: results/annotated/Physarum_polycephalum.fasta
+    wildcards: species=Physarum_polycephalum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:31 2025]
+localrule mafft_align:
+    input: results/annotated/Tetrahymena_thermophila.fasta
+    output: results/aligned/Tetrahymena_thermophila.aln.fasta
+    log: logs/mafft_Tetrahymena_thermophila.log
+    jobid: 200
+    benchmark: benchmarks/mafft_Tetrahymena_thermophila.txt
+    reason: Missing output files: results/aligned/Tetrahymena_thermophila.aln.fasta; Input files updated by another job: results/annotated/Tetrahymena_thermophila.fasta
+    wildcards: species=Tetrahymena_thermophila
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:32 2025]
+Finished jobid: 100 (Rule: mafft_align)
+33 of 233 steps (14%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:32 2025]
+localrule annotate:
+    input: results/per_species/Sulfolobus_solfataricus.fasta, results/qc/Sulfolobus_solfataricus.qc.txt
+    output: results/annotated/Sulfolobus_solfataricus.fasta
+    jobid: 189
+    reason: Missing output files: results/annotated/Sulfolobus_solfataricus.fasta; Input files updated by another job: results/qc/Sulfolobus_solfataricus.qc.txt
+    wildcards: species=Sulfolobus_solfataricus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:32 2025]
+Finished jobid: 80 (Rule: mafft_align)
+34 of 233 steps (15%) done
+[Sun Nov 23 19:20:32 2025]
+Finished jobid: 189 (Rule: annotate)
+35 of 233 steps (15%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:32 2025]
+localrule annotate:
+    input: results/per_species/Methanospirillum_hungatii.fasta, results/qc/Methanospirillum_hungatii.qc.txt
+    output: results/annotated/Methanospirillum_hungatii.fasta
+    jobid: 121
+    reason: Missing output files: results/annotated/Methanospirillum_hungatii.fasta; Input files updated by another job: results/qc/Methanospirillum_hungatii.qc.txt
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:32 2025]
+localrule quality_check:
+    input: results/per_species/Xenopus_laevis.fasta
+    output: results/qc/Xenopus_laevis.qc.txt
+    jobid: 234
+    reason: Missing output files: results/qc/Xenopus_laevis.qc.txt
+    wildcards: species=Xenopus_laevis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:32 2025]
+Finished jobid: 121 (Rule: annotate)
+36 of 233 steps (15%) done
+[Sun Nov 23 19:20:32 2025]
+Finished jobid: 234 (Rule: quality_check)
+37 of 233 steps (16%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:32 2025]
+localrule mafft_align:
+    input: results/annotated/Methanospirillum_hungatii.fasta
+    output: results/aligned/Methanospirillum_hungatii.aln.fasta
+    log: logs/mafft_Methanospirillum_hungatii.log
+    jobid: 120
+    benchmark: benchmarks/mafft_Methanospirillum_hungatii.txt
+    reason: Missing output files: results/aligned/Methanospirillum_hungatii.aln.fasta; Input files updated by another job: results/annotated/Methanospirillum_hungatii.fasta
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:33 2025]
+localrule annotate:
+    input: results/per_species/Xenopus_laevis.fasta, results/qc/Xenopus_laevis.qc.txt
+    output: results/annotated/Xenopus_laevis.fasta
+    jobid: 233
+    reason: Missing output files: results/annotated/Xenopus_laevis.fasta; Input files updated by another job: results/qc/Xenopus_laevis.qc.txt
+    wildcards: species=Xenopus_laevis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:33 2025]
+Finished jobid: 233 (Rule: annotate)
+38 of 233 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:33 2025]
+localrule quality_check:
+    input: results/per_species/Thermoproteus_tenax.fasta
+    output: results/qc/Thermoproteus_tenax.qc.txt
+    jobid: 218
+    reason: Missing output files: results/qc/Thermoproteus_tenax.qc.txt
+    wildcards: species=Thermoproteus_tenax
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:33 2025]
+Finished jobid: 218 (Rule: quality_check)
+39 of 233 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:33 2025]
+localrule quality_check:
+    input: results/per_species/Synechococcus_sp_str_CIP_6301.fasta
+    output: results/qc/Synechococcus_sp_str_CIP_6301.qc.txt
+    jobid: 194
+    reason: Missing output files: results/qc/Synechococcus_sp_str_CIP_6301.qc.txt
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:33 2025]
+Finished jobid: 194 (Rule: quality_check)
+40 of 233 steps (17%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:33 2025]
+localrule annotate:
+    input: results/per_species/Synechococcus_sp_str_CIP_6301.fasta, results/qc/Synechococcus_sp_str_CIP_6301.qc.txt
+    output: results/annotated/Synechococcus_sp_str_CIP_6301.fasta
+    jobid: 193
+    reason: Missing output files: results/annotated/Synechococcus_sp_str_CIP_6301.fasta; Input files updated by another job: results/qc/Synechococcus_sp_str_CIP_6301.qc.txt
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:33 2025]
+Finished jobid: 193 (Rule: annotate)
+41 of 233 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:34 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Marchantia_polymorpha.fasta
+    output: results/qc/Chloroplast_Marchantia_polymorpha.qc.txt
+    jobid: 42
+    reason: Missing output files: results/qc/Chloroplast_Marchantia_polymorpha.qc.txt
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:34 2025]
+Finished jobid: 42 (Rule: quality_check)
+42 of 233 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:34 2025]
+localrule quality_check:
+    input: results/per_species/Thermotoga_maritima.fasta
+    output: results/qc/Thermotoga_maritima.qc.txt
+    jobid: 222
+    reason: Missing output files: results/qc/Thermotoga_maritima.qc.txt; Code has changed since last execution
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:34 2025]
+Finished jobid: 222 (Rule: quality_check)
+43 of 233 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:34 2025]
+localrule quality_check:
+    input: results/per_species/Caenorhabditis_elegans.fasta
+    output: results/qc/Caenorhabditis_elegans.qc.txt
+    jobid: 22
+    reason: Missing output files: results/qc/Caenorhabditis_elegans.qc.txt; Code has changed since last execution
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:20:34 2025]
+Finished jobid: 22 (Rule: quality_check)
+44 of 233 steps (19%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:34 2025]
+localrule quality_check:
+    input: results/per_species/Streptomyces_ambofaciens.fasta
+    output: results/qc/Streptomyces_ambofaciens.qc.txt
+    jobid: 182
+    reason: Missing output files: results/qc/Streptomyces_ambofaciens.qc.txt
+    wildcards: species=Streptomyces_ambofaciens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:34 2025]
+Finished jobid: 182 (Rule: quality_check)
+45 of 233 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:34 2025]
+localrule quality_check:
+    input: results/per_species/Homo_sapien.fasta
+    output: results/qc/Homo_sapien.qc.txt
+    jobid: 114
+    reason: Missing output files: results/qc/Homo_sapien.qc.txt; Code has changed since last execution
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:35 2025]
+Finished jobid: 114 (Rule: quality_check)
+46 of 233 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:35 2025]
+localrule annotate:
+    input: results/per_species/Homo_sapien.fasta, results/qc/Homo_sapien.qc.txt
+    output: results/annotated/Homo_sapien.fasta
+    jobid: 113
+    reason: Missing output files: results/annotated/Homo_sapien.fasta; Input files updated by another job: results/qc/Homo_sapien.qc.txt
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:35 2025]
+Finished jobid: 113 (Rule: annotate)
+47 of 233 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:35 2025]
+localrule mafft_align:
+    input: results/annotated/Homo_sapien.fasta
+    output: results/aligned/Homo_sapien.aln.fasta
+    log: logs/mafft_Homo_sapien.log
+    jobid: 112
+    benchmark: benchmarks/mafft_Homo_sapien.txt
+    reason: Missing output files: results/aligned/Homo_sapien.aln.fasta; Input files updated by another job: results/annotated/Homo_sapien.fasta
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:35 2025]
+Finished jobid: 140 (Rule: mafft_align)
+48 of 233 steps (21%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:36 2025]
+localrule mafft_align:
+    input: results/annotated/Xenopus_laevis.fasta
+    output: results/aligned/Xenopus_laevis.aln.fasta
+    log: logs/mafft_Xenopus_laevis.log
+    jobid: 232
+    benchmark: benchmarks/mafft_Xenopus_laevis.txt
+    reason: Missing output files: results/aligned/Xenopus_laevis.aln.fasta; Input files updated by another job: results/annotated/Xenopus_laevis.fasta
+    wildcards: species=Xenopus_laevis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:36 2025]
+Finished jobid: 200 (Rule: mafft_align)
+49 of 233 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:36 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Oryza_sativa.fasta, results/qc/Chloroplast_Oryza_sativa.qc.txt
+    output: results/annotated/Chloroplast_Oryza_sativa.fasta
+    jobid: 49
+    reason: Missing output files: results/annotated/Chloroplast_Oryza_sativa.fasta; Input files updated by another job: results/qc/Chloroplast_Oryza_sativa.qc.txt
+    wildcards: species=Chloroplast_Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:36 2025]
+Finished jobid: 49 (Rule: annotate)
+50 of 233 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:36 2025]
+localrule annotate:
+    input: results/per_species/Thermofilum_pendens.fasta, results/qc/Thermofilum_pendens.qc.txt
+    output: results/annotated/Thermofilum_pendens.fasta
+    jobid: 209
+    reason: Missing output files: results/annotated/Thermofilum_pendens.fasta; Input files updated by another job: results/qc/Thermofilum_pendens.qc.txt
+    wildcards: species=Thermofilum_pendens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:36 2025]
+Finished jobid: 209 (Rule: annotate)
+51 of 233 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:36 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Conopholis_americana.fasta
+    output: results/qc/Chloroplast_Conopholis_americana.qc.txt
+    jobid: 34
+    reason: Missing output files: results/qc/Chloroplast_Conopholis_americana.qc.txt
+    wildcards: species=Chloroplast_Conopholis_americana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:36 2025]
+Finished jobid: 34 (Rule: quality_check)
+52 of 233 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:36 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Conopholis_americana.fasta, results/qc/Chloroplast_Conopholis_americana.qc.txt
+    output: results/annotated/Chloroplast_Conopholis_americana.fasta
+    jobid: 33
+    reason: Missing output files: results/annotated/Chloroplast_Conopholis_americana.fasta; Input files updated by another job: results/qc/Chloroplast_Conopholis_americana.qc.txt
+    wildcards: species=Chloroplast_Conopholis_americana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:36 2025]
+Finished jobid: 33 (Rule: annotate)
+53 of 233 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:36 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Conopholis_americana.fasta
+    output: results/aligned/Chloroplast_Conopholis_americana.aln.fasta
+    log: logs/mafft_Chloroplast_Conopholis_americana.log
+    jobid: 32
+    benchmark: benchmarks/mafft_Chloroplast_Conopholis_americana.txt
+    reason: Missing output files: results/aligned/Chloroplast_Conopholis_americana.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Conopholis_americana.fasta
+    wildcards: species=Chloroplast_Conopholis_americana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:37 2025]
+Finished jobid: 120 (Rule: mafft_align)
+54 of 233 steps (23%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:38 2025]
+localrule annotate:
+    input: results/per_species/Drosophila_melanogaster.fasta, results/qc/Drosophila_melanogaster.qc.txt
+    output: results/annotated/Drosophila_melanogaster.fasta
+    jobid: 69
+    reason: Missing output files: results/annotated/Drosophila_melanogaster.fasta; Input files updated by another job: results/qc/Drosophila_melanogaster.qc.txt
+    wildcards: species=Drosophila_melanogaster
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:38 2025]
+Finished jobid: 69 (Rule: annotate)
+55 of 233 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:38 2025]
+localrule annotate:
+    input: results/per_species/Trypanosoma_brucei.fasta, results/qc/Trypanosoma_brucei.qc.txt
+    output: results/annotated/Trypanosoma_brucei.fasta
+    jobid: 229
+    reason: Missing output files: results/annotated/Trypanosoma_brucei.fasta; Input files updated by another job: results/qc/Trypanosoma_brucei.qc.txt
+    wildcards: species=Trypanosoma_brucei
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:38 2025]
+Finished jobid: 229 (Rule: annotate)
+56 of 233 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:38 2025]
+localrule annotate:
+    input: results/per_species/Rhodobacter_sphaeroides.fasta, results/qc/Rhodobacter_sphaeroides.qc.txt
+    output: results/annotated/Rhodobacter_sphaeroides.fasta
+    jobid: 169
+    reason: Missing output files: results/annotated/Rhodobacter_sphaeroides.fasta; Input files updated by another job: results/qc/Rhodobacter_sphaeroides.qc.txt
+    wildcards: species=Rhodobacter_sphaeroides
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:38 2025]
+Finished jobid: 169 (Rule: annotate)
+57 of 233 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:38 2025]
+localrule annotate:
+    input: results/per_species/Archaeoglobus_fulgidus.fasta, results/qc/Archaeoglobus_fulgidus.qc.txt
+    output: results/annotated/Archaeoglobus_fulgidus.fasta
+    jobid: 9
+    reason: Missing output files: results/annotated/Archaeoglobus_fulgidus.fasta; Input files updated by another job: results/qc/Archaeoglobus_fulgidus.qc.txt
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:38 2025]
+Finished jobid: 9 (Rule: annotate)
+58 of 233 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:38 2025]
+localrule quality_check:
+    input: results/per_species/Saccharomyces_cerevisiae.fasta
+    output: results/qc/Saccharomyces_cerevisiae.qc.txt
+    jobid: 178
+    reason: Missing output files: results/qc/Saccharomyces_cerevisiae.qc.txt
+    wildcards: species=Saccharomyces_cerevisiae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:20:38 2025]
+Finished jobid: 178 (Rule: quality_check)
+59 of 233 steps (25%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:39 2025]
+localrule annotate:
+    input: results/per_species/Herdmania_momus.fasta, results/qc/Herdmania_momus.qc.txt
+    output: results/annotated/Herdmania_momus.fasta
+    jobid: 109
+    reason: Missing output files: results/annotated/Herdmania_momus.fasta; Input files updated by another job: results/qc/Herdmania_momus.qc.txt
+    wildcards: species=Herdmania_momus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:39 2025]
+Finished jobid: 109 (Rule: annotate)
+60 of 233 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:39 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Chlorella_ellipsoidea.fasta, results/qc/Chloroplast_Chlorella_ellipsoidea.qc.txt
+    output: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    jobid: 29
+    reason: Missing output files: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta; Input files updated by another job: results/qc/Chloroplast_Chlorella_ellipsoidea.qc.txt; Set of input files has changed since last execution
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:39 2025]
+Finished jobid: 29 (Rule: annotate)
+61 of 233 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:39 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Euglena_gracilis.fasta
+    output: results/qc/Chloroplast_Euglena_gracilis.qc.txt
+    jobid: 38
+    reason: Missing output files: results/qc/Chloroplast_Euglena_gracilis.qc.txt
+    wildcards: species=Chloroplast_Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:39 2025]
+Finished jobid: 38 (Rule: quality_check)
+62 of 233 steps (27%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:39 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Zea_mays.fasta
+    output: results/qc/Chloroplast_Zea_mays.qc.txt
+    jobid: 58
+    reason: Missing output files: results/qc/Chloroplast_Zea_mays.qc.txt
+    wildcards: species=Chloroplast_Zea_mays
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:39 2025]
+Finished jobid: 112 (Rule: mafft_align)
+63 of 233 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:39 2025]
+localrule quality_check:
+    input: results/per_species/Halobacterium_marismortui.fasta
+    output: results/qc/Halobacterium_marismortui.qc.txt
+    jobid: 98
+    reason: Missing output files: results/qc/Halobacterium_marismortui.qc.txt
+    wildcards: species=Halobacterium_marismortui
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:39 2025]
+Finished jobid: 58 (Rule: quality_check)
+64 of 233 steps (27%) done
+[Sun Nov 23 19:20:39 2025]
+Finished jobid: 98 (Rule: quality_check)
+65 of 233 steps (28%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 2 jobs...
+[Sun Nov 23 19:20:40 2025]
+localrule annotate:
+    input: results/per_species/Streptomyces_ambofaciens.fasta, results/qc/Streptomyces_ambofaciens.qc.txt
+    output: results/annotated/Streptomyces_ambofaciens.fasta
+    jobid: 181
+    reason: Missing output files: results/annotated/Streptomyces_ambofaciens.fasta; Input files updated by another job: results/qc/Streptomyces_ambofaciens.qc.txt
+    wildcards: species=Streptomyces_ambofaciens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:40 2025]
+localrule annotate:
+    input: results/per_species/Caenorhabditis_elegans.fasta, results/qc/Caenorhabditis_elegans.qc.txt
+    output: results/annotated/Caenorhabditis_elegans.fasta
+    jobid: 21
+    reason: Missing output files: results/annotated/Caenorhabditis_elegans.fasta; Input files updated by another job: results/qc/Caenorhabditis_elegans.qc.txt
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:40 2025]
+Finished jobid: 232 (Rule: mafft_align)
+66 of 233 steps (28%) done
+[Sun Nov 23 19:20:40 2025]
+Finished jobid: 181 (Rule: annotate)
+67 of 233 steps (29%) done
+[Sun Nov 23 19:20:40 2025]
+Finished jobid: 21 (Rule: annotate)
+68 of 233 steps (29%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:40 2025]
+localrule mafft_align:
+    input: results/annotated/Streptomyces_ambofaciens.fasta
+    output: results/aligned/Streptomyces_ambofaciens.aln.fasta
+    log: logs/mafft_Streptomyces_ambofaciens.log
+    jobid: 180
+    benchmark: benchmarks/mafft_Streptomyces_ambofaciens.txt
+    reason: Missing output files: results/aligned/Streptomyces_ambofaciens.aln.fasta; Input files updated by another job: results/annotated/Streptomyces_ambofaciens.fasta
+    wildcards: species=Streptomyces_ambofaciens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:40 2025]
+localrule mafft_align:
+    input: results/annotated/Caenorhabditis_elegans.fasta
+    output: results/aligned/Caenorhabditis_elegans.aln.fasta
+    log: logs/mafft_Caenorhabditis_elegans.log
+    jobid: 20
+    benchmark: benchmarks/mafft_Caenorhabditis_elegans.txt
+    reason: Missing output files: results/aligned/Caenorhabditis_elegans.aln.fasta; Input files updated by another job: results/annotated/Caenorhabditis_elegans.fasta
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:40 2025]
+localrule quality_check:
+    input: results/per_species/Bacillus_subtilis_23S.fasta
+    output: results/qc/Bacillus_subtilis_23S.qc.txt
+    jobid: 18
+    reason: Missing output files: results/qc/Bacillus_subtilis_23S.qc.txt
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:20:40 2025]
+Finished jobid: 18 (Rule: quality_check)
+69 of 233 steps (30%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:40 2025]
+localrule quality_check:
+    input: results/per_species/Methanobacterium_thermoautotrophicum.fasta
+    output: results/qc/Methanobacterium_thermoautotrophicum.qc.txt
+    jobid: 118
+    reason: Missing output files: results/qc/Methanobacterium_thermoautotrophicum.qc.txt; Code has changed since last execution
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:20:40 2025]
+Finished jobid: 118 (Rule: quality_check)
+70 of 233 steps (30%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:41 2025]
+localrule quality_check:
+    input: results/per_species/Oryza_sativa.fasta
+    output: results/qc/Oryza_sativa.qc.txt
+    jobid: 138
+    reason: Missing output files: results/qc/Oryza_sativa.qc.txt; Code has changed since last execution
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:41 2025]
+Finished jobid: 138 (Rule: quality_check)
+71 of 233 steps (30%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:41 2025]
+localrule quality_check:
+    input: results/per_species/Tetrahymena_pyriformis.fasta
+    output: results/qc/Tetrahymena_pyriformis.qc.txt
+    jobid: 198
+    reason: Missing output files: results/qc/Tetrahymena_pyriformis.qc.txt
+    wildcards: species=Tetrahymena_pyriformis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:41 2025]
+Finished jobid: 32 (Rule: mafft_align)
+72 of 233 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:41 2025]
+localrule mafft_align:
+    input: results/annotated/Drosophila_melanogaster.fasta
+    output: results/aligned/Drosophila_melanogaster.aln.fasta
+    log: logs/mafft_Drosophila_melanogaster.log
+    jobid: 68
+    benchmark: benchmarks/mafft_Drosophila_melanogaster.txt
+    reason: Missing output files: results/aligned/Drosophila_melanogaster.aln.fasta; Input files updated by another job: results/annotated/Drosophila_melanogaster.fasta
+    wildcards: species=Drosophila_melanogaster
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:41 2025]
+Finished jobid: 198 (Rule: quality_check)
+73 of 233 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:41 2025]
+localrule mafft_align:
+    input: results/annotated/Trypanosoma_brucei.fasta
+    output: results/aligned/Trypanosoma_brucei.aln.fasta
+    log: logs/mafft_Trypanosoma_brucei.log
+    jobid: 228
+    benchmark: benchmarks/mafft_Trypanosoma_brucei.txt
+    reason: Missing output files: results/aligned/Trypanosoma_brucei.aln.fasta; Input files updated by another job: results/annotated/Trypanosoma_brucei.fasta
+    wildcards: species=Trypanosoma_brucei
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:46 2025]
+Finished jobid: 20 (Rule: mafft_align)
+74 of 233 steps (32%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:46 2025]
+localrule mafft_align:
+    input: results/annotated/Thermofilum_pendens.fasta
+    output: results/aligned/Thermofilum_pendens.aln.fasta
+    log: logs/mafft_Thermofilum_pendens.log
+    jobid: 208
+    benchmark: benchmarks/mafft_Thermofilum_pendens.txt
+    reason: Missing output files: results/aligned/Thermofilum_pendens.aln.fasta; Input files updated by another job: results/annotated/Thermofilum_pendens.fasta
+    wildcards: species=Thermofilum_pendens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:46 2025]
+Finished jobid: 180 (Rule: mafft_align)
+75 of 233 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:46 2025]
+localrule mafft_align:
+    input: results/annotated/Mus_musculus.fasta
+    output: results/aligned/Mus_musculus.aln.fasta
+    log: logs/mafft_Mus_musculus.log
+    jobid: 128
+    benchmark: benchmarks/mafft_Mus_musculus.txt
+    reason: Missing output files: results/aligned/Mus_musculus.aln.fasta; Input files updated by another job: results/annotated/Mus_musculus.fasta
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:46 2025]
+Finished jobid: 68 (Rule: mafft_align)
+76 of 233 steps (33%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:46 2025]
+localrule mafft_align:
+    input: results/annotated/Prorocentrum_micans.fasta
+    output: results/aligned/Prorocentrum_micans.aln.fasta
+    log: logs/mafft_Prorocentrum_micans.log
+    jobid: 148
+    benchmark: benchmarks/mafft_Prorocentrum_micans.txt
+    reason: Missing output files: results/aligned/Prorocentrum_micans.aln.fasta; Input files updated by another job: results/annotated/Prorocentrum_micans.fasta
+    wildcards: species=Prorocentrum_micans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:46 2025]
+Finished jobid: 228 (Rule: mafft_align)
+77 of 233 steps (33%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:47 2025]
+localrule mafft_align:
+    input: results/annotated/Herdmania_momus.fasta
+    output: results/aligned/Herdmania_momus.aln.fasta
+    log: logs/mafft_Herdmania_momus.log
+    jobid: 108
+    benchmark: benchmarks/mafft_Herdmania_momus.txt
+    reason: Missing output files: results/aligned/Herdmania_momus.aln.fasta; Input files updated by another job: results/annotated/Herdmania_momus.fasta
+    wildcards: species=Herdmania_momus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:51 2025]
+Finished jobid: 208 (Rule: mafft_align)
+78 of 233 steps (33%) done
+Execute 1 jobs...
+[Sun Nov 23 19:20:51 2025]
+localrule annotate:
+    input: results/per_species/Euglena_gracilis.fasta, results/qc/Euglena_gracilis.qc.txt
+    output: results/annotated/Euglena_gracilis.fasta
+    jobid: 77
+    reason: Missing output files: results/annotated/Euglena_gracilis.fasta; Input files updated by another job: results/qc/Euglena_gracilis.qc.txt
+    wildcards: species=Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:51 2025]
+Finished jobid: 77 (Rule: annotate)
+79 of 233 steps (34%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:51 2025]
+localrule annotate:
+    input: results/per_species/Thermoproteus_tenax.fasta, results/qc/Thermoproteus_tenax.qc.txt
+    output: results/annotated/Thermoproteus_tenax.fasta
+    jobid: 217
+    reason: Missing output files: results/annotated/Thermoproteus_tenax.fasta; Input files updated by another job: results/qc/Thermoproteus_tenax.qc.txt
+    wildcards: species=Thermoproteus_tenax
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:51 2025]
+Finished jobid: 128 (Rule: mafft_align)
+80 of 233 steps (34%) done
+[Sun Nov 23 19:20:51 2025]
+Finished jobid: 217 (Rule: annotate)
+81 of 233 steps (35%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:51 2025]
+localrule annotate:
+    input: results/per_species/Thermotoga_maritima.fasta, results/qc/Thermotoga_maritima.qc.txt
+    output: results/annotated/Thermotoga_maritima.fasta
+    jobid: 221
+    reason: Missing output files: results/annotated/Thermotoga_maritima.fasta; Input files updated by another job: results/qc/Thermotoga_maritima.qc.txt
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:51 2025]
+localrule quality_check:
+    input: results/per_species/Mycobacterium_leprae.fasta
+    output: results/qc/Mycobacterium_leprae.qc.txt
+    jobid: 134
+    reason: Missing output files: results/qc/Mycobacterium_leprae.qc.txt; Code has changed since last execution
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:51 2025]
+Finished jobid: 221 (Rule: annotate)
+82 of 233 steps (35%) done
+[Sun Nov 23 19:20:51 2025]
+Finished jobid: 134 (Rule: quality_check)
+83 of 233 steps (36%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 2 jobs...
+[Sun Nov 23 19:20:52 2025]
+localrule mafft_align:
+    input: results/annotated/Thermotoga_maritima.fasta
+    output: results/aligned/Thermotoga_maritima.aln.fasta
+    log: logs/mafft_Thermotoga_maritima.log
+    jobid: 220
+    benchmark: benchmarks/mafft_Thermotoga_maritima.txt
+    reason: Missing output files: results/aligned/Thermotoga_maritima.aln.fasta; Input files updated by another job: results/annotated/Thermotoga_maritima.fasta
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    output: results/aligned/Chloroplast_Chlorella_ellipsoidea.aln.fasta
+    log: logs/mafft_Chloroplast_Chlorella_ellipsoidea.log
+    jobid: 28
+    benchmark: benchmarks/mafft_Chloroplast_Chlorella_ellipsoidea.txt
+    reason: Missing output files: results/aligned/Chloroplast_Chlorella_ellipsoidea.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 148 (Rule: mafft_align)
+84 of 233 steps (36%) done
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 108 (Rule: mafft_align)
+85 of 233 steps (36%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:52 2025]
+localrule quality_check:
+    input: results/per_species/Halobacterium_halobium.fasta
+    output: results/qc/Halobacterium_halobium.qc.txt
+    jobid: 94
+    reason: Missing output files: results/qc/Halobacterium_halobium.qc.txt
+    wildcards: species=Halobacterium_halobium
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+localrule annotate:
+    input: results/per_species/Saccharomyces_cerevisiae.fasta, results/qc/Saccharomyces_cerevisiae.qc.txt
+    output: results/annotated/Saccharomyces_cerevisiae.fasta
+    jobid: 177
+    reason: Missing output files: results/annotated/Saccharomyces_cerevisiae.fasta; Input files updated by another job: results/qc/Saccharomyces_cerevisiae.qc.txt
+    wildcards: species=Saccharomyces_cerevisiae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 94 (Rule: quality_check)
+86 of 233 steps (37%) done
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 177 (Rule: annotate)
+87 of 233 steps (37%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:52 2025]
+localrule quality_check:
+    input: results/per_species/Ruminobacter_amylophilus.fasta
+    output: results/qc/Ruminobacter_amylophilus.qc.txt
+    jobid: 174
+    reason: Missing output files: results/qc/Ruminobacter_amylophilus.qc.txt
+    wildcards: species=Ruminobacter_amylophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+localrule annotate:
+    input: results/per_species/Pseudomonas_cepacia.fasta, results/qc/Pseudomonas_cepacia.qc.txt
+    output: results/annotated/Pseudomonas_cepacia.fasta
+    jobid: 157
+    reason: Missing output files: results/annotated/Pseudomonas_cepacia.fasta; Input files updated by another job: results/qc/Pseudomonas_cepacia.qc.txt
+    wildcards: species=Pseudomonas_cepacia
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 157 (Rule: annotate)
+88 of 233 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:52 2025]
+localrule annotate:
+    input: results/per_species/Tetrahymena_pyriformis.fasta, results/qc/Tetrahymena_pyriformis.qc.txt
+    output: results/annotated/Tetrahymena_pyriformis.fasta
+    jobid: 197
+    reason: Missing output files: results/annotated/Tetrahymena_pyriformis.fasta; Input files updated by another job: results/qc/Tetrahymena_pyriformis.qc.txt
+    wildcards: species=Tetrahymena_pyriformis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 174 (Rule: quality_check)
+89 of 233 steps (38%) done
+[Sun Nov 23 19:20:52 2025]
+Finished jobid: 197 (Rule: annotate)
+90 of 233 steps (39%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Escherichia_coli.fasta
+    output: results/qc/Escherichia_coli.qc.txt
+    jobid: 74
+    reason: Missing output files: results/qc/Escherichia_coli.qc.txt
+    wildcards: species=Escherichia_coli
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Zea_mays.fasta, results/qc/Chloroplast_Zea_mays.qc.txt
+    output: results/annotated/Chloroplast_Zea_mays.fasta
+    jobid: 57
+    reason: Missing output files: results/annotated/Chloroplast_Zea_mays.fasta; Input files updated by another job: results/qc/Chloroplast_Zea_mays.qc.txt
+    wildcards: species=Chloroplast_Zea_mays
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 74 (Rule: quality_check)
+91 of 233 steps (39%) done
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 57 (Rule: annotate)
+92 of 233 steps (39%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Pseudomonas_aeruginosa.fasta
+    output: results/qc/Pseudomonas_aeruginosa.qc.txt
+    jobid: 154
+    reason: Missing output files: results/qc/Pseudomonas_aeruginosa.qc.txt
+    wildcards: species=Pseudomonas_aeruginosa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+localrule annotate:
+    input: results/per_species/Halobacterium_marismortui.fasta, results/qc/Halobacterium_marismortui.qc.txt
+    output: results/annotated/Halobacterium_marismortui.fasta
+    jobid: 97
+    reason: Missing output files: results/annotated/Halobacterium_marismortui.fasta; Input files updated by another job: results/qc/Halobacterium_marismortui.qc.txt
+    wildcards: species=Halobacterium_marismortui
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 154 (Rule: quality_check)
+93 of 233 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Thermus_thermophilus_HB8.fasta
+    output: results/qc/Thermus_thermophilus_HB8.qc.txt
+    jobid: 226
+    reason: Missing output files: results/qc/Thermus_thermophilus_HB8.qc.txt
+    wildcards: species=Thermus_thermophilus_HB8
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 97 (Rule: annotate)
+94 of 233 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Pirellula_marina.fasta
+    output: results/qc/Pirellula_marina.qc.txt
+    jobid: 146
+    reason: Missing output files: results/qc/Pirellula_marina.qc.txt
+    wildcards: species=Pirellula_marina
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 226 (Rule: quality_check)
+95 of 233 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Haloferax_volcanii.fasta
+    output: results/qc/Haloferax_volcanii.qc.txt
+    jobid: 106
+    reason: Missing output files: results/qc/Haloferax_volcanii.qc.txt
+    wildcards: species=Haloferax_volcanii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 146 (Rule: quality_check)
+96 of 233 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Desulfurococcus_mobilis.fasta
+    output: results/qc/Desulfurococcus_mobilis.qc.txt
+    jobid: 66
+    reason: Missing output files: results/qc/Desulfurococcus_mobilis.qc.txt
+    wildcards: species=Desulfurococcus_mobilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 106 (Rule: quality_check)
+97 of 233 steps (42%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:53 2025]
+localrule quality_check:
+    input: results/per_species/Micrococcus_luteus.fasta
+    output: results/qc/Micrococcus_luteus.qc.txt
+    jobid: 126
+    reason: Missing output files: results/qc/Micrococcus_luteus.qc.txt; Code has changed since last execution
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 66 (Rule: quality_check)
+98 of 233 steps (42%) done
+[Sun Nov 23 19:20:53 2025]
+Finished jobid: 126 (Rule: quality_check)
+99 of 233 steps (42%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:54 2025]
+localrule quality_check:
+    input: results/per_species/Bacillus_stearothermophilus.fasta
+    output: results/qc/Bacillus_stearothermophilus.qc.txt
+    jobid: 14
+    reason: Missing output files: results/qc/Bacillus_stearothermophilus.qc.txt; Code has changed since last execution
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Euglena_gracilis.fasta, results/qc/Chloroplast_Euglena_gracilis.qc.txt
+    output: results/annotated/Chloroplast_Euglena_gracilis.fasta
+    jobid: 37
+    reason: Missing output files: results/annotated/Chloroplast_Euglena_gracilis.fasta; Input files updated by another job: results/qc/Chloroplast_Euglena_gracilis.qc.txt
+    wildcards: species=Chloroplast_Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+Finished jobid: 14 (Rule: quality_check)
+100 of 233 steps (43%) done
+[Sun Nov 23 19:20:54 2025]
+Finished jobid: 37 (Rule: annotate)
+101 of 233 steps (43%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:54 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_stearothermophilus.fasta, results/qc/Bacillus_stearothermophilus.qc.txt
+    output: results/annotated/Bacillus_stearothermophilus.fasta
+    jobid: 13
+    reason: Missing output files: results/annotated/Bacillus_stearothermophilus.fasta; Input files updated by another job: results/qc/Bacillus_stearothermophilus.qc.txt
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+localrule quality_check:
+    input: results/per_species/Arabidopsis_thaliana.fasta
+    output: results/qc/Arabidopsis_thaliana.qc.txt
+    jobid: 6
+    reason: Missing output files: results/qc/Arabidopsis_thaliana.qc.txt
+    wildcards: species=Arabidopsis_thaliana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+Finished jobid: 13 (Rule: annotate)
+102 of 233 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:54 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Nicotiana_tabacum.fasta
+    output: results/qc/Chloroplast_Nicotiana_tabacum.qc.txt
+    jobid: 46
+    reason: Missing output files: results/qc/Chloroplast_Nicotiana_tabacum.qc.txt
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+Finished jobid: 6 (Rule: quality_check)
+103 of 233 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:54 2025]
+localrule quality_check:
+    input: results/per_species/Fragaria_ananassa.fasta
+    output: results/qc/Fragaria_ananassa.qc.txt
+    jobid: 86
+    reason: Missing output files: results/qc/Fragaria_ananassa.qc.txt
+    wildcards: species=Fragaria_ananassa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+Finished jobid: 46 (Rule: quality_check)
+104 of 233 steps (45%) done
+[Sun Nov 23 19:20:54 2025]
+Finished jobid: 86 (Rule: quality_check)
+105 of 233 steps (45%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:20:54 2025]
+localrule annotate:
+    input: results/per_species/Escherichia_coli.fasta, results/qc/Escherichia_coli.qc.txt
+    output: results/annotated/Escherichia_coli.fasta
+    jobid: 73
+    reason: Missing output files: results/annotated/Escherichia_coli.fasta; Input files updated by another job: results/qc/Escherichia_coli.qc.txt
+    wildcards: species=Escherichia_coli
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:54 2025]
+localrule annotate:
+    input: results/per_species/Methanobacterium_thermoautotrophicum.fasta, results/qc/Methanobacterium_thermoautotrophicum.qc.txt
+    output: results/annotated/Methanobacterium_thermoautotrophicum.fasta
+    jobid: 117
+    reason: Missing output files: results/annotated/Methanobacterium_thermoautotrophicum.fasta; Input files updated by another job: results/qc/Methanobacterium_thermoautotrophicum.qc.txt
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 73 (Rule: annotate)
+106 of 233 steps (45%) done
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 117 (Rule: annotate)
+107 of 233 steps (46%) done
+Execute 2 jobs...
+[Sun Nov 23 19:20:55 2025]
+localrule annotate:
+    input: results/per_species/Mycobacterium_leprae.fasta, results/qc/Mycobacterium_leprae.qc.txt
+    output: results/annotated/Mycobacterium_leprae.fasta
+    jobid: 133
+    reason: Missing output files: results/annotated/Mycobacterium_leprae.fasta; Input files updated by another job: results/qc/Mycobacterium_leprae.qc.txt
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:55 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_subtilis_23S.fasta, results/qc/Bacillus_subtilis_23S.qc.txt
+    output: results/annotated/Bacillus_subtilis_23S.fasta
+    jobid: 17
+    reason: Missing output files: results/annotated/Bacillus_subtilis_23S.fasta; Input files updated by another job: results/qc/Bacillus_subtilis_23S.qc.txt; Set of input files has changed since last execution
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 133 (Rule: annotate)
+108 of 233 steps (46%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:20:55 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Zea_mays.fasta
+    output: results/aligned/Chloroplast_Zea_mays.aln.fasta
+    log: logs/mafft_Chloroplast_Zea_mays.log
+    jobid: 56
+    benchmark: benchmarks/mafft_Chloroplast_Zea_mays.txt
+    reason: Missing output files: results/aligned/Chloroplast_Zea_mays.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Zea_mays.fasta
+    wildcards: species=Chloroplast_Zea_mays
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 17 (Rule: annotate)
+109 of 233 steps (47%) done
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 220 (Rule: mafft_align)
+110 of 233 steps (47%) done
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 28 (Rule: mafft_align)
+111 of 233 steps (48%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:20:55 2025]
+localrule mafft_align:
+    input: results/annotated/Mycobacterium_leprae.fasta
+    output: results/aligned/Mycobacterium_leprae.aln.fasta
+    log: logs/mafft_Mycobacterium_leprae.log
+    jobid: 132
+    benchmark: benchmarks/mafft_Mycobacterium_leprae.txt
+    reason: Missing output files: results/aligned/Mycobacterium_leprae.aln.fasta; Input files updated by another job: results/annotated/Mycobacterium_leprae.fasta
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:55 2025]
+localrule annotate:
+    input: results/per_species/Halobacterium_halobium.fasta, results/qc/Halobacterium_halobium.qc.txt
+    output: results/annotated/Halobacterium_halobium.fasta
+    jobid: 93
+    reason: Missing output files: results/annotated/Halobacterium_halobium.fasta; Input files updated by another job: results/qc/Halobacterium_halobium.qc.txt
+    wildcards: species=Halobacterium_halobium
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:55 2025]
+localrule quality_check:
+    input: results/per_species/Thermococcus_celer.fasta
+    output: results/qc/Thermococcus_celer.qc.txt
+    jobid: 206
+    reason: Missing output files: results/qc/Thermococcus_celer.qc.txt
+    wildcards: species=Thermococcus_celer
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 206 (Rule: quality_check)
+112 of 233 steps (48%) done
+[Sun Nov 23 19:20:55 2025]
+Finished jobid: 93 (Rule: annotate)
+113 of 233 steps (48%) done
+Execute 2 jobs...
+[Sun Nov 23 19:20:56 2025]
+localrule annotate:
+    input: results/per_species/Ruminobacter_amylophilus.fasta, results/qc/Ruminobacter_amylophilus.qc.txt
+    output: results/annotated/Ruminobacter_amylophilus.fasta
+    jobid: 173
+    reason: Missing output files: results/annotated/Ruminobacter_amylophilus.fasta; Input files updated by another job: results/qc/Ruminobacter_amylophilus.qc.txt
+    wildcards: species=Ruminobacter_amylophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:56 2025]
+localrule quality_check:
+    input: results/per_species/Rhodobacter_capsulatus.fasta
+    output: results/qc/Rhodobacter_capsulatus.qc.txt
+    jobid: 166
+    reason: Missing output files: results/qc/Rhodobacter_capsulatus.qc.txt
+    wildcards: species=Rhodobacter_capsulatus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:56 2025]
+Finished jobid: 173 (Rule: annotate)
+114 of 233 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:56 2025]
+localrule quality_check:
+    input: results/per_species/Streptomyces_griseus.fasta
+    output: results/qc/Streptomyces_griseus.qc.txt
+    jobid: 186
+    reason: Missing output files: results/qc/Streptomyces_griseus.qc.txt
+    wildcards: species=Streptomyces_griseus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:56 2025]
+Finished jobid: 166 (Rule: quality_check)
+115 of 233 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:56 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_stearothermophilus.fasta
+    output: results/aligned/Bacillus_stearothermophilus.aln.fasta
+    log: logs/mafft_Bacillus_stearothermophilus.log
+    jobid: 12
+    benchmark: benchmarks/mafft_Bacillus_stearothermophilus.txt
+    reason: Missing output files: results/aligned/Bacillus_stearothermophilus.aln.fasta; Input files updated by another job: results/annotated/Bacillus_stearothermophilus.fasta
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:56 2025]
+Finished jobid: 186 (Rule: quality_check)
+116 of 233 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:56 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Astasia_longa.fasta
+    output: results/qc/Chloroplast_Astasia_longa.qc.txt
+    jobid: 26
+    reason: Missing output files: results/qc/Chloroplast_Astasia_longa.qc.txt
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:20:56 2025]
+Finished jobid: 26 (Rule: quality_check)
+117 of 233 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:20:57 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_subtilis_23S.fasta
+    output: results/aligned/Bacillus_subtilis_23S.aln.fasta
+    log: logs/mafft_Bacillus_subtilis_23S.log
+    jobid: 16
+    benchmark: benchmarks/mafft_Bacillus_subtilis_23S.txt
+    reason: Missing output files: results/aligned/Bacillus_subtilis_23S.aln.fasta; Input files updated by another job: results/annotated/Bacillus_subtilis_23S.fasta
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:00 2025]
+Finished jobid: 56 (Rule: mafft_align)
+118 of 233 steps (51%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:00 2025]
+localrule mafft_align:
+    input: results/annotated/Synechococcus_sp_str_CIP_6301.fasta
+    output: results/aligned/Synechococcus_sp_str_CIP_6301.aln.fasta
+    log: logs/mafft_Synechococcus_sp_str_CIP_6301.log
+    jobid: 192
+    benchmark: benchmarks/mafft_Synechococcus_sp_str_CIP_6301.txt
+    reason: Missing output files: results/aligned/Synechococcus_sp_str_CIP_6301.aln.fasta; Input files updated by another job: results/annotated/Synechococcus_sp_str_CIP_6301.fasta
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:01 2025]
+Finished jobid: 132 (Rule: mafft_align)
+119 of 233 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:01 2025]
+localrule mafft_align:
+    input: results/annotated/Halobacterium_halobium.fasta
+    output: results/aligned/Halobacterium_halobium.aln.fasta
+    log: logs/mafft_Halobacterium_halobium.log
+    jobid: 92
+    benchmark: benchmarks/mafft_Halobacterium_halobium.txt
+    reason: Missing output files: results/aligned/Halobacterium_halobium.aln.fasta; Input files updated by another job: results/annotated/Halobacterium_halobium.fasta
+    wildcards: species=Halobacterium_halobium
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:01 2025]
+Finished jobid: 12 (Rule: mafft_align)
+120 of 233 steps (52%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:01 2025]
+localrule mafft_align:
+    input: results/annotated/Escherichia_coli.fasta
+    output: results/aligned/Escherichia_coli.aln.fasta
+    log: logs/mafft_Escherichia_coli.log
+    jobid: 72
+    benchmark: benchmarks/mafft_Escherichia_coli.txt
+    reason: Missing output files: results/aligned/Escherichia_coli.aln.fasta; Input files updated by another job: results/annotated/Escherichia_coli.fasta
+    wildcards: species=Escherichia_coli
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:02 2025]
+Finished jobid: 16 (Rule: mafft_align)
+121 of 233 steps (52%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:02 2025]
+localrule mafft_align:
+    input: results/annotated/Saccharomyces_cerevisiae.fasta
+    output: results/aligned/Saccharomyces_cerevisiae.aln.fasta
+    log: logs/mafft_Saccharomyces_cerevisiae.log
+    jobid: 176
+    benchmark: benchmarks/mafft_Saccharomyces_cerevisiae.txt
+    reason: Missing output files: results/aligned/Saccharomyces_cerevisiae.aln.fasta; Input files updated by another job: results/annotated/Saccharomyces_cerevisiae.fasta
+    wildcards: species=Saccharomyces_cerevisiae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:07 2025]
+Finished jobid: 192 (Rule: mafft_align)
+122 of 233 steps (52%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:07 2025]
+localrule mafft_align:
+    input: results/annotated/Ruminobacter_amylophilus.fasta
+    output: results/aligned/Ruminobacter_amylophilus.aln.fasta
+    log: logs/mafft_Ruminobacter_amylophilus.log
+    jobid: 172
+    benchmark: benchmarks/mafft_Ruminobacter_amylophilus.txt
+    reason: Missing output files: results/aligned/Ruminobacter_amylophilus.aln.fasta; Input files updated by another job: results/annotated/Ruminobacter_amylophilus.fasta
+    wildcards: species=Ruminobacter_amylophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:07 2025]
+Finished jobid: 92 (Rule: mafft_align)
+123 of 233 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:07 2025]
+localrule mafft_align:
+    input: results/annotated/Euglena_gracilis.fasta
+    output: results/aligned/Euglena_gracilis.aln.fasta
+    log: logs/mafft_Euglena_gracilis.log
+    jobid: 76
+    benchmark: benchmarks/mafft_Euglena_gracilis.txt
+    reason: Missing output files: results/aligned/Euglena_gracilis.aln.fasta; Input files updated by another job: results/annotated/Euglena_gracilis.fasta
+    wildcards: species=Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:08 2025]
+Finished jobid: 72 (Rule: mafft_align)
+124 of 233 steps (53%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:08 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Astasia_longa.fasta, results/qc/Chloroplast_Astasia_longa.qc.txt
+    output: results/annotated/Chloroplast_Astasia_longa.fasta
+    jobid: 25
+    reason: Missing output files: results/annotated/Chloroplast_Astasia_longa.fasta; Input files updated by another job: results/qc/Chloroplast_Astasia_longa.qc.txt; Set of input files has changed since last execution
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:08 2025]
+Finished jobid: 25 (Rule: annotate)
+125 of 233 steps (54%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:08 2025]
+localrule mafft_align:
+    input: results/annotated/Archaeoglobus_fulgidus.fasta
+    output: results/aligned/Archaeoglobus_fulgidus.aln.fasta
+    log: logs/mafft_Archaeoglobus_fulgidus.log
+    jobid: 8
+    benchmark: benchmarks/mafft_Archaeoglobus_fulgidus.txt
+    reason: Missing output files: results/aligned/Archaeoglobus_fulgidus.aln.fasta; Input files updated by another job: results/annotated/Archaeoglobus_fulgidus.fasta
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:08 2025]
+Finished jobid: 176 (Rule: mafft_align)
+126 of 233 steps (54%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:08 2025]
+localrule annotate:
+    input: results/per_species/Fragaria_ananassa.fasta, results/qc/Fragaria_ananassa.qc.txt
+    output: results/annotated/Fragaria_ananassa.fasta
+    jobid: 85
+    reason: Missing output files: results/annotated/Fragaria_ananassa.fasta; Input files updated by another job: results/qc/Fragaria_ananassa.qc.txt
+    wildcards: species=Fragaria_ananassa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:08 2025]
+Finished jobid: 85 (Rule: annotate)
+127 of 233 steps (55%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:08 2025]
+localrule mafft_align:
+    input: results/annotated/Rhodobacter_sphaeroides.fasta
+    output: results/aligned/Rhodobacter_sphaeroides.aln.fasta
+    log: logs/mafft_Rhodobacter_sphaeroides.log
+    jobid: 168
+    benchmark: benchmarks/mafft_Rhodobacter_sphaeroides.txt
+    reason: Missing output files: results/aligned/Rhodobacter_sphaeroides.aln.fasta; Input files updated by another job: results/annotated/Rhodobacter_sphaeroides.fasta
+    wildcards: species=Rhodobacter_sphaeroides
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:12 2025]
+Finished jobid: 172 (Rule: mafft_align)
+128 of 233 steps (55%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:13 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Oryza_sativa.fasta
+    output: results/aligned/Chloroplast_Oryza_sativa.aln.fasta
+    log: logs/mafft_Chloroplast_Oryza_sativa.log
+    jobid: 48
+    benchmark: benchmarks/mafft_Chloroplast_Oryza_sativa.txt
+    reason: Missing output files: results/aligned/Chloroplast_Oryza_sativa.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Oryza_sativa.fasta
+    wildcards: species=Chloroplast_Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:13 2025]
+Finished jobid: 76 (Rule: mafft_align)
+129 of 233 steps (55%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:13 2025]
+localrule mafft_align:
+    input: results/annotated/Frankia_sp.fasta
+    output: results/aligned/Frankia_sp.aln.fasta
+    log: logs/mafft_Frankia_sp.log
+    jobid: 88
+    benchmark: benchmarks/mafft_Frankia_sp.txt
+    reason: Missing output files: results/aligned/Frankia_sp.aln.fasta; Input files updated by another job: results/annotated/Frankia_sp.fasta
+    wildcards: species=Frankia_sp
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:13 2025]
+Finished jobid: 8 (Rule: mafft_align)
+130 of 233 steps (56%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:13 2025]
+localrule mafft_align:
+    input: results/annotated/Sulfolobus_solfataricus.fasta
+    output: results/aligned/Sulfolobus_solfataricus.aln.fasta
+    log: logs/mafft_Sulfolobus_solfataricus.log
+    jobid: 188
+    benchmark: benchmarks/mafft_Sulfolobus_solfataricus.txt
+    reason: Missing output files: results/aligned/Sulfolobus_solfataricus.aln.fasta; Input files updated by another job: results/annotated/Sulfolobus_solfataricus.fasta
+    wildcards: species=Sulfolobus_solfataricus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:14 2025]
+Finished jobid: 168 (Rule: mafft_align)
+131 of 233 steps (56%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:14 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Marchantia_polymorpha.fasta, results/qc/Chloroplast_Marchantia_polymorpha.qc.txt
+    output: results/annotated/Chloroplast_Marchantia_polymorpha.fasta
+    jobid: 41
+    reason: Missing output files: results/annotated/Chloroplast_Marchantia_polymorpha.fasta; Input files updated by another job: results/qc/Chloroplast_Marchantia_polymorpha.qc.txt
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:14 2025]
+Finished jobid: 41 (Rule: annotate)
+132 of 233 steps (57%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:15 2025]
+localrule mafft_align:
+    input: results/annotated/Methanobacterium_thermoautotrophicum.fasta
+    output: results/aligned/Methanobacterium_thermoautotrophicum.aln.fasta
+    log: logs/mafft_Methanobacterium_thermoautotrophicum.log
+    jobid: 116
+    benchmark: benchmarks/mafft_Methanobacterium_thermoautotrophicum.txt
+    reason: Missing output files: results/aligned/Methanobacterium_thermoautotrophicum.aln.fasta; Input files updated by another job: results/annotated/Methanobacterium_thermoautotrophicum.fasta
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:18 2025]
+Finished jobid: 48 (Rule: mafft_align)
+133 of 233 steps (57%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:18 2025]
+localrule annotate:
+    input: results/per_species/Micrococcus_luteus.fasta, results/qc/Micrococcus_luteus.qc.txt
+    output: results/annotated/Micrococcus_luteus.fasta
+    jobid: 125
+    reason: Missing output files: results/annotated/Micrococcus_luteus.fasta; Input files updated by another job: results/qc/Micrococcus_luteus.qc.txt
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:18 2025]
+Finished jobid: 88 (Rule: mafft_align)
+134 of 233 steps (58%) done
+[Sun Nov 23 19:21:18 2025]
+Finished jobid: 125 (Rule: annotate)
+135 of 233 steps (58%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:21:18 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Marchantia_polymorpha.fasta
+    output: results/aligned/Chloroplast_Marchantia_polymorpha.aln.fasta
+    log: logs/mafft_Chloroplast_Marchantia_polymorpha.log
+    jobid: 40
+    benchmark: benchmarks/mafft_Chloroplast_Marchantia_polymorpha.txt
+    reason: Missing output files: results/aligned/Chloroplast_Marchantia_polymorpha.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Marchantia_polymorpha.fasta
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:18 2025]
+localrule annotate:
+    input: results/per_species/Streptomyces_griseus.fasta, results/qc/Streptomyces_griseus.qc.txt
+    output: results/annotated/Streptomyces_griseus.fasta
+    jobid: 185
+    reason: Missing output files: results/annotated/Streptomyces_griseus.fasta; Input files updated by another job: results/qc/Streptomyces_griseus.qc.txt
+    wildcards: species=Streptomyces_griseus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:18 2025]
+Finished jobid: 185 (Rule: annotate)
+136 of 233 steps (58%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:19 2025]
+localrule annotate:
+    input: results/per_species/Oryza_sativa.fasta, results/qc/Oryza_sativa.qc.txt
+    output: results/annotated/Oryza_sativa.fasta
+    jobid: 137
+    reason: Missing output files: results/annotated/Oryza_sativa.fasta; Input files updated by another job: results/qc/Oryza_sativa.qc.txt
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:19 2025]
+Finished jobid: 188 (Rule: mafft_align)
+137 of 233 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:19 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Euglena_gracilis.fasta
+    output: results/aligned/Chloroplast_Euglena_gracilis.aln.fasta
+    log: logs/mafft_Chloroplast_Euglena_gracilis.log
+    jobid: 36
+    benchmark: benchmarks/mafft_Chloroplast_Euglena_gracilis.txt
+    reason: Missing output files: results/aligned/Chloroplast_Euglena_gracilis.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Euglena_gracilis.fasta
+    wildcards: species=Chloroplast_Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:19 2025]
+Finished jobid: 137 (Rule: annotate)
+138 of 233 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:19 2025]
+localrule mafft_align:
+    input: results/annotated/Oryza_sativa.fasta
+    output: results/aligned/Oryza_sativa.aln.fasta
+    log: logs/mafft_Oryza_sativa.log
+    jobid: 136
+    benchmark: benchmarks/mafft_Oryza_sativa.txt
+    reason: Missing output files: results/aligned/Oryza_sativa.aln.fasta; Input files updated by another job: results/annotated/Oryza_sativa.fasta
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:19 2025]
+Finished jobid: 116 (Rule: mafft_align)
+139 of 233 steps (60%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:20 2025]
+localrule mafft_align:
+    input: results/annotated/Halobacterium_marismortui.fasta
+    output: results/aligned/Halobacterium_marismortui.aln.fasta
+    log: logs/mafft_Halobacterium_marismortui.log
+    jobid: 96
+    benchmark: benchmarks/mafft_Halobacterium_marismortui.txt
+    reason: Missing output files: results/aligned/Halobacterium_marismortui.aln.fasta; Input files updated by another job: results/annotated/Halobacterium_marismortui.fasta
+    wildcards: species=Halobacterium_marismortui
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:23 2025]
+Finished jobid: 40 (Rule: mafft_align)
+140 of 233 steps (60%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:23 2025]
+localrule mafft_align:
+    input: results/annotated/Pseudomonas_cepacia.fasta
+    output: results/aligned/Pseudomonas_cepacia.aln.fasta
+    log: logs/mafft_Pseudomonas_cepacia.log
+    jobid: 156
+    benchmark: benchmarks/mafft_Pseudomonas_cepacia.txt
+    reason: Missing output files: results/aligned/Pseudomonas_cepacia.aln.fasta; Input files updated by another job: results/annotated/Pseudomonas_cepacia.fasta
+    wildcards: species=Pseudomonas_cepacia
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:24 2025]
+Finished jobid: 36 (Rule: mafft_align)
+141 of 233 steps (61%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:24 2025]
+localrule mafft_align:
+    input: results/annotated/Thermoproteus_tenax.fasta
+    output: results/aligned/Thermoproteus_tenax.aln.fasta
+    log: logs/mafft_Thermoproteus_tenax.log
+    jobid: 216
+    benchmark: benchmarks/mafft_Thermoproteus_tenax.txt
+    reason: Missing output files: results/aligned/Thermoproteus_tenax.aln.fasta; Input files updated by another job: results/annotated/Thermoproteus_tenax.fasta
+    wildcards: species=Thermoproteus_tenax
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:24 2025]
+Finished jobid: 136 (Rule: mafft_align)
+142 of 233 steps (61%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:24 2025]
+localrule annotate:
+    input: results/per_species/Rhodobacter_capsulatus.fasta, results/qc/Rhodobacter_capsulatus.qc.txt
+    output: results/annotated/Rhodobacter_capsulatus.fasta
+    jobid: 165
+    reason: Missing output files: results/annotated/Rhodobacter_capsulatus.fasta; Input files updated by another job: results/qc/Rhodobacter_capsulatus.qc.txt
+    wildcards: species=Rhodobacter_capsulatus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:24 2025]
+Finished jobid: 165 (Rule: annotate)
+143 of 233 steps (61%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:24 2025]
+localrule annotate:
+    input: results/per_species/Thermococcus_celer.fasta, results/qc/Thermococcus_celer.qc.txt
+    output: results/annotated/Thermococcus_celer.fasta
+    jobid: 205
+    reason: Missing output files: results/annotated/Thermococcus_celer.fasta; Input files updated by another job: results/qc/Thermococcus_celer.qc.txt
+    wildcards: species=Thermococcus_celer
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:24 2025]
+Finished jobid: 205 (Rule: annotate)
+144 of 233 steps (62%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:24 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Nicotiana_tabacum.fasta, results/qc/Chloroplast_Nicotiana_tabacum.qc.txt
+    output: results/annotated/Chloroplast_Nicotiana_tabacum.fasta
+    jobid: 45
+    reason: Missing output files: results/annotated/Chloroplast_Nicotiana_tabacum.fasta; Input files updated by another job: results/qc/Chloroplast_Nicotiana_tabacum.qc.txt
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:25 2025]
+Finished jobid: 45 (Rule: annotate)
+145 of 233 steps (62%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:25 2025]
+localrule annotate:
+    input: results/per_species/Arabidopsis_thaliana.fasta, results/qc/Arabidopsis_thaliana.qc.txt
+    output: results/annotated/Arabidopsis_thaliana.fasta
+    jobid: 5
+    reason: Missing output files: results/annotated/Arabidopsis_thaliana.fasta; Input files updated by another job: results/qc/Arabidopsis_thaliana.qc.txt; Set of input files has changed since last execution
+    wildcards: species=Arabidopsis_thaliana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:25 2025]
+Finished jobid: 96 (Rule: mafft_align)
+146 of 233 steps (63%) done
+[Sun Nov 23 19:21:25 2025]
+Finished jobid: 5 (Rule: annotate)
+147 of 233 steps (63%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:21:25 2025]
+localrule mafft_align:
+    input: results/annotated/Streptomyces_griseus.fasta
+    output: results/aligned/Streptomyces_griseus.aln.fasta
+    log: logs/mafft_Streptomyces_griseus.log
+    jobid: 184
+    benchmark: benchmarks/mafft_Streptomyces_griseus.txt
+    reason: Missing output files: results/aligned/Streptomyces_griseus.aln.fasta; Input files updated by another job: results/annotated/Streptomyces_griseus.fasta
+    wildcards: species=Streptomyces_griseus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:25 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Pisum_sativum.fasta
+    output: results/qc/Chloroplast_Pisum_sativum.qc.txt
+    jobid: 54
+    reason: Missing output files: results/qc/Chloroplast_Pisum_sativum.qc.txt
+    wildcards: species=Chloroplast_Pisum_sativum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:25 2025]
+Finished jobid: 54 (Rule: quality_check)
+148 of 233 steps (64%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:26 2025]
+localrule mafft_align:
+    input: results/annotated/Tetrahymena_pyriformis.fasta
+    output: results/aligned/Tetrahymena_pyriformis.aln.fasta
+    log: logs/mafft_Tetrahymena_pyriformis.log
+    jobid: 196
+    benchmark: benchmarks/mafft_Tetrahymena_pyriformis.txt
+    reason: Missing output files: results/aligned/Tetrahymena_pyriformis.aln.fasta; Input files updated by another job: results/annotated/Tetrahymena_pyriformis.fasta
+    wildcards: species=Tetrahymena_pyriformis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:29 2025]
+Finished jobid: 156 (Rule: mafft_align)
+149 of 233 steps (64%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:29 2025]
+localrule annotate:
+    input: results/per_species/Desulfurococcus_mobilis.fasta, results/qc/Desulfurococcus_mobilis.qc.txt
+    output: results/annotated/Desulfurococcus_mobilis.fasta
+    jobid: 65
+    reason: Missing output files: results/annotated/Desulfurococcus_mobilis.fasta; Input files updated by another job: results/qc/Desulfurococcus_mobilis.qc.txt
+    wildcards: species=Desulfurococcus_mobilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:30 2025]
+Finished jobid: 65 (Rule: annotate)
+150 of 233 steps (64%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:30 2025]
+localrule annotate:
+    input: results/per_species/Pirellula_marina.fasta, results/qc/Pirellula_marina.qc.txt
+    output: results/annotated/Pirellula_marina.fasta
+    jobid: 145
+    reason: Missing output files: results/annotated/Pirellula_marina.fasta; Input files updated by another job: results/qc/Pirellula_marina.qc.txt
+    wildcards: species=Pirellula_marina
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:30 2025]
+Finished jobid: 145 (Rule: annotate)
+151 of 233 steps (65%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:30 2025]
+localrule annotate:
+    input: results/per_species/Thermus_thermophilus_HB8.fasta, results/qc/Thermus_thermophilus_HB8.qc.txt
+    output: results/annotated/Thermus_thermophilus_HB8.fasta
+    jobid: 225
+    reason: Missing output files: results/annotated/Thermus_thermophilus_HB8.fasta; Input files updated by another job: results/qc/Thermus_thermophilus_HB8.qc.txt
+    wildcards: species=Thermus_thermophilus_HB8
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:30 2025]
+Finished jobid: 216 (Rule: mafft_align)
+152 of 233 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:30 2025]
+localrule annotate:
+    input: results/per_species/Haloferax_volcanii.fasta, results/qc/Haloferax_volcanii.qc.txt
+    output: results/annotated/Haloferax_volcanii.fasta
+    jobid: 105
+    reason: Missing output files: results/annotated/Haloferax_volcanii.fasta; Input files updated by another job: results/qc/Haloferax_volcanii.qc.txt
+    wildcards: species=Haloferax_volcanii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:30 2025]
+Finished jobid: 225 (Rule: annotate)
+153 of 233 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:31 2025]
+localrule mafft_align:
+    input: results/annotated/Thermus_thermophilus_HB8.fasta
+    output: results/aligned/Thermus_thermophilus_HB8.aln.fasta
+    log: logs/mafft_Thermus_thermophilus_HB8.log
+    jobid: 224
+    benchmark: benchmarks/mafft_Thermus_thermophilus_HB8.txt
+    reason: Missing output files: results/aligned/Thermus_thermophilus_HB8.aln.fasta; Input files updated by another job: results/annotated/Thermus_thermophilus_HB8.fasta
+    wildcards: species=Thermus_thermophilus_HB8
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:31 2025]
+Finished jobid: 105 (Rule: annotate)
+154 of 233 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:31 2025]
+localrule mafft_align:
+    input: results/annotated/Haloferax_volcanii.fasta
+    output: results/aligned/Haloferax_volcanii.aln.fasta
+    log: logs/mafft_Haloferax_volcanii.log
+    jobid: 104
+    benchmark: benchmarks/mafft_Haloferax_volcanii.txt
+    reason: Missing output files: results/aligned/Haloferax_volcanii.aln.fasta; Input files updated by another job: results/annotated/Haloferax_volcanii.fasta
+    wildcards: species=Haloferax_volcanii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:31 2025]
+Finished jobid: 184 (Rule: mafft_align)
+155 of 233 steps (67%) done
+Execute 1 jobs...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:31 2025]
+localrule quality_check:
+    input: results/per_species/Thermoplasma_acidophilum.fasta
+    output: results/qc/Thermoplasma_acidophilum.qc.txt
+    jobid: 214
+    reason: Missing output files: results/qc/Thermoplasma_acidophilum.qc.txt
+    wildcards: species=Thermoplasma_acidophilum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:32 2025]
+Finished jobid: 196 (Rule: mafft_align)
+156 of 233 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:32 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Astasia_longa.fasta
+    output: results/aligned/Chloroplast_Astasia_longa.aln.fasta
+    log: logs/mafft_Chloroplast_Astasia_longa.log
+    jobid: 24
+    benchmark: benchmarks/mafft_Chloroplast_Astasia_longa.txt
+    reason: Missing output files: results/aligned/Chloroplast_Astasia_longa.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Astasia_longa.fasta
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:32 2025]
+Finished jobid: 214 (Rule: quality_check)
+157 of 233 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:32 2025]
+localrule mafft_align:
+    input: results/annotated/Micrococcus_luteus.fasta
+    output: results/aligned/Micrococcus_luteus.aln.fasta
+    log: logs/mafft_Micrococcus_luteus.log
+    jobid: 124
+    benchmark: benchmarks/mafft_Micrococcus_luteus.txt
+    reason: Missing output files: results/aligned/Micrococcus_luteus.aln.fasta; Input files updated by another job: results/annotated/Micrococcus_luteus.fasta
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:38 2025]
+Finished jobid: 224 (Rule: mafft_align)
+158 of 233 steps (68%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:38 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Pisum_sativum.fasta, results/qc/Chloroplast_Pisum_sativum.qc.txt
+    output: results/annotated/Chloroplast_Pisum_sativum.fasta
+    jobid: 53
+    reason: Missing output files: results/annotated/Chloroplast_Pisum_sativum.fasta; Input files updated by another job: results/qc/Chloroplast_Pisum_sativum.qc.txt
+    wildcards: species=Chloroplast_Pisum_sativum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:38 2025]
+Finished jobid: 104 (Rule: mafft_align)
+159 of 233 steps (68%) done
+[Sun Nov 23 19:21:38 2025]
+Finished jobid: 53 (Rule: annotate)
+160 of 233 steps (69%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:21:38 2025]
+localrule annotate:
+    input: results/per_species/Pseudomonas_aeruginosa.fasta, results/qc/Pseudomonas_aeruginosa.qc.txt
+    output: results/annotated/Pseudomonas_aeruginosa.fasta
+    jobid: 153
+    reason: Missing output files: results/annotated/Pseudomonas_aeruginosa.fasta; Input files updated by another job: results/qc/Pseudomonas_aeruginosa.qc.txt
+    wildcards: species=Pseudomonas_aeruginosa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:38 2025]
+localrule mafft_align:
+    input: results/annotated/Fragaria_ananassa.fasta
+    output: results/aligned/Fragaria_ananassa.aln.fasta
+    log: logs/mafft_Fragaria_ananassa.log
+    jobid: 84
+    benchmark: benchmarks/mafft_Fragaria_ananassa.txt
+    reason: Missing output files: results/aligned/Fragaria_ananassa.aln.fasta; Input files updated by another job: results/annotated/Fragaria_ananassa.fasta
+    wildcards: species=Fragaria_ananassa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:38 2025]
+Finished jobid: 153 (Rule: annotate)
+161 of 233 steps (69%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:39 2025]
+localrule mafft_align:
+    input: results/annotated/Desulfurococcus_mobilis.fasta
+    output: results/aligned/Desulfurococcus_mobilis.aln.fasta
+    log: logs/mafft_Desulfurococcus_mobilis.log
+    jobid: 64
+    benchmark: benchmarks/mafft_Desulfurococcus_mobilis.txt
+    reason: Missing output files: results/aligned/Desulfurococcus_mobilis.aln.fasta; Input files updated by another job: results/annotated/Desulfurococcus_mobilis.fasta
+    wildcards: species=Desulfurococcus_mobilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:39 2025]
+Finished jobid: 24 (Rule: mafft_align)
+162 of 233 steps (70%) done
+[Sun Nov 23 19:21:39 2025]
+Finished jobid: 124 (Rule: mafft_align)
+163 of 233 steps (70%) done
+Execute 2 jobs...
+[Sun Nov 23 19:21:39 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Pisum_sativum.fasta
+    output: results/aligned/Chloroplast_Pisum_sativum.aln.fasta
+    log: logs/mafft_Chloroplast_Pisum_sativum.log
+    jobid: 52
+    benchmark: benchmarks/mafft_Chloroplast_Pisum_sativum.txt
+    reason: Missing output files: results/aligned/Chloroplast_Pisum_sativum.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Pisum_sativum.fasta
+    wildcards: species=Chloroplast_Pisum_sativum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:39 2025]
+localrule mafft_align:
+    input: results/annotated/Thermococcus_celer.fasta
+    output: results/aligned/Thermococcus_celer.aln.fasta
+    log: logs/mafft_Thermococcus_celer.log
+    jobid: 204
+    benchmark: benchmarks/mafft_Thermococcus_celer.txt
+    reason: Missing output files: results/aligned/Thermococcus_celer.aln.fasta; Input files updated by another job: results/annotated/Thermococcus_celer.fasta
+    wildcards: species=Thermococcus_celer
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:44 2025]
+Finished jobid: 84 (Rule: mafft_align)
+Benchmark: unable to collect cpu and memory benchmark statistics
+164 of 233 steps (70%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:44 2025]
+localrule mafft_align:
+    input: results/annotated/Rhodobacter_capsulatus.fasta
+    output: results/aligned/Rhodobacter_capsulatus.aln.fasta
+    log: logs/mafft_Rhodobacter_capsulatus.log
+    jobid: 164
+    benchmark: benchmarks/mafft_Rhodobacter_capsulatus.txt
+    reason: Missing output files: results/aligned/Rhodobacter_capsulatus.aln.fasta; Input files updated by another job: results/annotated/Rhodobacter_capsulatus.fasta
+    wildcards: species=Rhodobacter_capsulatus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:44 2025]
+Finished jobid: 64 (Rule: mafft_align)
+165 of 233 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:44 2025]
+localrule mafft_align:
+    input: results/annotated/Pirellula_marina.fasta
+    output: results/aligned/Pirellula_marina.aln.fasta
+    log: logs/mafft_Pirellula_marina.log
+    jobid: 144
+    benchmark: benchmarks/mafft_Pirellula_marina.txt
+    reason: Missing output files: results/aligned/Pirellula_marina.aln.fasta; Input files updated by another job: results/annotated/Pirellula_marina.fasta
+    wildcards: species=Pirellula_marina
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:45 2025]
+Finished jobid: 204 (Rule: mafft_align)
+166 of 233 steps (71%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:21:45 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Nicotiana_tabacum.fasta
+    output: results/aligned/Chloroplast_Nicotiana_tabacum.aln.fasta
+    log: logs/mafft_Chloroplast_Nicotiana_tabacum.log
+    jobid: 44
+    benchmark: benchmarks/mafft_Chloroplast_Nicotiana_tabacum.txt
+    reason: Missing output files: results/aligned/Chloroplast_Nicotiana_tabacum.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Nicotiana_tabacum.fasta
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:45 2025]
+Finished jobid: 52 (Rule: mafft_align)
+167 of 233 steps (72%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:21:45 2025]
+localrule mafft_align:
+    input: results/annotated/Arabidopsis_thaliana.fasta
+    output: results/aligned/Arabidopsis_thaliana.aln.fasta
+    log: logs/mafft_Arabidopsis_thaliana.log
+    jobid: 4
+    benchmark: benchmarks/mafft_Arabidopsis_thaliana.txt
+    reason: Missing output files: results/aligned/Arabidopsis_thaliana.aln.fasta; Input files updated by another job: results/annotated/Arabidopsis_thaliana.fasta
+    wildcards: species=Arabidopsis_thaliana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:50 2025]
+Finished jobid: 164 (Rule: mafft_align)
+168 of 233 steps (72%) done
+[Sun Nov 23 19:21:50 2025]
+Finished jobid: 144 (Rule: mafft_align)
+169 of 233 steps (73%) done
+Execute 2 jobs...
+[Sun Nov 23 19:21:51 2025]
+localrule mafft_align:
+    input: results/annotated/Pseudomonas_aeruginosa.fasta
+    output: results/aligned/Pseudomonas_aeruginosa.aln.fasta
+    log: logs/mafft_Pseudomonas_aeruginosa.log
+    jobid: 152
+    benchmark: benchmarks/mafft_Pseudomonas_aeruginosa.txt
+    reason: Missing output files: results/aligned/Pseudomonas_aeruginosa.aln.fasta; Input files updated by another job: results/annotated/Pseudomonas_aeruginosa.fasta
+    wildcards: species=Pseudomonas_aeruginosa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:21:51 2025]
+localrule annotate:
+    input: results/per_species/Thermoplasma_acidophilum.fasta, results/qc/Thermoplasma_acidophilum.qc.txt
+    output: results/annotated/Thermoplasma_acidophilum.fasta
+    jobid: 213
+    reason: Missing output files: results/annotated/Thermoplasma_acidophilum.fasta; Input files updated by another job: results/qc/Thermoplasma_acidophilum.qc.txt
+    wildcards: species=Thermoplasma_acidophilum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:21:51 2025]
+Finished jobid: 213 (Rule: annotate)
+Benchmark: unable to collect cpu and memory benchmark statistics
+170 of 233 steps (73%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:51 2025]
+localrule mafft_align:
+    input: results/annotated/Thermoplasma_acidophilum.fasta
+    output: results/aligned/Thermoplasma_acidophilum.aln.fasta
+    log: logs/mafft_Thermoplasma_acidophilum.log
+    jobid: 212
+    benchmark: benchmarks/mafft_Thermoplasma_acidophilum.txt
+    reason: Missing output files: results/aligned/Thermoplasma_acidophilum.aln.fasta; Input files updated by another job: results/annotated/Thermoplasma_acidophilum.fasta
+    wildcards: species=Thermoplasma_acidophilum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:51 2025]
+Finished jobid: 44 (Rule: mafft_align)
+171 of 233 steps (73%) done
+[Sun Nov 23 19:21:51 2025]
+Finished jobid: 4 (Rule: mafft_align)
+172 of 233 steps (74%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:21:54 2025]
+Finished jobid: 212 (Rule: mafft_align)
+173 of 233 steps (74%) done
+[Sun Nov 23 19:21:54 2025]
+Finished jobid: 152 (Rule: mafft_align)
+174 of 233 steps (75%) done
+Execute 1 jobs...
+[Sun Nov 23 19:21:55 2025]
+localrule iqtree_build:
+    input: results/aligned/Trypanosoma_brucei.aln.fasta
+    output: results/trees/Trypanosoma_brucei.treefile, results/trees/Trypanosoma_brucei.iqtree, results/trees/Trypanosoma_brucei.log
+    log: logs/iqtree_Trypanosoma_brucei.log
+    jobid: 227
+    benchmark: benchmarks/iqtree_Trypanosoma_brucei.txt
+    reason: Missing output files: results/trees/Trypanosoma_brucei.treefile; Input files updated by another job: results/aligned/Trypanosoma_brucei.aln.fasta
+    wildcards: species=Trypanosoma_brucei
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 116:
+Command 'mkdir -p results/trees
+        iqtree2 -s results/aligned/Trypanosoma_brucei.aln.fasta -nt 4 -m MFP -bb 1000 -pre results/trees/Trypanosoma_brucei > logs/iqtree_Trypanosoma_brucei.log 2>&1' returned non-zero exit status 1.
+[Sun Nov 23 19:21:55 2025]
+Error in rule iqtree_build:
+    message: None
+    jobid: 227
+    input: results/aligned/Trypanosoma_brucei.aln.fasta
+    output: results/trees/Trypanosoma_brucei.treefile, results/trees/Trypanosoma_brucei.iqtree, results/trees/Trypanosoma_brucei.log
+    log: logs/iqtree_Trypanosoma_brucei.log (check log file(s) for error details)
+    shell:
+        
+        mkdir -p results/trees
+        iqtree2 -s results/aligned/Trypanosoma_brucei.aln.fasta -nt 4 -m MFP -bb 1000 -pre results/trees/Trypanosoma_brucei > logs/iqtree_Trypanosoma_brucei.log 2>&1
+        
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 19:21:55 2025]
+Error in rule iqtree_build:
+    message: None
+    jobid: 227
+    input: results/aligned/Trypanosoma_brucei.aln.fasta
+    output: results/trees/Trypanosoma_brucei.treefile, results/trees/Trypanosoma_brucei.iqtree, results/trees/Trypanosoma_brucei.log
+    log: logs/iqtree_Trypanosoma_brucei.log (check log file(s) for error details)
+    shell:
+        
+        mkdir -p results/trees
+        iqtree2 -s results/aligned/Trypanosoma_brucei.aln.fasta -nt 4 -m MFP -bb 1000 -pre results/trees/Trypanosoma_brucei > logs/iqtree_Trypanosoma_brucei.log 2>&1
+        
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T192022.123490.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

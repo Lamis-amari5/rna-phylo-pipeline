@@ -1,0 +1,17 @@
+Page de codes active : 65001
+ 
+Preparing environment to run MAFFT on Windows. 
+This may take a while, if real-time scanning by anti-virus software is on. 
+
+It may take a while before the calculation starts
+if being scanned by anti-virus software.
+Also consider using a faster version for Windows 10:
+https://mafft.cbrc.jp/alignment/software/wsl.html
+nthread = 0
+nthreadpair = 0
+nthreadtb = 0
+ppenalty_ex = 0
+Warning: Only 1 sequence found.
+distout=h
+At least 2 sequences should be input!
+Only 1 sequence found.

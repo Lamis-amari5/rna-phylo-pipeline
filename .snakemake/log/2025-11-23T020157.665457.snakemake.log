@@ -1,0 +1,148 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+annotate               44
+iqtree_build           58
+mafft_align            58
+quality_check          43
+split_by_species        1
+total                 205
+
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 02:01:58 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    jobid: 120
+    benchmark: benchmarks/mafft_Bacillus_subtilis_23S_.txt
+    reason: Missing output files: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    wildcards: species=Bacillus_subtilis_23S_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:01:58 2025]
+localrule mafft_align:
+    input: results/annotated/Oryza_sativa_.fasta
+    output: results/aligned/Oryza_sativa_.aln.fasta
+    jobid: 150
+    benchmark: benchmarks/mafft_Oryza_sativa_.txt
+    reason: Missing output files: results/aligned/Oryza_sativa_.aln.fasta
+    wildcards: species=Oryza_sativa_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:01:58 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Chlorella_ellipsoidea_.fasta
+    output: results/annotated/Chloroplast_Chlorella_ellipsoidea_.fasta
+    jobid: 65
+    reason: Missing output files: results/annotated/Chloroplast_Chlorella_ellipsoidea_.fasta
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:01:58 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_stearothermophilus_.fasta
+    output: results/aligned/Bacillus_stearothermophilus_.aln.fasta
+    jobid: 119
+    benchmark: benchmarks/mafft_Bacillus_stearothermophilus_.txt
+    reason: Missing output files: results/aligned/Bacillus_stearothermophilus_.aln.fasta
+    wildcards: species=Bacillus_stearothermophilus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:01:58 2025]
+Finished jobid: 65 (Rule: annotate)
+1 of 205 steps (0.5%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=18036)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 02:01:58 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 120
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Bacillus_subtilis_23S_.fasta" > "results/aligned/Bacillus_subtilis_23S_.aln.fasta"
+        (command exited with non-zero exit code)
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=1076)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 02:01:58 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 150
+    input: results/annotated/Oryza_sativa_.fasta
+    output: results/aligned/Oryza_sativa_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Oryza_sativa_.fasta" > "results/aligned/Oryza_sativa_.aln.fasta"
+        (command exited with non-zero exit code)
+Execute 1 jobs...
+[Sun Nov 23 02:01:58 2025]
+localrule mafft_align:
+    input: results/annotated/Methanospirillum_hungatii_.fasta
+    output: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    jobid: 146
+    benchmark: benchmarks/mafft_Methanospirillum_hungatii_.txt
+    reason: Missing output files: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    wildcards: species=Methanospirillum_hungatii_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Waiting at most 5 seconds for missing files:
+results/aligned/Bacillus_stearothermophilus_.aln.fasta (missing locally)
+Benchmark: unable to collect cpu and memory benchmark statistics
+MissingOutputException in rule mafft_align in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 68:
+Job 119  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/aligned/Bacillus_stearothermophilus_.aln.fasta (missing locally, parent dir contents: )
+Waiting at most 5 seconds for missing files:
+results/aligned/Methanospirillum_hungatii_.aln.fasta (missing locally)
+MissingOutputException in rule mafft_align in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 68:
+Job 146  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/aligned/Methanospirillum_hungatii_.aln.fasta (missing locally, parent dir contents: )
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 02:02:08 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 119
+    input: results/annotated/Bacillus_stearothermophilus_.fasta
+    output: results/aligned/Bacillus_stearothermophilus_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Bacillus_stearothermophilus_.fasta" > "results/aligned/Bacillus_stearothermophilus_.aln.fasta"
+        (command exited with non-zero exit code)
+[Sun Nov 23 02:02:08 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 120
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Bacillus_subtilis_23S_.fasta" > "results/aligned/Bacillus_subtilis_23S_.aln.fasta"
+        (command exited with non-zero exit code)
+[Sun Nov 23 02:02:08 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 150
+    input: results/annotated/Oryza_sativa_.fasta
+    output: results/aligned/Oryza_sativa_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Oryza_sativa_.fasta" > "results/aligned/Oryza_sativa_.aln.fasta"
+        (command exited with non-zero exit code)
+[Sun Nov 23 02:02:08 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 146
+    input: results/annotated/Methanospirillum_hungatii_.fasta
+    output: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Methanospirillum_hungatii_.fasta" > "results/aligned/Methanospirillum_hungatii_.aln.fasta"
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T020157.665457.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

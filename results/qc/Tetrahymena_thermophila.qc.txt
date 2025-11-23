@@ -1,0 +1,5 @@
+Species=Tetrahymena_thermophila
+Sequences=1
+Min_len=3500
+Max_len=3500
+Mean_len=3500.00

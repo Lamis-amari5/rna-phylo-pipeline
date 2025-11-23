@@ -1,0 +1,5 @@
+Species=Physarum_polycephalum
+Sequences=1
+Min_len=3943
+Max_len=3943
+Mean_len=3943.00

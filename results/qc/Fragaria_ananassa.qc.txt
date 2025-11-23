@@ -1,0 +1,5 @@
+Species=Fragaria_ananassa
+Sequences=1
+Min_len=3541
+Max_len=3541
+Mean_len=3541.00

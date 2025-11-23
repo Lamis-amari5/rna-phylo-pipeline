@@ -1,0 +1,5 @@
+Species=Methanobacterium_thermoautotrophicum
+Sequences=1
+Min_len=3018
+Max_len=3018
+Mean_len=3018.00

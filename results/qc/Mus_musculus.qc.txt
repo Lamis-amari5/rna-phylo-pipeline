@@ -1,0 +1,5 @@
+Species=Mus_musculus
+Sequences=1
+Min_len=4847
+Max_len=4847
+Mean_len=4847.00

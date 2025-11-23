@@ -1,0 +1,5 @@
+Species=Rattus_norvegicus
+Sequences=1
+Min_len=4873
+Max_len=4873
+Mean_len=4873.00

@@ -1,0 +1,35 @@
+Page de codes active : 65001
+ 
+Preparing environment to run MAFFT on Windows. 
+This may take a while, if real-time scanning by anti-virus software is on. 
+
+It may take a while before the calculation starts
+if being scanned by anti-virus software.
+Also consider using a faster version for Windows 10:
+https://mafft.cbrc.jp/alignment/software/wsl.html
+outputhat23=16
+treein = 0
+compacttree = 0
+Warning: Only 1 sequence found.
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Warning: Only 1 sequence found.
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+

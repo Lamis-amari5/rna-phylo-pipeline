@@ -1,0 +1,5 @@
+Species=Homo_sapien
+Sequences=1
+Min_len=5183
+Max_len=5183
+Mean_len=5183.00

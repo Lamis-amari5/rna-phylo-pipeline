@@ -1,0 +1,36 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+split_by_species        1
+total                   1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sat Nov 22 20:15:27 2025]
+localrule split_by_species:
+    input: data/seqs-RNA.fasta.txt
+    output: results/per_species/dummy.txt
+    jobid: 0
+    reason: Missing output files: results/per_species/dummy.txt
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Waiting at most 5 seconds for missing files:
+results/per_species/dummy.txt (missing locally)
+MissingOutputException in rule split_by_species in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 9:
+Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/per_species/dummy.txt (missing locally, parent dir contents: J01355.fasta, J01446.fasta, K00637.fasta, M11167.fasta, M11585.fasta, M21017.fasta, M32298.fasta, M36158.fasta, M37430.fasta, M55343.fasta, M61738.fasta, M62806.fasta, M64487.fasta, M67495.fasta, M67497.fasta, M67498.fasta, M76388.fasta, noacc.fasta, V00331.fasta, V01159.fasta, X00136.fasta, X00512.fasta, X00525.fasta, X01069.fasta, X01365.fasta, X01387.fasta, X03407.fasta, X03680.fasta, X04465.fasta, X05480.fasta, X05481.fasta, X06484.fasta, X06485.fasta, X06765.fasta, X07408.fasta, X12612,.fasta, X13310.fasta, X13738.fasta, X14386.fasta, X14553.fasta, X14835.fasta, X15364.fasta, X15901.fasta, X16108.fasta, X16368.fasta, X52320.fasta, X53361.fasta, X53538.fasta, X53853.fasta, X54004.fasta, X54512.fasta, X56657.fasta, X58118.fasta, X59768.fasta, Y00055.fasta, Y00432.fasta)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sat Nov 22 20:15:33 2025]
+Error in rule split_by_species:
+    message: None
+    jobid: 0
+    input: data/seqs-RNA.fasta.txt
+    output: results/per_species/dummy.txt
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-22T201523.966883.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

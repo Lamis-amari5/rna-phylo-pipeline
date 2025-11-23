@@ -1,0 +1,3324 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+split_by_species        1
+total                   2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:01 2025]
+localcheckpoint split_by_species:
+    input: data/seqs-RNA.fasta.txt
+    output: results/per_species
+    jobid: 1
+    reason: Forced execution
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+DAG of jobs will be updated after completion.
+[Sun Nov 23 19:59:01 2025]
+Finished jobid: 1 (Rule: split_by_species)
+1 of 2 steps (50%) done
+Updating checkpoint dependencies.
+Select jobs to execute...
+Execute 5 jobs...
+[Sun Nov 23 19:59:01 2025]
+localrule quality_check:
+    input: results/per_species/Archaeoglobus_fulgidus.fasta
+    output: results/qc/Archaeoglobus_fulgidus.qc.txt
+    jobid: 11
+    reason: Forced execution
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:01 2025]
+localrule quality_check:
+    input: results/per_species/Drosophila_melanogaster.fasta
+    output: results/qc/Drosophila_melanogaster.qc.txt
+    jobid: 71
+    reason: Forced execution
+    wildcards: species=Drosophila_melanogaster
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:01 2025]
+localrule quality_check:
+    input: results/per_species/Rhodobacter_sphaeroides.fasta
+    output: results/qc/Rhodobacter_sphaeroides.qc.txt
+    jobid: 171
+    reason: Forced execution
+    wildcards: species=Rhodobacter_sphaeroides
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:01 2025]
+localrule quality_check:
+    input: results/per_species/Thermofilum_pendens.fasta
+    output: results/qc/Thermofilum_pendens.qc.txt
+    jobid: 211
+    reason: Forced execution
+    wildcards: species=Thermofilum_pendens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:01 2025]
+localrule quality_check:
+    input: results/per_species/Flexibacter_flexilis.fasta
+    output: results/qc/Flexibacter_flexilis.qc.txt
+    jobid: 83
+    reason: Forced execution
+    wildcards: species=Flexibacter_flexilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:01 2025]
+Finished jobid: 11 (Rule: quality_check)
+2 of 234 steps (1%) done
+[Sun Nov 23 19:59:01 2025]
+Finished jobid: 71 (Rule: quality_check)
+3 of 234 steps (1%) done
+[Sun Nov 23 19:59:01 2025]
+Finished jobid: 171 (Rule: quality_check)
+4 of 234 steps (2%) done
+[Sun Nov 23 19:59:01 2025]
+Finished jobid: 211 (Rule: quality_check)
+5 of 234 steps (2%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Frankia_sp.fasta
+    output: results/qc/Frankia_sp.qc.txt
+    jobid: 91
+    reason: Forced execution
+    wildcards: species=Frankia_sp
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Prorocentrum_micans.fasta
+    output: results/qc/Prorocentrum_micans.qc.txt
+    jobid: 151
+    reason: Forced execution
+    wildcards: species=Prorocentrum_micans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Crithidia_fasciculata.fasta
+    output: results/qc/Crithidia_fasciculata.qc.txt
+    jobid: 63
+    reason: Forced execution
+    wildcards: species=Crithidia_fasciculata
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Physarum_polycephalum.fasta
+    output: results/qc/Physarum_polycephalum.qc.txt
+    jobid: 143
+    reason: Forced execution
+    wildcards: species=Physarum_polycephalum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 83 (Rule: quality_check)
+6 of 234 steps (3%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 91 (Rule: quality_check)
+7 of 234 steps (3%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 151 (Rule: quality_check)
+8 of 234 steps (3%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 63 (Rule: quality_check)
+9 of 234 steps (4%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Trypanosoma_brucei.fasta
+    output: results/qc/Trypanosoma_brucei.qc.txt
+    jobid: 231
+    reason: Forced execution
+    wildcards: species=Trypanosoma_brucei
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Oryza_sativa.fasta
+    output: results/qc/Chloroplast_Oryza_sativa.qc.txt
+    jobid: 51
+    reason: Forced execution
+    wildcards: species=Chloroplast_Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Rattus_norvegicus.fasta
+    output: results/qc/Rattus_norvegicus.qc.txt
+    jobid: 163
+    reason: Forced execution
+    wildcards: species=Rattus_norvegicus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Thermotoga_maritima.fasta
+    output: results/qc/Thermotoga_maritima.qc.txt
+    jobid: 223
+    reason: Forced execution
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 143 (Rule: quality_check)
+10 of 234 steps (4%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 51 (Rule: quality_check)
+11 of 234 steps (5%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 163 (Rule: quality_check)
+12 of 234 steps (5%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 231 (Rule: quality_check)
+13 of 234 steps (6%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:02 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Oryza_sativa.fasta, results/qc/Chloroplast_Oryza_sativa.qc.txt
+    output: results/annotated/Chloroplast_Oryza_sativa.fasta
+    jobid: 50
+    reason: Forced execution
+    wildcards: species=Chloroplast_Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Mus_musculus.fasta
+    output: results/qc/Mus_musculus.qc.txt
+    jobid: 131
+    reason: Forced execution
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule annotate:
+    input: results/per_species/Archaeoglobus_fulgidus.fasta, results/qc/Archaeoglobus_fulgidus.qc.txt
+    output: results/annotated/Archaeoglobus_fulgidus.fasta
+    jobid: 10
+    reason: Forced execution
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Marchantia_polymorpha.fasta
+    output: results/qc/Chloroplast_Marchantia_polymorpha.qc.txt
+    jobid: 43
+    reason: Forced execution
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 223 (Rule: quality_check)
+14 of 234 steps (6%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 50 (Rule: annotate)
+15 of 234 steps (6%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 131 (Rule: quality_check)
+16 of 234 steps (7%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 10 (Rule: annotate)
+17 of 234 steps (7%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Chlorella_ellipsoidea.fasta
+    output: results/qc/Chloroplast_Chlorella_ellipsoidea.qc.txt
+    jobid: 31
+    reason: Forced execution
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Herdmania_momus.fasta
+    output: results/qc/Herdmania_momus.qc.txt
+    jobid: 111
+    reason: Forced execution
+    wildcards: species=Herdmania_momus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Methanospirillum_hungatii.fasta
+    output: results/qc/Methanospirillum_hungatii.qc.txt
+    jobid: 123
+    reason: Forced execution
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Streptomyces_ambofaciens.fasta
+    output: results/qc/Streptomyces_ambofaciens.qc.txt
+    jobid: 183
+    reason: Forced execution
+    wildcards: species=Streptomyces_ambofaciens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 43 (Rule: quality_check)
+18 of 234 steps (8%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 31 (Rule: quality_check)
+19 of 234 steps (8%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 111 (Rule: quality_check)
+20 of 234 steps (9%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 123 (Rule: quality_check)
+21 of 234 steps (9%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Sulfolobus_solfataricus.fasta
+    output: results/qc/Sulfolobus_solfataricus.qc.txt
+    jobid: 191
+    reason: Forced execution
+    wildcards: species=Sulfolobus_solfataricus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Saccharomyces_cerevisiae.fasta
+    output: results/qc/Saccharomyces_cerevisiae.qc.txt
+    jobid: 179
+    reason: Forced execution
+    wildcards: species=Saccharomyces_cerevisiae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Caenorhabditis_elegans.fasta
+    output: results/qc/Caenorhabditis_elegans.qc.txt
+    jobid: 23
+    reason: Forced execution
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+localrule quality_check:
+    input: results/per_species/Halococcus_morrhuae.fasta
+    output: results/qc/Halococcus_morrhuae.qc.txt
+    jobid: 103
+    reason: Forced execution
+    wildcards: species=Halococcus_morrhuae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 183 (Rule: quality_check)
+22 of 234 steps (9%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 191 (Rule: quality_check)
+23 of 234 steps (10%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 179 (Rule: quality_check)
+24 of 234 steps (10%) done
+[Sun Nov 23 19:59:02 2025]
+Finished jobid: 23 (Rule: quality_check)
+25 of 234 steps (11%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:03 2025]
+localrule quality_check:
+    input: results/per_species/Oryza_sativa.fasta
+    output: results/qc/Oryza_sativa.qc.txt
+    jobid: 139
+    reason: Forced execution
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Rattus_norvegicus.fasta, results/qc/Rattus_norvegicus.qc.txt
+    output: results/annotated/Rattus_norvegicus.fasta
+    jobid: 162
+    reason: Forced execution
+    wildcards: species=Rattus_norvegicus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule quality_check:
+    input: results/per_species/Tetrahymena_thermophila.fasta
+    output: results/qc/Tetrahymena_thermophila.qc.txt
+    jobid: 203
+    reason: Forced execution
+    wildcards: species=Tetrahymena_thermophila
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule quality_check:
+    input: results/per_species/Thermoproteus_tenax.fasta
+    output: results/qc/Thermoproteus_tenax.qc.txt
+    jobid: 219
+    reason: Forced execution
+    wildcards: species=Thermoproteus_tenax
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 103 (Rule: quality_check)
+26 of 234 steps (11%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 139 (Rule: quality_check)
+27 of 234 steps (12%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 162 (Rule: annotate)
+28 of 234 steps (12%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 203 (Rule: quality_check)
+29 of 234 steps (12%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:03 2025]
+localrule mafft_align:
+    input: results/annotated/Rattus_norvegicus.fasta
+    output: results/aligned/Rattus_norvegicus.aln.fasta
+    log: logs/mafft_Rattus_norvegicus.log
+    jobid: 161
+    benchmark: benchmarks/mafft_Rattus_norvegicus.txt
+    reason: Forced execution
+    wildcards: species=Rattus_norvegicus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Flexibacter_flexilis.fasta, results/qc/Flexibacter_flexilis.qc.txt
+    output: results/annotated/Flexibacter_flexilis.fasta
+    jobid: 82
+    reason: Forced execution
+    wildcards: species=Flexibacter_flexilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Tetrahymena_thermophila.fasta, results/qc/Tetrahymena_thermophila.qc.txt
+    output: results/annotated/Tetrahymena_thermophila.fasta
+    jobid: 202
+    reason: Forced execution
+    wildcards: species=Tetrahymena_thermophila
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Rhodobacter_sphaeroides.fasta, results/qc/Rhodobacter_sphaeroides.qc.txt
+    output: results/annotated/Rhodobacter_sphaeroides.fasta
+    jobid: 170
+    reason: Forced execution
+    wildcards: species=Rhodobacter_sphaeroides
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 219 (Rule: quality_check)
+30 of 234 steps (13%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 82 (Rule: annotate)
+31 of 234 steps (13%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 202 (Rule: annotate)
+32 of 234 steps (14%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 170 (Rule: annotate)
+33 of 234 steps (14%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 19:59:03 2025]
+localrule mafft_align:
+    input: results/annotated/Flexibacter_flexilis.fasta
+    output: results/aligned/Flexibacter_flexilis.aln.fasta
+    log: logs/mafft_Flexibacter_flexilis.log
+    jobid: 81
+    benchmark: benchmarks/mafft_Flexibacter_flexilis.txt
+    reason: Forced execution
+    wildcards: species=Flexibacter_flexilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule mafft_align:
+    input: results/annotated/Tetrahymena_thermophila.fasta
+    output: results/aligned/Tetrahymena_thermophila.aln.fasta
+    log: logs/mafft_Tetrahymena_thermophila.log
+    jobid: 201
+    benchmark: benchmarks/mafft_Tetrahymena_thermophila.txt
+    reason: Forced execution
+    wildcards: species=Tetrahymena_thermophila
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule quality_check:
+    input: results/per_species/Ruminobacter_amylophilus.fasta
+    output: results/qc/Ruminobacter_amylophilus.qc.txt
+    jobid: 175
+    reason: Forced execution
+    wildcards: species=Ruminobacter_amylophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule quality_check:
+    input: results/per_species/Escherichia_coli.fasta
+    output: results/qc/Escherichia_coli.qc.txt
+    jobid: 75
+    reason: Forced execution
+    wildcards: species=Escherichia_coli
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 175 (Rule: quality_check)
+34 of 234 steps (15%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Mus_musculus.fasta, results/qc/Mus_musculus.qc.txt
+    output: results/annotated/Mus_musculus.fasta
+    jobid: 130
+    reason: Forced execution
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 75 (Rule: quality_check)
+35 of 234 steps (15%) done
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 130 (Rule: annotate)
+36 of 234 steps (15%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Thermotoga_maritima.fasta, results/qc/Thermotoga_maritima.qc.txt
+    output: results/annotated/Thermotoga_maritima.fasta
+    jobid: 222
+    reason: Forced execution
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Marchantia_polymorpha.fasta, results/qc/Chloroplast_Marchantia_polymorpha.qc.txt
+    output: results/annotated/Chloroplast_Marchantia_polymorpha.fasta
+    jobid: 42
+    reason: Forced execution
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:03 2025]
+Finished jobid: 222 (Rule: annotate)
+37 of 234 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:03 2025]
+localrule annotate:
+    input: results/per_species/Thermofilum_pendens.fasta, results/qc/Thermofilum_pendens.qc.txt
+    output: results/annotated/Thermofilum_pendens.fasta
+    jobid: 210
+    reason: Forced execution
+    wildcards: species=Thermofilum_pendens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:04 2025]
+Finished jobid: 42 (Rule: annotate)
+38 of 234 steps (16%) done
+[Sun Nov 23 19:59:04 2025]
+Finished jobid: 210 (Rule: annotate)
+39 of 234 steps (17%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:04 2025]
+localrule mafft_align:
+    input: results/annotated/Thermotoga_maritima.fasta
+    output: results/aligned/Thermotoga_maritima.aln.fasta
+    log: logs/mafft_Thermotoga_maritima.log
+    jobid: 221
+    benchmark: benchmarks/mafft_Thermotoga_maritima.txt
+    reason: Forced execution
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:04 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Marchantia_polymorpha.fasta
+    output: results/aligned/Chloroplast_Marchantia_polymorpha.aln.fasta
+    log: logs/mafft_Chloroplast_Marchantia_polymorpha.log
+    jobid: 41
+    benchmark: benchmarks/mafft_Chloroplast_Marchantia_polymorpha.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 161 (Rule: mafft_align)
+40 of 234 steps (17%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 201 (Rule: mafft_align)
+41 of 234 steps (18%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 221 (Rule: mafft_align)
+42 of 234 steps (18%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 3 jobs...
+[Sun Nov 23 19:59:11 2025]
+localrule annotate:
+    input: results/per_species/Crithidia_fasciculata.fasta, results/qc/Crithidia_fasciculata.qc.txt
+    output: results/annotated/Crithidia_fasciculata.fasta
+    jobid: 62
+    reason: Forced execution
+    wildcards: species=Crithidia_fasciculata
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+localrule annotate:
+    input: results/per_species/Methanospirillum_hungatii.fasta, results/qc/Methanospirillum_hungatii.qc.txt
+    output: results/annotated/Methanospirillum_hungatii.fasta
+    jobid: 122
+    reason: Forced execution
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+localrule quality_check:
+    input: results/per_species/Pseudomonas_aeruginosa.fasta
+    output: results/qc/Pseudomonas_aeruginosa.qc.txt
+    jobid: 155
+    reason: Forced execution
+    wildcards: species=Pseudomonas_aeruginosa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 81 (Rule: mafft_align)
+43 of 234 steps (18%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 41 (Rule: mafft_align)
+44 of 234 steps (19%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 62 (Rule: annotate)
+45 of 234 steps (19%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 122 (Rule: annotate)
+46 of 234 steps (20%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 155 (Rule: quality_check)
+47 of 234 steps (20%) done
+Select jobs to execute...
+Execute 5 jobs...
+[Sun Nov 23 19:59:11 2025]
+localrule mafft_align:
+    input: results/annotated/Crithidia_fasciculata.fasta
+    output: results/aligned/Crithidia_fasciculata.aln.fasta
+    log: logs/mafft_Crithidia_fasciculata.log
+    jobid: 61
+    benchmark: benchmarks/mafft_Crithidia_fasciculata.txt
+    reason: Forced execution
+    wildcards: species=Crithidia_fasciculata
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+localrule mafft_align:
+    input: results/annotated/Methanospirillum_hungatii.fasta
+    output: results/aligned/Methanospirillum_hungatii.aln.fasta
+    log: logs/mafft_Methanospirillum_hungatii.log
+    jobid: 121
+    benchmark: benchmarks/mafft_Methanospirillum_hungatii.txt
+    reason: Forced execution
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+localrule annotate:
+    input: results/per_species/Pseudomonas_aeruginosa.fasta, results/qc/Pseudomonas_aeruginosa.qc.txt
+    output: results/annotated/Pseudomonas_aeruginosa.fasta
+    jobid: 154
+    reason: Forced execution
+    wildcards: species=Pseudomonas_aeruginosa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+localrule quality_check:
+    input: results/per_species/Bacillus_stearothermophilus.fasta
+    output: results/qc/Bacillus_stearothermophilus.qc.txt
+    jobid: 15
+    reason: Forced execution
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+localrule quality_check:
+    input: results/per_species/Xenopus_laevis.fasta
+    output: results/qc/Xenopus_laevis.qc.txt
+    jobid: 235
+    reason: Forced execution
+    wildcards: species=Xenopus_laevis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 154 (Rule: annotate)
+48 of 234 steps (21%) done
+[Sun Nov 23 19:59:11 2025]
+Finished jobid: 15 (Rule: quality_check)
+49 of 234 steps (21%) done
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 235 (Rule: quality_check)
+50 of 234 steps (21%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:12 2025]
+localrule quality_check:
+    input: results/per_species/Rhodobacter_capsulatus.fasta
+    output: results/qc/Rhodobacter_capsulatus.qc.txt
+    jobid: 167
+    reason: Forced execution
+    wildcards: species=Rhodobacter_capsulatus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+localrule annotate:
+    input: results/per_species/Physarum_polycephalum.fasta, results/qc/Physarum_polycephalum.qc.txt
+    output: results/annotated/Physarum_polycephalum.fasta
+    jobid: 142
+    reason: Forced execution
+    wildcards: species=Physarum_polycephalum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_stearothermophilus.fasta, results/qc/Bacillus_stearothermophilus.qc.txt
+    output: results/annotated/Bacillus_stearothermophilus.fasta
+    jobid: 14
+    reason: Forced execution
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 167 (Rule: quality_check)
+51 of 234 steps (22%) done
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 142 (Rule: annotate)
+52 of 234 steps (22%) done
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 14 (Rule: annotate)
+53 of 234 steps (23%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:12 2025]
+localrule mafft_align:
+    input: results/annotated/Physarum_polycephalum.fasta
+    output: results/aligned/Physarum_polycephalum.aln.fasta
+    log: logs/mafft_Physarum_polycephalum.log
+    jobid: 141
+    benchmark: benchmarks/mafft_Physarum_polycephalum.txt
+    reason: Forced execution
+    wildcards: species=Physarum_polycephalum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+localrule annotate:
+    input: results/per_species/Caenorhabditis_elegans.fasta, results/qc/Caenorhabditis_elegans.qc.txt
+    output: results/annotated/Caenorhabditis_elegans.fasta
+    jobid: 22
+    reason: Forced execution
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+localrule annotate:
+    input: results/per_species/Xenopus_laevis.fasta, results/qc/Xenopus_laevis.qc.txt
+    output: results/annotated/Xenopus_laevis.fasta
+    jobid: 234
+    reason: Forced execution
+    wildcards: species=Xenopus_laevis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 22 (Rule: annotate)
+54 of 234 steps (23%) done
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 234 (Rule: annotate)
+55 of 234 steps (24%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:12 2025]
+localrule mafft_align:
+    input: results/annotated/Caenorhabditis_elegans.fasta
+    output: results/aligned/Caenorhabditis_elegans.aln.fasta
+    log: logs/mafft_Caenorhabditis_elegans.log
+    jobid: 21
+    benchmark: benchmarks/mafft_Caenorhabditis_elegans.txt
+    reason: Forced execution
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+localrule annotate:
+    input: results/per_species/Halococcus_morrhuae.fasta, results/qc/Halococcus_morrhuae.qc.txt
+    output: results/annotated/Halococcus_morrhuae.fasta
+    jobid: 102
+    reason: Forced execution
+    wildcards: species=Halococcus_morrhuae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:12 2025]
+Finished jobid: 102 (Rule: annotate)
+56 of 234 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:13 2025]
+localrule annotate:
+    input: results/per_species/Escherichia_coli.fasta, results/qc/Escherichia_coli.qc.txt
+    output: results/annotated/Escherichia_coli.fasta
+    jobid: 74
+    reason: Forced execution
+    wildcards: species=Escherichia_coli
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:13 2025]
+Finished jobid: 74 (Rule: annotate)
+57 of 234 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:13 2025]
+localrule annotate:
+    input: results/per_species/Ruminobacter_amylophilus.fasta, results/qc/Ruminobacter_amylophilus.qc.txt
+    output: results/annotated/Ruminobacter_amylophilus.fasta
+    jobid: 174
+    reason: Forced execution
+    wildcards: species=Ruminobacter_amylophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:13 2025]
+Finished jobid: 174 (Rule: annotate)
+58 of 234 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:13 2025]
+localrule mafft_align:
+    input: results/annotated/Ruminobacter_amylophilus.fasta
+    output: results/aligned/Ruminobacter_amylophilus.aln.fasta
+    log: logs/mafft_Ruminobacter_amylophilus.log
+    jobid: 173
+    benchmark: benchmarks/mafft_Ruminobacter_amylophilus.txt
+    reason: Forced execution
+    wildcards: species=Ruminobacter_amylophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:17 2025]
+Finished jobid: 121 (Rule: mafft_align)
+59 of 234 steps (25%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:17 2025]
+localrule mafft_align:
+    input: results/annotated/Escherichia_coli.fasta
+    output: results/aligned/Escherichia_coli.aln.fasta
+    log: logs/mafft_Escherichia_coli.log
+    jobid: 73
+    benchmark: benchmarks/mafft_Escherichia_coli.txt
+    reason: Forced execution
+    wildcards: species=Escherichia_coli
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:17 2025]
+Finished jobid: 61 (Rule: mafft_align)
+60 of 234 steps (26%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:18 2025]
+localrule mafft_align:
+    input: results/annotated/Xenopus_laevis.fasta
+    output: results/aligned/Xenopus_laevis.aln.fasta
+    log: logs/mafft_Xenopus_laevis.log
+    jobid: 233
+    benchmark: benchmarks/mafft_Xenopus_laevis.txt
+    reason: Forced execution
+    wildcards: species=Xenopus_laevis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:18 2025]
+Finished jobid: 141 (Rule: mafft_align)
+61 of 234 steps (26%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:18 2025]
+localrule annotate:
+    input: results/per_species/Herdmania_momus.fasta, results/qc/Herdmania_momus.qc.txt
+    output: results/annotated/Herdmania_momus.fasta
+    jobid: 110
+    reason: Forced execution
+    wildcards: species=Herdmania_momus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:18 2025]
+Finished jobid: 110 (Rule: annotate)
+62 of 234 steps (26%) done
+[Sun Nov 23 19:59:18 2025]
+Finished jobid: 21 (Rule: mafft_align)
+63 of 234 steps (27%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:18 2025]
+localrule mafft_align:
+    input: results/annotated/Halococcus_morrhuae.fasta
+    output: results/aligned/Halococcus_morrhuae.aln.fasta
+    log: logs/mafft_Halococcus_morrhuae.log
+    jobid: 101
+    benchmark: benchmarks/mafft_Halococcus_morrhuae.txt
+    reason: Forced execution
+    wildcards: species=Halococcus_morrhuae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:18 2025]
+localrule annotate:
+    input: results/per_species/Streptomyces_ambofaciens.fasta, results/qc/Streptomyces_ambofaciens.qc.txt
+    output: results/annotated/Streptomyces_ambofaciens.fasta
+    jobid: 182
+    reason: Forced execution
+    wildcards: species=Streptomyces_ambofaciens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:18 2025]
+Finished jobid: 182 (Rule: annotate)
+64 of 234 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:19 2025]
+localrule annotate:
+    input: results/per_species/Sulfolobus_solfataricus.fasta, results/qc/Sulfolobus_solfataricus.qc.txt
+    output: results/annotated/Sulfolobus_solfataricus.fasta
+    jobid: 190
+    reason: Forced execution
+    wildcards: species=Sulfolobus_solfataricus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:19 2025]
+Finished jobid: 190 (Rule: annotate)
+65 of 234 steps (28%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:19 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Zea_mays.fasta
+    output: results/qc/Chloroplast_Zea_mays.qc.txt
+    jobid: 59
+    reason: Forced execution
+    wildcards: species=Chloroplast_Zea_mays
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:19 2025]
+Finished jobid: 173 (Rule: mafft_align)
+66 of 234 steps (28%) done
+[Sun Nov 23 19:59:19 2025]
+Finished jobid: 59 (Rule: quality_check)
+67 of 234 steps (29%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:19 2025]
+localrule mafft_align:
+    input: results/annotated/Streptomyces_ambofaciens.fasta
+    output: results/aligned/Streptomyces_ambofaciens.aln.fasta
+    log: logs/mafft_Streptomyces_ambofaciens.log
+    jobid: 181
+    benchmark: benchmarks/mafft_Streptomyces_ambofaciens.txt
+    reason: Forced execution
+    wildcards: species=Streptomyces_ambofaciens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:19 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_stearothermophilus.fasta
+    output: results/aligned/Bacillus_stearothermophilus.aln.fasta
+    log: logs/mafft_Bacillus_stearothermophilus.log
+    jobid: 13
+    benchmark: benchmarks/mafft_Bacillus_stearothermophilus.txt
+    reason: Forced execution
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:22 2025]
+Finished jobid: 73 (Rule: mafft_align)
+68 of 234 steps (29%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:23 2025]
+localrule annotate:
+    input: results/per_species/Frankia_sp.fasta, results/qc/Frankia_sp.qc.txt
+    output: results/annotated/Frankia_sp.fasta
+    jobid: 90
+    reason: Forced execution
+    wildcards: species=Frankia_sp
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 90 (Rule: annotate)
+69 of 234 steps (29%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:23 2025]
+localrule quality_check:
+    input: results/per_species/Tetrahymena_pyriformis.fasta
+    output: results/qc/Tetrahymena_pyriformis.qc.txt
+    jobid: 199
+    reason: Forced execution
+    wildcards: species=Tetrahymena_pyriformis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 233 (Rule: mafft_align)
+70 of 234 steps (30%) done
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 199 (Rule: quality_check)
+71 of 234 steps (30%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:23 2025]
+localrule annotate:
+    input: results/per_species/Rhodobacter_capsulatus.fasta, results/qc/Rhodobacter_capsulatus.qc.txt
+    output: results/annotated/Rhodobacter_capsulatus.fasta
+    jobid: 166
+    reason: Forced execution
+    wildcards: species=Rhodobacter_capsulatus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+localrule quality_check:
+    input: results/per_species/Halobacterium_marismortui.fasta
+    output: results/qc/Halobacterium_marismortui.qc.txt
+    jobid: 99
+    reason: Forced execution
+    wildcards: species=Halobacterium_marismortui
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 166 (Rule: annotate)
+72 of 234 steps (31%) done
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 99 (Rule: quality_check)
+73 of 234 steps (31%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:23 2025]
+localrule quality_check:
+    input: results/per_species/Thermoplasma_acidophilum.fasta
+    output: results/qc/Thermoplasma_acidophilum.qc.txt
+    jobid: 215
+    reason: Forced execution
+    wildcards: species=Thermoplasma_acidophilum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+localrule quality_check:
+    input: results/per_species/Methanobacterium_thermoautotrophicum.fasta
+    output: results/qc/Methanobacterium_thermoautotrophicum.qc.txt
+    jobid: 119
+    reason: Forced execution
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 215 (Rule: quality_check)
+74 of 234 steps (32%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:23 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Euglena_gracilis.fasta
+    output: results/qc/Chloroplast_Euglena_gracilis.qc.txt
+    jobid: 39
+    reason: Forced execution
+    wildcards: species=Chloroplast_Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:23 2025]
+Finished jobid: 119 (Rule: quality_check)
+75 of 234 steps (32%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 101 (Rule: mafft_align)
+76 of 234 steps (32%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:24 2025]
+localrule quality_check:
+    input: results/per_species/Synechococcus_sp_str_CIP_6301.fasta
+    output: results/qc/Synechococcus_sp_str_CIP_6301.qc.txt
+    jobid: 195
+    reason: Forced execution
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+localrule annotate:
+    input: results/per_species/Drosophila_melanogaster.fasta, results/qc/Drosophila_melanogaster.qc.txt
+    output: results/annotated/Drosophila_melanogaster.fasta
+    jobid: 70
+    reason: Forced execution
+    wildcards: species=Drosophila_melanogaster
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 39 (Rule: quality_check)
+77 of 234 steps (33%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 195 (Rule: quality_check)
+78 of 234 steps (33%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 70 (Rule: annotate)
+79 of 234 steps (34%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:24 2025]
+localrule mafft_align:
+    input: results/annotated/Rhodobacter_capsulatus.fasta
+    output: results/aligned/Rhodobacter_capsulatus.aln.fasta
+    log: logs/mafft_Rhodobacter_capsulatus.log
+    jobid: 165
+    benchmark: benchmarks/mafft_Rhodobacter_capsulatus.txt
+    reason: Forced execution
+    wildcards: species=Rhodobacter_capsulatus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+localrule quality_check:
+    input: results/per_species/Mycobacterium_leprae.fasta
+    output: results/qc/Mycobacterium_leprae.qc.txt
+    jobid: 135
+    reason: Forced execution
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+localrule quality_check:
+    input: results/per_species/Euglena_gracilis.fasta
+    output: results/qc/Euglena_gracilis.qc.txt
+    jobid: 79
+    reason: Forced execution
+    wildcards: species=Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 135 (Rule: quality_check)
+80 of 234 steps (34%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 79 (Rule: quality_check)
+81 of 234 steps (35%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 2 jobs...
+[Sun Nov 23 19:59:24 2025]
+localrule quality_check:
+    input: results/per_species/Homo_sapien.fasta
+    output: results/qc/Homo_sapien.qc.txt
+    jobid: 115
+    reason: Forced execution
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+localrule annotate:
+    input: results/per_species/Euglena_gracilis.fasta, results/qc/Euglena_gracilis.qc.txt
+    output: results/annotated/Euglena_gracilis.fasta
+    jobid: 78
+    reason: Forced execution
+    wildcards: species=Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 181 (Rule: mafft_align)
+82 of 234 steps (35%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 13 (Rule: mafft_align)
+83 of 234 steps (35%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 115 (Rule: quality_check)
+84 of 234 steps (36%) done
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 78 (Rule: annotate)
+85 of 234 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:24 2025]
+localrule iqtree_build:
+    input: results/aligned/Thermotoga_maritima.aln.fasta
+    output: results/trees/Thermotoga_maritima.treefile, results/trees/Thermotoga_maritima.iqtree, results/trees/Thermotoga_maritima.log
+    log: logs/iqtree_Thermotoga_maritima.log
+    jobid: 220
+    benchmark: benchmarks/iqtree_Thermotoga_maritima.txt
+    reason: Forced execution
+    wildcards: species=Thermotoga_maritima
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:24 2025]
+Finished jobid: 220 (Rule: iqtree_build)
+86 of 234 steps (37%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:24 2025]
+localrule iqtree_build:
+    input: results/aligned/Halococcus_morrhuae.aln.fasta
+    output: results/trees/Halococcus_morrhuae.treefile, results/trees/Halococcus_morrhuae.iqtree, results/trees/Halococcus_morrhuae.log
+    log: logs/iqtree_Halococcus_morrhuae.log
+    jobid: 100
+    benchmark: benchmarks/iqtree_Halococcus_morrhuae.txt
+    reason: Forced execution
+    wildcards: species=Halococcus_morrhuae
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 100 (Rule: iqtree_build)
+87 of 234 steps (37%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Rattus_norvegicus.aln.fasta
+    output: results/trees/Rattus_norvegicus.treefile, results/trees/Rattus_norvegicus.iqtree, results/trees/Rattus_norvegicus.log
+    log: logs/iqtree_Rattus_norvegicus.log
+    jobid: 160
+    benchmark: benchmarks/iqtree_Rattus_norvegicus.txt
+    reason: Forced execution
+    wildcards: species=Rattus_norvegicus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 160 (Rule: iqtree_build)
+88 of 234 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Marchantia_polymorpha.aln.fasta
+    output: results/trees/Chloroplast_Marchantia_polymorpha.treefile, results/trees/Chloroplast_Marchantia_polymorpha.iqtree, results/trees/Chloroplast_Marchantia_polymorpha.log
+    log: logs/iqtree_Chloroplast_Marchantia_polymorpha.log
+    jobid: 40
+    benchmark: benchmarks/iqtree_Chloroplast_Marchantia_polymorpha.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Marchantia_polymorpha
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 40 (Rule: iqtree_build)
+89 of 234 steps (38%) done
+Execute 4 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Synechococcus_sp_str_CIP_6301.fasta, results/qc/Synechococcus_sp_str_CIP_6301.qc.txt
+    output: results/annotated/Synechococcus_sp_str_CIP_6301.fasta
+    jobid: 194
+    reason: Forced execution
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Homo_sapien.fasta, results/qc/Homo_sapien.qc.txt
+    output: results/annotated/Homo_sapien.fasta
+    jobid: 114
+    reason: Forced execution
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Pisum_sativum.fasta
+    output: results/qc/Chloroplast_Pisum_sativum.qc.txt
+    jobid: 55
+    reason: Forced execution
+    wildcards: species=Chloroplast_Pisum_sativum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Euglena_gracilis.fasta, results/qc/Chloroplast_Euglena_gracilis.qc.txt
+    output: results/annotated/Chloroplast_Euglena_gracilis.fasta
+    jobid: 38
+    reason: Forced execution
+    wildcards: species=Chloroplast_Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 194 (Rule: annotate)
+90 of 234 steps (38%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 114 (Rule: annotate)
+91 of 234 steps (39%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 55 (Rule: quality_check)
+92 of 234 steps (39%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 38 (Rule: annotate)
+93 of 234 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Ruminobacter_amylophilus.aln.fasta
+    output: results/trees/Ruminobacter_amylophilus.treefile, results/trees/Ruminobacter_amylophilus.iqtree, results/trees/Ruminobacter_amylophilus.log
+    log: logs/iqtree_Ruminobacter_amylophilus.log
+    jobid: 172
+    benchmark: benchmarks/iqtree_Ruminobacter_amylophilus.txt
+    reason: Forced execution
+    wildcards: species=Ruminobacter_amylophilus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 172 (Rule: iqtree_build)
+94 of 234 steps (40%) done
+Execute 4 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Thermoplasma_acidophilum.fasta, results/qc/Thermoplasma_acidophilum.qc.txt
+    output: results/annotated/Thermoplasma_acidophilum.fasta
+    jobid: 214
+    reason: Forced execution
+    wildcards: species=Thermoplasma_acidophilum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Pisum_sativum.fasta, results/qc/Chloroplast_Pisum_sativum.qc.txt
+    output: results/annotated/Chloroplast_Pisum_sativum.fasta
+    jobid: 54
+    reason: Forced execution
+    wildcards: species=Chloroplast_Pisum_sativum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Conopholis_americana.fasta
+    output: results/qc/Chloroplast_Conopholis_americana.qc.txt
+    jobid: 35
+    reason: Forced execution
+    wildcards: species=Chloroplast_Conopholis_americana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule quality_check:
+    input: results/per_species/Bacillus_subtilis_23S.fasta
+    output: results/qc/Bacillus_subtilis_23S.qc.txt
+    jobid: 19
+    reason: Forced execution
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 214 (Rule: annotate)
+95 of 234 steps (41%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 54 (Rule: annotate)
+96 of 234 steps (41%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 35 (Rule: quality_check)
+97 of 234 steps (41%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule quality_check:
+    input: results/per_species/Halobacterium_halobium.fasta
+    output: results/qc/Halobacterium_halobium.qc.txt
+    jobid: 95
+    reason: Forced execution
+    wildcards: species=Halobacterium_halobium
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Chlorella_ellipsoidea.fasta, results/qc/Chloroplast_Chlorella_ellipsoidea.qc.txt
+    output: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    jobid: 30
+    reason: Forced execution
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule quality_check:
+    input: results/per_species/Pseudomonas_cepacia.fasta
+    output: results/qc/Pseudomonas_cepacia.qc.txt
+    jobid: 159
+    reason: Forced execution
+    wildcards: species=Pseudomonas_cepacia
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 19 (Rule: quality_check)
+98 of 234 steps (42%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 95 (Rule: quality_check)
+99 of 234 steps (42%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 30 (Rule: annotate)
+100 of 234 steps (43%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_subtilis_23S.fasta, results/qc/Bacillus_subtilis_23S.qc.txt
+    output: results/annotated/Bacillus_subtilis_23S.fasta
+    jobid: 18
+    reason: Forced execution
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Pisum_sativum.fasta
+    output: results/aligned/Chloroplast_Pisum_sativum.aln.fasta
+    log: logs/mafft_Chloroplast_Pisum_sativum.log
+    jobid: 53
+    benchmark: benchmarks/mafft_Chloroplast_Pisum_sativum.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Pisum_sativum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Conopholis_americana.fasta, results/qc/Chloroplast_Conopholis_americana.qc.txt
+    output: results/annotated/Chloroplast_Conopholis_americana.fasta
+    jobid: 34
+    reason: Forced execution
+    wildcards: species=Chloroplast_Conopholis_americana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 159 (Rule: quality_check)
+101 of 234 steps (43%) done
+[Sun Nov 23 19:59:25 2025]
+Finished jobid: 18 (Rule: annotate)
+102 of 234 steps (44%) done
+[Sun Nov 23 19:59:26 2025]
+Finished jobid: 34 (Rule: annotate)
+103 of 234 steps (44%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:26 2025]
+localrule annotate:
+    input: results/per_species/Pseudomonas_cepacia.fasta, results/qc/Pseudomonas_cepacia.qc.txt
+    output: results/annotated/Pseudomonas_cepacia.fasta
+    jobid: 158
+    reason: Forced execution
+    wildcards: species=Pseudomonas_cepacia
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:26 2025]
+localrule mafft_align:
+    input: results/annotated/Drosophila_melanogaster.fasta
+    output: results/aligned/Drosophila_melanogaster.aln.fasta
+    log: logs/mafft_Drosophila_melanogaster.log
+    jobid: 69
+    benchmark: benchmarks/mafft_Drosophila_melanogaster.txt
+    reason: Forced execution
+    wildcards: species=Drosophila_melanogaster
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:26 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    output: results/aligned/Chloroplast_Chlorella_ellipsoidea.aln.fasta
+    log: logs/mafft_Chloroplast_Chlorella_ellipsoidea.log
+    jobid: 29
+    benchmark: benchmarks/mafft_Chloroplast_Chlorella_ellipsoidea.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:26 2025]
+Finished jobid: 158 (Rule: annotate)
+104 of 234 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:26 2025]
+localrule mafft_align:
+    input: results/annotated/Herdmania_momus.fasta
+    output: results/aligned/Herdmania_momus.aln.fasta
+    log: logs/mafft_Herdmania_momus.log
+    jobid: 109
+    benchmark: benchmarks/mafft_Herdmania_momus.txt
+    reason: Forced execution
+    wildcards: species=Herdmania_momus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:27 2025]
+Finished jobid: 165 (Rule: mafft_align)
+105 of 234 steps (45%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:27 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Oryza_sativa.fasta
+    output: results/aligned/Chloroplast_Oryza_sativa.aln.fasta
+    log: logs/mafft_Chloroplast_Oryza_sativa.log
+    jobid: 49
+    benchmark: benchmarks/mafft_Chloroplast_Oryza_sativa.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:30 2025]
+Finished jobid: 53 (Rule: mafft_align)
+106 of 234 steps (45%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:30 2025]
+localrule mafft_align:
+    input: results/annotated/Archaeoglobus_fulgidus.fasta
+    output: results/aligned/Archaeoglobus_fulgidus.aln.fasta
+    log: logs/mafft_Archaeoglobus_fulgidus.log
+    jobid: 9
+    benchmark: benchmarks/mafft_Archaeoglobus_fulgidus.txt
+    reason: Forced execution
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:30 2025]
+Finished jobid: 69 (Rule: mafft_align)
+107 of 234 steps (46%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Tetrahymena_pyriformis.fasta, results/qc/Tetrahymena_pyriformis.qc.txt
+    output: results/annotated/Tetrahymena_pyriformis.fasta
+    jobid: 198
+    reason: Forced execution
+    wildcards: species=Tetrahymena_pyriformis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 29 (Rule: mafft_align)
+108 of 234 steps (46%) done
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 198 (Rule: annotate)
+109 of 234 steps (47%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 2 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Mycobacterium_leprae.fasta, results/qc/Mycobacterium_leprae.qc.txt
+    output: results/annotated/Mycobacterium_leprae.fasta
+    jobid: 134
+    reason: Forced execution
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Methanobacterium_thermoautotrophicum.fasta, results/qc/Methanobacterium_thermoautotrophicum.qc.txt
+    output: results/annotated/Methanobacterium_thermoautotrophicum.fasta
+    jobid: 118
+    reason: Forced execution
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 109 (Rule: mafft_align)
+110 of 234 steps (47%) done
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 134 (Rule: annotate)
+111 of 234 steps (47%) done
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 118 (Rule: annotate)
+112 of 234 steps (48%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule mafft_align:
+    input: results/annotated/Thermoplasma_acidophilum.fasta
+    output: results/aligned/Thermoplasma_acidophilum.aln.fasta
+    log: logs/mafft_Thermoplasma_acidophilum.log
+    jobid: 213
+    benchmark: benchmarks/mafft_Thermoplasma_acidophilum.txt
+    reason: Forced execution
+    wildcards: species=Thermoplasma_acidophilum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Zea_mays.fasta, results/qc/Chloroplast_Zea_mays.qc.txt
+    output: results/annotated/Chloroplast_Zea_mays.fasta
+    jobid: 58
+    reason: Forced execution
+    wildcards: species=Chloroplast_Zea_mays
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+localrule mafft_align:
+    input: results/annotated/Rhodobacter_sphaeroides.fasta
+    output: results/aligned/Rhodobacter_sphaeroides.aln.fasta
+    log: logs/mafft_Rhodobacter_sphaeroides.log
+    jobid: 169
+    benchmark: benchmarks/mafft_Rhodobacter_sphaeroides.txt
+    reason: Forced execution
+    wildcards: species=Rhodobacter_sphaeroides
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 58 (Rule: annotate)
+113 of 234 steps (48%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Halobacterium_marismortui.fasta, results/qc/Halobacterium_marismortui.qc.txt
+    output: results/annotated/Halobacterium_marismortui.fasta
+    jobid: 98
+    reason: Forced execution
+    wildcards: species=Halobacterium_marismortui
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 98 (Rule: annotate)
+114 of 234 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Saccharomyces_cerevisiae.fasta, results/qc/Saccharomyces_cerevisiae.qc.txt
+    output: results/annotated/Saccharomyces_cerevisiae.fasta
+    jobid: 178
+    reason: Forced execution
+    wildcards: species=Saccharomyces_cerevisiae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 178 (Rule: annotate)
+115 of 234 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule annotate:
+    input: results/per_species/Oryza_sativa.fasta, results/qc/Oryza_sativa.qc.txt
+    output: results/annotated/Oryza_sativa.fasta
+    jobid: 138
+    reason: Forced execution
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 138 (Rule: annotate)
+116 of 234 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:31 2025]
+localrule mafft_align:
+    input: results/annotated/Oryza_sativa.fasta
+    output: results/aligned/Oryza_sativa.aln.fasta
+    log: logs/mafft_Oryza_sativa.log
+    jobid: 137
+    benchmark: benchmarks/mafft_Oryza_sativa.txt
+    reason: Forced execution
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:31 2025]
+Finished jobid: 49 (Rule: mafft_align)
+117 of 234 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:32 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Nicotiana_tabacum.fasta
+    output: results/qc/Chloroplast_Nicotiana_tabacum.qc.txt
+    jobid: 47
+    reason: Forced execution
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:32 2025]
+Finished jobid: 47 (Rule: quality_check)
+118 of 234 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:32 2025]
+localrule quality_check:
+    input: results/per_species/Micrococcus_luteus.fasta
+    output: results/qc/Micrococcus_luteus.qc.txt
+    jobid: 127
+    reason: Forced execution
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:32 2025]
+Finished jobid: 127 (Rule: quality_check)
+119 of 234 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:32 2025]
+localrule quality_check:
+    input: results/per_species/Thermococcus_celer.fasta
+    output: results/qc/Thermococcus_celer.qc.txt
+    jobid: 207
+    reason: Forced execution
+    wildcards: species=Thermococcus_celer
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:32 2025]
+Finished jobid: 207 (Rule: quality_check)
+120 of 234 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:32 2025]
+localrule quality_check:
+    input: results/per_species/Thermus_thermophilus_HB8.fasta
+    output: results/qc/Thermus_thermophilus_HB8.qc.txt
+    jobid: 227
+    reason: Forced execution
+    wildcards: species=Thermus_thermophilus_HB8
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:32 2025]
+Finished jobid: 227 (Rule: quality_check)
+121 of 234 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:33 2025]
+localrule quality_check:
+    input: results/per_species/Desulfurococcus_mobilis.fasta
+    output: results/qc/Desulfurococcus_mobilis.qc.txt
+    jobid: 67
+    reason: Forced execution
+    wildcards: species=Desulfurococcus_mobilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:33 2025]
+Finished jobid: 67 (Rule: quality_check)
+122 of 234 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:33 2025]
+localrule quality_check:
+    input: results/per_species/Haloferax_volcanii.fasta
+    output: results/qc/Haloferax_volcanii.qc.txt
+    jobid: 107
+    reason: Forced execution
+    wildcards: species=Haloferax_volcanii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:33 2025]
+Finished jobid: 107 (Rule: quality_check)
+123 of 234 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:33 2025]
+localrule quality_check:
+    input: results/per_species/Chloroplast_Astasia_longa.fasta
+    output: results/qc/Chloroplast_Astasia_longa.qc.txt
+    jobid: 27
+    reason: Forced execution
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+[Sun Nov 23 19:59:33 2025]
+Finished jobid: 27 (Rule: quality_check)
+124 of 234 steps (53%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:33 2025]
+localrule quality_check:
+    input: results/per_species/Streptomyces_griseus.fasta
+    output: results/qc/Streptomyces_griseus.qc.txt
+    jobid: 187
+    reason: Forced execution
+    wildcards: species=Streptomyces_griseus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:33 2025]
+Finished jobid: 187 (Rule: quality_check)
+125 of 234 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:33 2025]
+localrule mafft_align:
+    input: results/annotated/Tetrahymena_pyriformis.fasta
+    output: results/aligned/Tetrahymena_pyriformis.aln.fasta
+    log: logs/mafft_Tetrahymena_pyriformis.log
+    jobid: 197
+    benchmark: benchmarks/mafft_Tetrahymena_pyriformis.txt
+    reason: Forced execution
+    wildcards: species=Tetrahymena_pyriformis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:35 2025]
+Finished jobid: 9 (Rule: mafft_align)
+126 of 234 steps (54%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:35 2025]
+localrule quality_check:
+    input: results/per_species/Pirellula_marina.fasta
+    output: results/qc/Pirellula_marina.qc.txt
+    jobid: 147
+    reason: Forced execution
+    wildcards: species=Pirellula_marina
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:35 2025]
+Finished jobid: 147 (Rule: quality_check)
+127 of 234 steps (54%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:35 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Euglena_gracilis.fasta
+    output: results/aligned/Chloroplast_Euglena_gracilis.aln.fasta
+    log: logs/mafft_Chloroplast_Euglena_gracilis.log
+    jobid: 37
+    benchmark: benchmarks/mafft_Chloroplast_Euglena_gracilis.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:36 2025]
+Finished jobid: 213 (Rule: mafft_align)
+128 of 234 steps (55%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:36 2025]
+localrule quality_check:
+    input: results/per_species/Fragaria_ananassa.fasta
+    output: results/qc/Fragaria_ananassa.qc.txt
+    jobid: 87
+    reason: Forced execution
+    wildcards: species=Fragaria_ananassa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:36 2025]
+Finished jobid: 169 (Rule: mafft_align)
+129 of 234 steps (55%) done
+[Sun Nov 23 19:59:36 2025]
+Finished jobid: 87 (Rule: quality_check)
+130 of 234 steps (56%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:36 2025]
+localrule quality_check:
+    input: results/per_species/Arabidopsis_thaliana.fasta
+    output: results/qc/Arabidopsis_thaliana.qc.txt
+    jobid: 7
+    reason: Forced execution
+    wildcards: species=Arabidopsis_thaliana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:36 2025]
+localrule mafft_align:
+    input: results/annotated/Methanobacterium_thermoautotrophicum.fasta
+    output: results/aligned/Methanobacterium_thermoautotrophicum.aln.fasta
+    log: logs/mafft_Methanobacterium_thermoautotrophicum.log
+    jobid: 117
+    benchmark: benchmarks/mafft_Methanobacterium_thermoautotrophicum.txt
+    reason: Forced execution
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:36 2025]
+Finished jobid: 7 (Rule: quality_check)
+131 of 234 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:36 2025]
+localrule annotate:
+    input: results/per_species/Trypanosoma_brucei.fasta, results/qc/Trypanosoma_brucei.qc.txt
+    output: results/annotated/Trypanosoma_brucei.fasta
+    jobid: 230
+    reason: Forced execution
+    wildcards: species=Trypanosoma_brucei
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:36 2025]
+Finished jobid: 230 (Rule: annotate)
+132 of 234 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:36 2025]
+localrule mafft_align:
+    input: results/annotated/Halobacterium_marismortui.fasta
+    output: results/aligned/Halobacterium_marismortui.aln.fasta
+    log: logs/mafft_Halobacterium_marismortui.log
+    jobid: 97
+    benchmark: benchmarks/mafft_Halobacterium_marismortui.txt
+    reason: Forced execution
+    wildcards: species=Halobacterium_marismortui
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:36 2025]
+Finished jobid: 137 (Rule: mafft_align)
+133 of 234 steps (57%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:37 2025]
+localrule mafft_align:
+    input: results/annotated/Pseudomonas_cepacia.fasta
+    output: results/aligned/Pseudomonas_cepacia.aln.fasta
+    log: logs/mafft_Pseudomonas_cepacia.log
+    jobid: 157
+    benchmark: benchmarks/mafft_Pseudomonas_cepacia.txt
+    reason: Forced execution
+    wildcards: species=Pseudomonas_cepacia
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:38 2025]
+Finished jobid: 197 (Rule: mafft_align)
+134 of 234 steps (57%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:38 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_subtilis_23S.fasta
+    output: results/aligned/Bacillus_subtilis_23S.aln.fasta
+    log: logs/mafft_Bacillus_subtilis_23S.log
+    jobid: 17
+    benchmark: benchmarks/mafft_Bacillus_subtilis_23S.txt
+    reason: Forced execution
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:40 2025]
+Finished jobid: 37 (Rule: mafft_align)
+135 of 234 steps (58%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:40 2025]
+localrule mafft_align:
+    input: results/annotated/Pseudomonas_aeruginosa.fasta
+    output: results/aligned/Pseudomonas_aeruginosa.aln.fasta
+    log: logs/mafft_Pseudomonas_aeruginosa.log
+    jobid: 153
+    benchmark: benchmarks/mafft_Pseudomonas_aeruginosa.txt
+    reason: Forced execution
+    wildcards: species=Pseudomonas_aeruginosa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:40 2025]
+Finished jobid: 117 (Rule: mafft_align)
+136 of 234 steps (58%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:41 2025]
+localrule annotate:
+    input: results/per_species/Desulfurococcus_mobilis.fasta, results/qc/Desulfurococcus_mobilis.qc.txt
+    output: results/annotated/Desulfurococcus_mobilis.fasta
+    jobid: 66
+    reason: Forced execution
+    wildcards: species=Desulfurococcus_mobilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:41 2025]
+Finished jobid: 66 (Rule: annotate)
+137 of 234 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:41 2025]
+localrule mafft_align:
+    input: results/annotated/Trypanosoma_brucei.fasta
+    output: results/aligned/Trypanosoma_brucei.aln.fasta
+    log: logs/mafft_Trypanosoma_brucei.log
+    jobid: 229
+    benchmark: benchmarks/mafft_Trypanosoma_brucei.txt
+    reason: Forced execution
+    wildcards: species=Trypanosoma_brucei
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:41 2025]
+Finished jobid: 97 (Rule: mafft_align)
+138 of 234 steps (59%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:41 2025]
+localrule annotate:
+    input: results/per_species/Prorocentrum_micans.fasta, results/qc/Prorocentrum_micans.qc.txt
+    output: results/annotated/Prorocentrum_micans.fasta
+    jobid: 150
+    reason: Forced execution
+    wildcards: species=Prorocentrum_micans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:41 2025]
+Finished jobid: 157 (Rule: mafft_align)
+139 of 234 steps (59%) done
+[Sun Nov 23 19:59:41 2025]
+Finished jobid: 150 (Rule: annotate)
+140 of 234 steps (60%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:41 2025]
+localrule mafft_align:
+    input: results/annotated/Mycobacterium_leprae.fasta
+    output: results/aligned/Mycobacterium_leprae.aln.fasta
+    log: logs/mafft_Mycobacterium_leprae.log
+    jobid: 133
+    benchmark: benchmarks/mafft_Mycobacterium_leprae.txt
+    reason: Forced execution
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:41 2025]
+localrule annotate:
+    input: results/per_species/Pirellula_marina.fasta, results/qc/Pirellula_marina.qc.txt
+    output: results/annotated/Pirellula_marina.fasta
+    jobid: 146
+    reason: Forced execution
+    wildcards: species=Pirellula_marina
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:42 2025]
+Finished jobid: 146 (Rule: annotate)
+141 of 234 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:42 2025]
+localrule mafft_align:
+    input: results/annotated/Sulfolobus_solfataricus.fasta
+    output: results/aligned/Sulfolobus_solfataricus.aln.fasta
+    log: logs/mafft_Sulfolobus_solfataricus.log
+    jobid: 189
+    benchmark: benchmarks/mafft_Sulfolobus_solfataricus.txt
+    reason: Forced execution
+    wildcards: species=Sulfolobus_solfataricus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:43 2025]
+Finished jobid: 17 (Rule: mafft_align)
+142 of 234 steps (61%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:43 2025]
+localrule mafft_align:
+    input: results/annotated/Prorocentrum_micans.fasta
+    output: results/aligned/Prorocentrum_micans.aln.fasta
+    log: logs/mafft_Prorocentrum_micans.log
+    jobid: 149
+    benchmark: benchmarks/mafft_Prorocentrum_micans.txt
+    reason: Forced execution
+    wildcards: species=Prorocentrum_micans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:45 2025]
+Finished jobid: 153 (Rule: mafft_align)
+143 of 234 steps (61%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:45 2025]
+localrule mafft_align:
+    input: results/annotated/Thermofilum_pendens.fasta
+    output: results/aligned/Thermofilum_pendens.aln.fasta
+    log: logs/mafft_Thermofilum_pendens.log
+    jobid: 209
+    benchmark: benchmarks/mafft_Thermofilum_pendens.txt
+    reason: Forced execution
+    wildcards: species=Thermofilum_pendens
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:46 2025]
+Finished jobid: 229 (Rule: mafft_align)
+144 of 234 steps (62%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:46 2025]
+localrule mafft_align:
+    input: results/annotated/Mus_musculus.fasta
+    output: results/aligned/Mus_musculus.aln.fasta
+    log: logs/mafft_Mus_musculus.log
+    jobid: 129
+    benchmark: benchmarks/mafft_Mus_musculus.txt
+    reason: Forced execution
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:47 2025]
+Finished jobid: 133 (Rule: mafft_align)
+145 of 234 steps (62%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:47 2025]
+localrule mafft_align:
+    input: results/annotated/Frankia_sp.fasta
+    output: results/aligned/Frankia_sp.aln.fasta
+    log: logs/mafft_Frankia_sp.log
+    jobid: 89
+    benchmark: benchmarks/mafft_Frankia_sp.txt
+    reason: Forced execution
+    wildcards: species=Frankia_sp
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:47 2025]
+Finished jobid: 189 (Rule: mafft_align)
+146 of 234 steps (62%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:47 2025]
+localrule annotate:
+    input: results/per_species/Thermoproteus_tenax.fasta, results/qc/Thermoproteus_tenax.qc.txt
+    output: results/annotated/Thermoproteus_tenax.fasta
+    jobid: 218
+    reason: Forced execution
+    wildcards: species=Thermoproteus_tenax
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:47 2025]
+Finished jobid: 218 (Rule: annotate)
+147 of 234 steps (63%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:48 2025]
+localrule mafft_align:
+    input: results/annotated/Saccharomyces_cerevisiae.fasta
+    output: results/aligned/Saccharomyces_cerevisiae.aln.fasta
+    log: logs/mafft_Saccharomyces_cerevisiae.log
+    jobid: 177
+    benchmark: benchmarks/mafft_Saccharomyces_cerevisiae.txt
+    reason: Forced execution
+    wildcards: species=Saccharomyces_cerevisiae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:48 2025]
+Finished jobid: 149 (Rule: mafft_align)
+148 of 234 steps (63%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:49 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Zea_mays.fasta
+    output: results/aligned/Chloroplast_Zea_mays.aln.fasta
+    log: logs/mafft_Chloroplast_Zea_mays.log
+    jobid: 57
+    benchmark: benchmarks/mafft_Chloroplast_Zea_mays.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Zea_mays
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:50 2025]
+Finished jobid: 209 (Rule: mafft_align)
+149 of 234 steps (64%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:51 2025]
+localrule mafft_align:
+    input: results/annotated/Thermoproteus_tenax.fasta
+    output: results/aligned/Thermoproteus_tenax.aln.fasta
+    log: logs/mafft_Thermoproteus_tenax.log
+    jobid: 217
+    benchmark: benchmarks/mafft_Thermoproteus_tenax.txt
+    reason: Forced execution
+    wildcards: species=Thermoproteus_tenax
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:52 2025]
+Finished jobid: 129 (Rule: mafft_align)
+150 of 234 steps (64%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:52 2025]
+localrule mafft_align:
+    input: results/annotated/Euglena_gracilis.fasta
+    output: results/aligned/Euglena_gracilis.aln.fasta
+    log: logs/mafft_Euglena_gracilis.log
+    jobid: 77
+    benchmark: benchmarks/mafft_Euglena_gracilis.txt
+    reason: Forced execution
+    wildcards: species=Euglena_gracilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:52 2025]
+Finished jobid: 89 (Rule: mafft_align)
+151 of 234 steps (65%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:52 2025]
+localrule annotate:
+    input: results/per_species/Streptomyces_griseus.fasta, results/qc/Streptomyces_griseus.qc.txt
+    output: results/annotated/Streptomyces_griseus.fasta
+    jobid: 186
+    reason: Forced execution
+    wildcards: species=Streptomyces_griseus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:52 2025]
+Finished jobid: 186 (Rule: annotate)
+152 of 234 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:52 2025]
+localrule annotate:
+    input: results/per_species/Haloferax_volcanii.fasta, results/qc/Haloferax_volcanii.qc.txt
+    output: results/annotated/Haloferax_volcanii.fasta
+    jobid: 106
+    reason: Forced execution
+    wildcards: species=Haloferax_volcanii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:52 2025]
+Finished jobid: 106 (Rule: annotate)
+153 of 234 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:52 2025]
+localrule annotate:
+    input: results/per_species/Thermus_thermophilus_HB8.fasta, results/qc/Thermus_thermophilus_HB8.qc.txt
+    output: results/annotated/Thermus_thermophilus_HB8.fasta
+    jobid: 226
+    reason: Forced execution
+    wildcards: species=Thermus_thermophilus_HB8
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:52 2025]
+Finished jobid: 226 (Rule: annotate)
+154 of 234 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:52 2025]
+localrule annotate:
+    input: results/per_species/Thermococcus_celer.fasta, results/qc/Thermococcus_celer.qc.txt
+    output: results/annotated/Thermococcus_celer.fasta
+    jobid: 206
+    reason: Forced execution
+    wildcards: species=Thermococcus_celer
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:53 2025]
+Finished jobid: 206 (Rule: annotate)
+155 of 234 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:53 2025]
+localrule annotate:
+    input: results/per_species/Micrococcus_luteus.fasta, results/qc/Micrococcus_luteus.qc.txt
+    output: results/annotated/Micrococcus_luteus.fasta
+    jobid: 126
+    reason: Forced execution
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:53 2025]
+Finished jobid: 126 (Rule: annotate)
+156 of 234 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:53 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Nicotiana_tabacum.fasta, results/qc/Chloroplast_Nicotiana_tabacum.qc.txt
+    output: results/annotated/Chloroplast_Nicotiana_tabacum.fasta
+    jobid: 46
+    reason: Forced execution
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:53 2025]
+Finished jobid: 46 (Rule: annotate)
+157 of 234 steps (67%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:53 2025]
+localrule annotate:
+    input: results/per_species/Fragaria_ananassa.fasta, results/qc/Fragaria_ananassa.qc.txt
+    output: results/annotated/Fragaria_ananassa.fasta
+    jobid: 86
+    reason: Forced execution
+    wildcards: species=Fragaria_ananassa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:53 2025]
+Finished jobid: 57 (Rule: mafft_align)
+158 of 234 steps (68%) done
+[Sun Nov 23 19:59:53 2025]
+Finished jobid: 86 (Rule: annotate)
+159 of 234 steps (68%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:54 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Conopholis_americana.fasta
+    output: results/aligned/Chloroplast_Conopholis_americana.aln.fasta
+    log: logs/mafft_Chloroplast_Conopholis_americana.log
+    jobid: 33
+    benchmark: benchmarks/mafft_Chloroplast_Conopholis_americana.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Conopholis_americana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:54 2025]
+localrule mafft_align:
+    input: results/annotated/Thermococcus_celer.fasta
+    output: results/aligned/Thermococcus_celer.aln.fasta
+    log: logs/mafft_Thermococcus_celer.log
+    jobid: 205
+    benchmark: benchmarks/mafft_Thermococcus_celer.txt
+    reason: Forced execution
+    wildcards: species=Thermococcus_celer
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:55 2025]
+Finished jobid: 217 (Rule: mafft_align)
+160 of 234 steps (68%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:56 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Astasia_longa.fasta, results/qc/Chloroplast_Astasia_longa.qc.txt
+    output: results/annotated/Chloroplast_Astasia_longa.fasta
+    jobid: 26
+    reason: Forced execution
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:56 2025]
+Finished jobid: 177 (Rule: mafft_align)
+161 of 234 steps (69%) done
+[Sun Nov 23 19:59:56 2025]
+Finished jobid: 26 (Rule: annotate)
+162 of 234 steps (69%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 19:59:56 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Nicotiana_tabacum.fasta
+    output: results/aligned/Chloroplast_Nicotiana_tabacum.aln.fasta
+    log: logs/mafft_Chloroplast_Nicotiana_tabacum.log
+    jobid: 45
+    benchmark: benchmarks/mafft_Chloroplast_Nicotiana_tabacum.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:56 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Astasia_longa.fasta
+    output: results/aligned/Chloroplast_Astasia_longa.aln.fasta
+    log: logs/mafft_Chloroplast_Astasia_longa.log
+    jobid: 25
+    benchmark: benchmarks/mafft_Chloroplast_Astasia_longa.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:57 2025]
+Finished jobid: 77 (Rule: mafft_align)
+163 of 234 steps (70%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:57 2025]
+localrule annotate:
+    input: results/per_species/Arabidopsis_thaliana.fasta, results/qc/Arabidopsis_thaliana.qc.txt
+    output: results/annotated/Arabidopsis_thaliana.fasta
+    jobid: 6
+    reason: Forced execution
+    wildcards: species=Arabidopsis_thaliana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:57 2025]
+Finished jobid: 6 (Rule: annotate)
+164 of 234 steps (70%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 19:59:57 2025]
+localrule mafft_align:
+    input: results/annotated/Arabidopsis_thaliana.fasta
+    output: results/aligned/Arabidopsis_thaliana.aln.fasta
+    log: logs/mafft_Arabidopsis_thaliana.log
+    jobid: 5
+    benchmark: benchmarks/mafft_Arabidopsis_thaliana.txt
+    reason: Forced execution
+    wildcards: species=Arabidopsis_thaliana
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 19:59:59 2025]
+Finished jobid: 205 (Rule: mafft_align)
+165 of 234 steps (71%) done
+Execute 1 jobs...
+[Sun Nov 23 19:59:59 2025]
+localrule annotate:
+    input: results/per_species/Halobacterium_halobium.fasta, results/qc/Halobacterium_halobium.qc.txt
+    output: results/annotated/Halobacterium_halobium.fasta
+    jobid: 94
+    reason: Forced execution
+    wildcards: species=Halobacterium_halobium
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 19:59:59 2025]
+Finished jobid: 94 (Rule: annotate)
+166 of 234 steps (71%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 19:59:59 2025]
+localrule mafft_align:
+    input: results/annotated/Haloferax_volcanii.fasta
+    output: results/aligned/Haloferax_volcanii.aln.fasta
+    log: logs/mafft_Haloferax_volcanii.log
+    jobid: 105
+    benchmark: benchmarks/mafft_Haloferax_volcanii.txt
+    reason: Forced execution
+    wildcards: species=Haloferax_volcanii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 20:00:00 2025]
+Finished jobid: 33 (Rule: mafft_align)
+167 of 234 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:00 2025]
+localrule mafft_align:
+    input: results/annotated/Micrococcus_luteus.fasta
+    output: results/aligned/Micrococcus_luteus.aln.fasta
+    log: logs/mafft_Micrococcus_luteus.log
+    jobid: 125
+    benchmark: benchmarks/mafft_Micrococcus_luteus.txt
+    reason: Forced execution
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:01 2025]
+Finished jobid: 25 (Rule: mafft_align)
+168 of 234 steps (72%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 20:00:01 2025]
+localrule mafft_align:
+    input: results/annotated/Halobacterium_halobium.fasta
+    output: results/aligned/Halobacterium_halobium.aln.fasta
+    log: logs/mafft_Halobacterium_halobium.log
+    jobid: 93
+    benchmark: benchmarks/mafft_Halobacterium_halobium.txt
+    reason: Forced execution
+    wildcards: species=Halobacterium_halobium
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 20:00:01 2025]
+Finished jobid: 45 (Rule: mafft_align)
+169 of 234 steps (72%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:02 2025]
+localrule mafft_align:
+    input: results/annotated/Streptomyces_griseus.fasta
+    output: results/aligned/Streptomyces_griseus.aln.fasta
+    log: logs/mafft_Streptomyces_griseus.log
+    jobid: 185
+    benchmark: benchmarks/mafft_Streptomyces_griseus.txt
+    reason: Forced execution
+    wildcards: species=Streptomyces_griseus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:02 2025]
+Finished jobid: 5 (Rule: mafft_align)
+170 of 234 steps (73%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:02 2025]
+localrule mafft_align:
+    input: results/annotated/Pirellula_marina.fasta
+    output: results/aligned/Pirellula_marina.aln.fasta
+    log: logs/mafft_Pirellula_marina.log
+    jobid: 145
+    benchmark: benchmarks/mafft_Pirellula_marina.txt
+    reason: Forced execution
+    wildcards: species=Pirellula_marina
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:05 2025]
+Finished jobid: 105 (Rule: mafft_align)
+171 of 234 steps (73%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:05 2025]
+localrule mafft_align:
+    input: results/annotated/Desulfurococcus_mobilis.fasta
+    output: results/aligned/Desulfurococcus_mobilis.aln.fasta
+    log: logs/mafft_Desulfurococcus_mobilis.log
+    jobid: 65
+    benchmark: benchmarks/mafft_Desulfurococcus_mobilis.txt
+    reason: Forced execution
+    wildcards: species=Desulfurococcus_mobilis
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:06 2025]
+Finished jobid: 125 (Rule: mafft_align)
+172 of 234 steps (74%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:06 2025]
+localrule mafft_align:
+    input: results/annotated/Synechococcus_sp_str_CIP_6301.fasta
+    output: results/aligned/Synechococcus_sp_str_CIP_6301.aln.fasta
+    log: logs/mafft_Synechococcus_sp_str_CIP_6301.log
+    jobid: 193
+    benchmark: benchmarks/mafft_Synechococcus_sp_str_CIP_6301.txt
+    reason: Forced execution
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:07 2025]
+Finished jobid: 93 (Rule: mafft_align)
+173 of 234 steps (74%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 20:00:07 2025]
+localrule mafft_align:
+    input: results/annotated/Thermus_thermophilus_HB8.fasta
+    output: results/aligned/Thermus_thermophilus_HB8.aln.fasta
+    log: logs/mafft_Thermus_thermophilus_HB8.log
+    jobid: 225
+    benchmark: benchmarks/mafft_Thermus_thermophilus_HB8.txt
+    reason: Forced execution
+    wildcards: species=Thermus_thermophilus_HB8
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 20:00:07 2025]
+Finished jobid: 185 (Rule: mafft_align)
+174 of 234 steps (74%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:07 2025]
+localrule mafft_align:
+    input: results/annotated/Fragaria_ananassa.fasta
+    output: results/aligned/Fragaria_ananassa.aln.fasta
+    log: logs/mafft_Fragaria_ananassa.log
+    jobid: 85
+    benchmark: benchmarks/mafft_Fragaria_ananassa.txt
+    reason: Forced execution
+    wildcards: species=Fragaria_ananassa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:08 2025]
+Finished jobid: 145 (Rule: mafft_align)
+175 of 234 steps (75%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:08 2025]
+localrule mafft_align:
+    input: results/annotated/Homo_sapien.fasta
+    output: results/aligned/Homo_sapien.aln.fasta
+    log: logs/mafft_Homo_sapien.log
+    jobid: 113
+    benchmark: benchmarks/mafft_Homo_sapien.txt
+    reason: Forced execution
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:10 2025]
+Finished jobid: 65 (Rule: mafft_align)
+176 of 234 steps (75%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:10 2025]
+Finished jobid: 193 (Rule: mafft_align)
+177 of 234 steps (76%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:12 2025]
+Finished jobid: 225 (Rule: mafft_align)
+178 of 234 steps (76%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:12 2025]
+Finished jobid: 85 (Rule: mafft_align)
+179 of 234 steps (76%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:12 2025]
+localrule iqtree_build:
+    input: results/aligned/Rhodobacter_sphaeroides.aln.fasta
+    output: results/trees/Rhodobacter_sphaeroides.treefile, results/trees/Rhodobacter_sphaeroides.iqtree, results/trees/Rhodobacter_sphaeroides.log
+    log: logs/iqtree_Rhodobacter_sphaeroides.log
+    jobid: 168
+    benchmark: benchmarks/iqtree_Rhodobacter_sphaeroides.txt
+    reason: Forced execution
+    wildcards: species=Rhodobacter_sphaeroides
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:12 2025]
+Finished jobid: 168 (Rule: iqtree_build)
+180 of 234 steps (77%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+Execute 1 jobs...
+[Sun Nov 23 20:00:12 2025]
+localrule iqtree_build:
+    input: results/aligned/Herdmania_momus.aln.fasta
+    output: results/trees/Herdmania_momus.treefile, results/trees/Herdmania_momus.iqtree, results/trees/Herdmania_momus.log
+    log: logs/iqtree_Herdmania_momus.log
+    jobid: 108
+    benchmark: benchmarks/iqtree_Herdmania_momus.txt
+    reason: Forced execution
+    wildcards: species=Herdmania_momus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:12 2025]
+Finished jobid: 113 (Rule: mafft_align)
+181 of 234 steps (77%) done
+Select jobs to execute...
+[Sun Nov 23 20:00:13 2025]
+Finished jobid: 108 (Rule: iqtree_build)
+182 of 234 steps (78%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:13 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Oryza_sativa.aln.fasta
+    output: results/trees/Chloroplast_Oryza_sativa.treefile, results/trees/Chloroplast_Oryza_sativa.iqtree, results/trees/Chloroplast_Oryza_sativa.log
+    log: logs/iqtree_Chloroplast_Oryza_sativa.log
+    jobid: 48
+    benchmark: benchmarks/iqtree_Chloroplast_Oryza_sativa.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Oryza_sativa
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:13 2025]
+Finished jobid: 48 (Rule: iqtree_build)
+183 of 234 steps (78%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:13 2025]
+localrule iqtree_build:
+    input: results/aligned/Caenorhabditis_elegans.aln.fasta
+    output: results/trees/Caenorhabditis_elegans.treefile, results/trees/Caenorhabditis_elegans.iqtree, results/trees/Caenorhabditis_elegans.log
+    log: logs/iqtree_Caenorhabditis_elegans.log
+    jobid: 20
+    benchmark: benchmarks/iqtree_Caenorhabditis_elegans.txt
+    reason: Forced execution
+    wildcards: species=Caenorhabditis_elegans
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:13 2025]
+Finished jobid: 20 (Rule: iqtree_build)
+184 of 234 steps (79%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:13 2025]
+localrule iqtree_build:
+    input: results/aligned/Tetrahymena_thermophila.aln.fasta
+    output: results/trees/Tetrahymena_thermophila.treefile, results/trees/Tetrahymena_thermophila.iqtree, results/trees/Tetrahymena_thermophila.log
+    log: logs/iqtree_Tetrahymena_thermophila.log
+    jobid: 200
+    benchmark: benchmarks/iqtree_Tetrahymena_thermophila.txt
+    reason: Forced execution
+    wildcards: species=Tetrahymena_thermophila
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:13 2025]
+Finished jobid: 200 (Rule: iqtree_build)
+185 of 234 steps (79%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:13 2025]
+localrule iqtree_build:
+    input: results/aligned/Physarum_polycephalum.aln.fasta
+    output: results/trees/Physarum_polycephalum.treefile, results/trees/Physarum_polycephalum.iqtree, results/trees/Physarum_polycephalum.log
+    log: logs/iqtree_Physarum_polycephalum.log
+    jobid: 140
+    benchmark: benchmarks/iqtree_Physarum_polycephalum.txt
+    reason: Forced execution
+    wildcards: species=Physarum_polycephalum
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:13 2025]
+Finished jobid: 140 (Rule: iqtree_build)
+186 of 234 steps (79%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:13 2025]
+localrule iqtree_build:
+    input: results/aligned/Flexibacter_flexilis.aln.fasta
+    output: results/trees/Flexibacter_flexilis.treefile, results/trees/Flexibacter_flexilis.iqtree, results/trees/Flexibacter_flexilis.log
+    log: logs/iqtree_Flexibacter_flexilis.log
+    jobid: 80
+    benchmark: benchmarks/iqtree_Flexibacter_flexilis.txt
+    reason: Forced execution
+    wildcards: species=Flexibacter_flexilis
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:14 2025]
+Finished jobid: 80 (Rule: iqtree_build)
+187 of 234 steps (80%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:14 2025]
+localrule iqtree_build:
+    input: results/aligned/Xenopus_laevis.aln.fasta
+    output: results/trees/Xenopus_laevis.treefile, results/trees/Xenopus_laevis.iqtree, results/trees/Xenopus_laevis.log
+    log: logs/iqtree_Xenopus_laevis.log
+    jobid: 232
+    benchmark: benchmarks/iqtree_Xenopus_laevis.txt
+    reason: Forced execution
+    wildcards: species=Xenopus_laevis
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:14 2025]
+Finished jobid: 232 (Rule: iqtree_build)
+188 of 234 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:14 2025]
+localrule iqtree_build:
+    input: results/aligned/Homo_sapien.aln.fasta
+    output: results/trees/Homo_sapien.treefile, results/trees/Homo_sapien.iqtree, results/trees/Homo_sapien.log
+    log: logs/iqtree_Homo_sapien.log
+    jobid: 112
+    benchmark: benchmarks/iqtree_Homo_sapien.txt
+    reason: Forced execution
+    wildcards: species=Homo_sapien
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:14 2025]
+Finished jobid: 112 (Rule: iqtree_build)
+189 of 234 steps (81%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:14 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Pisum_sativum.aln.fasta
+    output: results/trees/Chloroplast_Pisum_sativum.treefile, results/trees/Chloroplast_Pisum_sativum.iqtree, results/trees/Chloroplast_Pisum_sativum.log
+    log: logs/iqtree_Chloroplast_Pisum_sativum.log
+    jobid: 52
+    benchmark: benchmarks/iqtree_Chloroplast_Pisum_sativum.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Pisum_sativum
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:14 2025]
+Finished jobid: 52 (Rule: iqtree_build)
+190 of 234 steps (81%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:15 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Astasia_longa.aln.fasta
+    output: results/trees/Chloroplast_Astasia_longa.treefile, results/trees/Chloroplast_Astasia_longa.iqtree, results/trees/Chloroplast_Astasia_longa.log
+    log: logs/iqtree_Chloroplast_Astasia_longa.log
+    jobid: 24
+    benchmark: benchmarks/iqtree_Chloroplast_Astasia_longa.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Astasia_longa
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:15 2025]
+Finished jobid: 24 (Rule: iqtree_build)
+191 of 234 steps (82%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:15 2025]
+localrule iqtree_build:
+    input: results/aligned/Thermococcus_celer.aln.fasta
+    output: results/trees/Thermococcus_celer.treefile, results/trees/Thermococcus_celer.iqtree, results/trees/Thermococcus_celer.log
+    log: logs/iqtree_Thermococcus_celer.log
+    jobid: 204
+    benchmark: benchmarks/iqtree_Thermococcus_celer.txt
+    reason: Forced execution
+    wildcards: species=Thermococcus_celer
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:15 2025]
+Finished jobid: 204 (Rule: iqtree_build)
+192 of 234 steps (82%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:15 2025]
+localrule iqtree_build:
+    input: results/aligned/Pirellula_marina.aln.fasta
+    output: results/trees/Pirellula_marina.treefile, results/trees/Pirellula_marina.iqtree, results/trees/Pirellula_marina.log
+    log: logs/iqtree_Pirellula_marina.log
+    jobid: 144
+    benchmark: benchmarks/iqtree_Pirellula_marina.txt
+    reason: Forced execution
+    wildcards: species=Pirellula_marina
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:15 2025]
+Finished jobid: 144 (Rule: iqtree_build)
+193 of 234 steps (82%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:15 2025]
+localrule iqtree_build:
+    input: results/aligned/Fragaria_ananassa.aln.fasta
+    output: results/trees/Fragaria_ananassa.treefile, results/trees/Fragaria_ananassa.iqtree, results/trees/Fragaria_ananassa.log
+    log: logs/iqtree_Fragaria_ananassa.log
+    jobid: 84
+    benchmark: benchmarks/iqtree_Fragaria_ananassa.txt
+    reason: Forced execution
+    wildcards: species=Fragaria_ananassa
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:16 2025]
+Finished jobid: 84 (Rule: iqtree_build)
+194 of 234 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:16 2025]
+localrule iqtree_build:
+    input: results/aligned/Saccharomyces_cerevisiae.aln.fasta
+    output: results/trees/Saccharomyces_cerevisiae.treefile, results/trees/Saccharomyces_cerevisiae.iqtree, results/trees/Saccharomyces_cerevisiae.log
+    log: logs/iqtree_Saccharomyces_cerevisiae.log
+    jobid: 176
+    benchmark: benchmarks/iqtree_Saccharomyces_cerevisiae.txt
+    reason: Forced execution
+    wildcards: species=Saccharomyces_cerevisiae
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:16 2025]
+Finished jobid: 176 (Rule: iqtree_build)
+195 of 234 steps (83%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:16 2025]
+localrule iqtree_build:
+    input: results/aligned/Methanobacterium_thermoautotrophicum.aln.fasta
+    output: results/trees/Methanobacterium_thermoautotrophicum.treefile, results/trees/Methanobacterium_thermoautotrophicum.iqtree, results/trees/Methanobacterium_thermoautotrophicum.log
+    log: logs/iqtree_Methanobacterium_thermoautotrophicum.log
+    jobid: 116
+    benchmark: benchmarks/iqtree_Methanobacterium_thermoautotrophicum.txt
+    reason: Forced execution
+    wildcards: species=Methanobacterium_thermoautotrophicum
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:16 2025]
+Finished jobid: 116 (Rule: iqtree_build)
+196 of 234 steps (84%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:16 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Zea_mays.aln.fasta
+    output: results/trees/Chloroplast_Zea_mays.treefile, results/trees/Chloroplast_Zea_mays.iqtree, results/trees/Chloroplast_Zea_mays.log
+    log: logs/iqtree_Chloroplast_Zea_mays.log
+    jobid: 56
+    benchmark: benchmarks/iqtree_Chloroplast_Zea_mays.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Zea_mays
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:16 2025]
+Finished jobid: 56 (Rule: iqtree_build)
+197 of 234 steps (84%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:16 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Chlorella_ellipsoidea.aln.fasta
+    output: results/trees/Chloroplast_Chlorella_ellipsoidea.treefile, results/trees/Chloroplast_Chlorella_ellipsoidea.iqtree, results/trees/Chloroplast_Chlorella_ellipsoidea.log
+    log: logs/iqtree_Chloroplast_Chlorella_ellipsoidea.log
+    jobid: 28
+    benchmark: benchmarks/iqtree_Chloroplast_Chlorella_ellipsoidea.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:17 2025]
+Finished jobid: 28 (Rule: iqtree_build)
+198 of 234 steps (85%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:17 2025]
+localrule iqtree_build:
+    input: results/aligned/Thermofilum_pendens.aln.fasta
+    output: results/trees/Thermofilum_pendens.treefile, results/trees/Thermofilum_pendens.iqtree, results/trees/Thermofilum_pendens.log
+    log: logs/iqtree_Thermofilum_pendens.log
+    jobid: 208
+    benchmark: benchmarks/iqtree_Thermofilum_pendens.txt
+    reason: Forced execution
+    wildcards: species=Thermofilum_pendens
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:17 2025]
+Finished jobid: 208 (Rule: iqtree_build)
+199 of 234 steps (85%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:17 2025]
+localrule iqtree_build:
+    input: results/aligned/Prorocentrum_micans.aln.fasta
+    output: results/trees/Prorocentrum_micans.treefile, results/trees/Prorocentrum_micans.iqtree, results/trees/Prorocentrum_micans.log
+    log: logs/iqtree_Prorocentrum_micans.log
+    jobid: 148
+    benchmark: benchmarks/iqtree_Prorocentrum_micans.txt
+    reason: Forced execution
+    wildcards: species=Prorocentrum_micans
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:18 2025]
+Finished jobid: 148 (Rule: iqtree_build)
+200 of 234 steps (85%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:18 2025]
+localrule iqtree_build:
+    input: results/aligned/Frankia_sp.aln.fasta
+    output: results/trees/Frankia_sp.treefile, results/trees/Frankia_sp.iqtree, results/trees/Frankia_sp.log
+    log: logs/iqtree_Frankia_sp.log
+    jobid: 88
+    benchmark: benchmarks/iqtree_Frankia_sp.txt
+    reason: Forced execution
+    wildcards: species=Frankia_sp
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:18 2025]
+Finished jobid: 88 (Rule: iqtree_build)
+201 of 234 steps (86%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:18 2025]
+localrule iqtree_build:
+    input: results/aligned/Streptomyces_ambofaciens.aln.fasta
+    output: results/trees/Streptomyces_ambofaciens.treefile, results/trees/Streptomyces_ambofaciens.iqtree, results/trees/Streptomyces_ambofaciens.log
+    log: logs/iqtree_Streptomyces_ambofaciens.log
+    jobid: 180
+    benchmark: benchmarks/iqtree_Streptomyces_ambofaciens.txt
+    reason: Forced execution
+    wildcards: species=Streptomyces_ambofaciens
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:18 2025]
+Finished jobid: 180 (Rule: iqtree_build)
+202 of 234 steps (86%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:18 2025]
+localrule iqtree_build:
+    input: results/aligned/Methanospirillum_hungatii.aln.fasta
+    output: results/trees/Methanospirillum_hungatii.treefile, results/trees/Methanospirillum_hungatii.iqtree, results/trees/Methanospirillum_hungatii.log
+    log: logs/iqtree_Methanospirillum_hungatii.log
+    jobid: 120
+    benchmark: benchmarks/iqtree_Methanospirillum_hungatii.txt
+    reason: Forced execution
+    wildcards: species=Methanospirillum_hungatii
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:18 2025]
+Finished jobid: 120 (Rule: iqtree_build)
+203 of 234 steps (87%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:18 2025]
+localrule iqtree_build:
+    input: results/aligned/Crithidia_fasciculata.aln.fasta
+    output: results/trees/Crithidia_fasciculata.treefile, results/trees/Crithidia_fasciculata.iqtree, results/trees/Crithidia_fasciculata.log
+    log: logs/iqtree_Crithidia_fasciculata.log
+    jobid: 60
+    benchmark: benchmarks/iqtree_Crithidia_fasciculata.txt
+    reason: Forced execution
+    wildcards: species=Crithidia_fasciculata
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:19 2025]
+Finished jobid: 60 (Rule: iqtree_build)
+204 of 234 steps (87%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:19 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Conopholis_americana.aln.fasta
+    output: results/trees/Chloroplast_Conopholis_americana.treefile, results/trees/Chloroplast_Conopholis_americana.iqtree, results/trees/Chloroplast_Conopholis_americana.log
+    log: logs/iqtree_Chloroplast_Conopholis_americana.log
+    jobid: 32
+    benchmark: benchmarks/iqtree_Chloroplast_Conopholis_americana.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Conopholis_americana
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:19 2025]
+Finished jobid: 32 (Rule: iqtree_build)
+205 of 234 steps (88%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:19 2025]
+localrule iqtree_build:
+    input: results/aligned/Thermoplasma_acidophilum.aln.fasta
+    output: results/trees/Thermoplasma_acidophilum.treefile, results/trees/Thermoplasma_acidophilum.iqtree, results/trees/Thermoplasma_acidophilum.log
+    log: logs/iqtree_Thermoplasma_acidophilum.log
+    jobid: 212
+    benchmark: benchmarks/iqtree_Thermoplasma_acidophilum.txt
+    reason: Forced execution
+    wildcards: species=Thermoplasma_acidophilum
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:19 2025]
+Finished jobid: 212 (Rule: iqtree_build)
+206 of 234 steps (88%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:19 2025]
+localrule iqtree_build:
+    input: results/aligned/Pseudomonas_aeruginosa.aln.fasta
+    output: results/trees/Pseudomonas_aeruginosa.treefile, results/trees/Pseudomonas_aeruginosa.iqtree, results/trees/Pseudomonas_aeruginosa.log
+    log: logs/iqtree_Pseudomonas_aeruginosa.log
+    jobid: 152
+    benchmark: benchmarks/iqtree_Pseudomonas_aeruginosa.txt
+    reason: Forced execution
+    wildcards: species=Pseudomonas_aeruginosa
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:19 2025]
+Finished jobid: 152 (Rule: iqtree_build)
+207 of 234 steps (88%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:19 2025]
+localrule iqtree_build:
+    input: results/aligned/Halobacterium_halobium.aln.fasta
+    output: results/trees/Halobacterium_halobium.treefile, results/trees/Halobacterium_halobium.iqtree, results/trees/Halobacterium_halobium.log
+    log: logs/iqtree_Halobacterium_halobium.log
+    jobid: 92
+    benchmark: benchmarks/iqtree_Halobacterium_halobium.txt
+    reason: Forced execution
+    wildcards: species=Halobacterium_halobium
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:20 2025]
+Finished jobid: 92 (Rule: iqtree_build)
+208 of 234 steps (89%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:20 2025]
+localrule iqtree_build:
+    input: results/aligned/Arabidopsis_thaliana.aln.fasta
+    output: results/trees/Arabidopsis_thaliana.treefile, results/trees/Arabidopsis_thaliana.iqtree, results/trees/Arabidopsis_thaliana.log
+    log: logs/iqtree_Arabidopsis_thaliana.log
+    jobid: 4
+    benchmark: benchmarks/iqtree_Arabidopsis_thaliana.txt
+    reason: Forced execution
+    wildcards: species=Arabidopsis_thaliana
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:20 2025]
+Finished jobid: 4 (Rule: iqtree_build)
+209 of 234 steps (89%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:20 2025]
+localrule iqtree_build:
+    input: results/aligned/Streptomyces_griseus.aln.fasta
+    output: results/trees/Streptomyces_griseus.treefile, results/trees/Streptomyces_griseus.iqtree, results/trees/Streptomyces_griseus.log
+    log: logs/iqtree_Streptomyces_griseus.log
+    jobid: 184
+    benchmark: benchmarks/iqtree_Streptomyces_griseus.txt
+    reason: Forced execution
+    wildcards: species=Streptomyces_griseus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:20 2025]
+Finished jobid: 184 (Rule: iqtree_build)
+210 of 234 steps (90%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:20 2025]
+localrule iqtree_build:
+    input: results/aligned/Micrococcus_luteus.aln.fasta
+    output: results/trees/Micrococcus_luteus.treefile, results/trees/Micrococcus_luteus.iqtree, results/trees/Micrococcus_luteus.log
+    log: logs/iqtree_Micrococcus_luteus.log
+    jobid: 124
+    benchmark: benchmarks/iqtree_Micrococcus_luteus.txt
+    reason: Forced execution
+    wildcards: species=Micrococcus_luteus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:20 2025]
+Finished jobid: 124 (Rule: iqtree_build)
+211 of 234 steps (90%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:20 2025]
+localrule iqtree_build:
+    input: results/aligned/Desulfurococcus_mobilis.aln.fasta
+    output: results/trees/Desulfurococcus_mobilis.treefile, results/trees/Desulfurococcus_mobilis.iqtree, results/trees/Desulfurococcus_mobilis.log
+    log: logs/iqtree_Desulfurococcus_mobilis.log
+    jobid: 64
+    benchmark: benchmarks/iqtree_Desulfurococcus_mobilis.txt
+    reason: Forced execution
+    wildcards: species=Desulfurococcus_mobilis
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:20 2025]
+Finished jobid: 64 (Rule: iqtree_build)
+212 of 234 steps (91%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:20 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Euglena_gracilis.aln.fasta
+    output: results/trees/Chloroplast_Euglena_gracilis.treefile, results/trees/Chloroplast_Euglena_gracilis.iqtree, results/trees/Chloroplast_Euglena_gracilis.log
+    log: logs/iqtree_Chloroplast_Euglena_gracilis.log
+    jobid: 36
+    benchmark: benchmarks/iqtree_Chloroplast_Euglena_gracilis.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Euglena_gracilis
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:21 2025]
+Finished jobid: 36 (Rule: iqtree_build)
+213 of 234 steps (91%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:21 2025]
+localrule iqtree_build:
+    input: results/aligned/Thermoproteus_tenax.aln.fasta
+    output: results/trees/Thermoproteus_tenax.treefile, results/trees/Thermoproteus_tenax.iqtree, results/trees/Thermoproteus_tenax.log
+    log: logs/iqtree_Thermoproteus_tenax.log
+    jobid: 216
+    benchmark: benchmarks/iqtree_Thermoproteus_tenax.txt
+    reason: Forced execution
+    wildcards: species=Thermoproteus_tenax
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:21 2025]
+Finished jobid: 216 (Rule: iqtree_build)
+214 of 234 steps (91%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:21 2025]
+localrule iqtree_build:
+    input: results/aligned/Pseudomonas_cepacia.aln.fasta
+    output: results/trees/Pseudomonas_cepacia.treefile, results/trees/Pseudomonas_cepacia.iqtree, results/trees/Pseudomonas_cepacia.log
+    log: logs/iqtree_Pseudomonas_cepacia.log
+    jobid: 156
+    benchmark: benchmarks/iqtree_Pseudomonas_cepacia.txt
+    reason: Forced execution
+    wildcards: species=Pseudomonas_cepacia
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:21 2025]
+Finished jobid: 156 (Rule: iqtree_build)
+215 of 234 steps (92%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:21 2025]
+localrule iqtree_build:
+    input: results/aligned/Oryza_sativa.aln.fasta
+    output: results/trees/Oryza_sativa.treefile, results/trees/Oryza_sativa.iqtree, results/trees/Oryza_sativa.log
+    log: logs/iqtree_Oryza_sativa.log
+    jobid: 136
+    benchmark: benchmarks/iqtree_Oryza_sativa.txt
+    reason: Forced execution
+    wildcards: species=Oryza_sativa
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:21 2025]
+Finished jobid: 136 (Rule: iqtree_build)
+216 of 234 steps (92%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:21 2025]
+localrule iqtree_build:
+    input: results/aligned/Mus_musculus.aln.fasta
+    output: results/trees/Mus_musculus.treefile, results/trees/Mus_musculus.iqtree, results/trees/Mus_musculus.log
+    log: logs/iqtree_Mus_musculus.log
+    jobid: 128
+    benchmark: benchmarks/iqtree_Mus_musculus.txt
+    reason: Forced execution
+    wildcards: species=Mus_musculus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:21 2025]
+Finished jobid: 128 (Rule: iqtree_build)
+217 of 234 steps (93%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:21 2025]
+localrule iqtree_build:
+    input: results/aligned/Drosophila_melanogaster.aln.fasta
+    output: results/trees/Drosophila_melanogaster.treefile, results/trees/Drosophila_melanogaster.iqtree, results/trees/Drosophila_melanogaster.log
+    log: logs/iqtree_Drosophila_melanogaster.log
+    jobid: 68
+    benchmark: benchmarks/iqtree_Drosophila_melanogaster.txt
+    reason: Forced execution
+    wildcards: species=Drosophila_melanogaster
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:22 2025]
+Finished jobid: 68 (Rule: iqtree_build)
+218 of 234 steps (93%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:22 2025]
+localrule iqtree_build:
+    input: results/aligned/Euglena_gracilis.aln.fasta
+    output: results/trees/Euglena_gracilis.treefile, results/trees/Euglena_gracilis.iqtree, results/trees/Euglena_gracilis.log
+    log: logs/iqtree_Euglena_gracilis.log
+    jobid: 76
+    benchmark: benchmarks/iqtree_Euglena_gracilis.txt
+    reason: Forced execution
+    wildcards: species=Euglena_gracilis
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:22 2025]
+Finished jobid: 76 (Rule: iqtree_build)
+219 of 234 steps (94%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:22 2025]
+localrule iqtree_build:
+    input: results/aligned/Trypanosoma_brucei.aln.fasta
+    output: results/trees/Trypanosoma_brucei.treefile, results/trees/Trypanosoma_brucei.iqtree, results/trees/Trypanosoma_brucei.log
+    log: logs/iqtree_Trypanosoma_brucei.log
+    jobid: 228
+    benchmark: benchmarks/iqtree_Trypanosoma_brucei.txt
+    reason: Forced execution
+    wildcards: species=Trypanosoma_brucei
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:22 2025]
+Finished jobid: 228 (Rule: iqtree_build)
+220 of 234 steps (94%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:22 2025]
+localrule iqtree_build:
+    input: results/aligned/Bacillus_subtilis_23S.aln.fasta
+    output: results/trees/Bacillus_subtilis_23S.treefile, results/trees/Bacillus_subtilis_23S.iqtree, results/trees/Bacillus_subtilis_23S.log
+    log: logs/iqtree_Bacillus_subtilis_23S.log
+    jobid: 16
+    benchmark: benchmarks/iqtree_Bacillus_subtilis_23S.txt
+    reason: Forced execution
+    wildcards: species=Bacillus_subtilis_23S
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:22 2025]
+Finished jobid: 16 (Rule: iqtree_build)
+221 of 234 steps (94%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:23 2025]
+localrule iqtree_build:
+    input: results/aligned/Synechococcus_sp_str_CIP_6301.aln.fasta
+    output: results/trees/Synechococcus_sp_str_CIP_6301.treefile, results/trees/Synechococcus_sp_str_CIP_6301.iqtree, results/trees/Synechococcus_sp_str_CIP_6301.log
+    log: logs/iqtree_Synechococcus_sp_str_CIP_6301.log
+    jobid: 192
+    benchmark: benchmarks/iqtree_Synechococcus_sp_str_CIP_6301.txt
+    reason: Forced execution
+    wildcards: species=Synechococcus_sp_str_CIP_6301
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:23 2025]
+Finished jobid: 192 (Rule: iqtree_build)
+222 of 234 steps (95%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:23 2025]
+localrule iqtree_build:
+    input: results/aligned/Mycobacterium_leprae.aln.fasta
+    output: results/trees/Mycobacterium_leprae.treefile, results/trees/Mycobacterium_leprae.iqtree, results/trees/Mycobacterium_leprae.log
+    log: logs/iqtree_Mycobacterium_leprae.log
+    jobid: 132
+    benchmark: benchmarks/iqtree_Mycobacterium_leprae.txt
+    reason: Forced execution
+    wildcards: species=Mycobacterium_leprae
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:23 2025]
+Finished jobid: 132 (Rule: iqtree_build)
+223 of 234 steps (95%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:23 2025]
+localrule iqtree_build:
+    input: results/aligned/Escherichia_coli.aln.fasta
+    output: results/trees/Escherichia_coli.treefile, results/trees/Escherichia_coli.iqtree, results/trees/Escherichia_coli.log
+    log: logs/iqtree_Escherichia_coli.log
+    jobid: 72
+    benchmark: benchmarks/iqtree_Escherichia_coli.txt
+    reason: Forced execution
+    wildcards: species=Escherichia_coli
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:23 2025]
+Finished jobid: 72 (Rule: iqtree_build)
+224 of 234 steps (96%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:23 2025]
+localrule iqtree_build:
+    input: results/aligned/Tetrahymena_pyriformis.aln.fasta
+    output: results/trees/Tetrahymena_pyriformis.treefile, results/trees/Tetrahymena_pyriformis.iqtree, results/trees/Tetrahymena_pyriformis.log
+    log: logs/iqtree_Tetrahymena_pyriformis.log
+    jobid: 196
+    benchmark: benchmarks/iqtree_Tetrahymena_pyriformis.txt
+    reason: Forced execution
+    wildcards: species=Tetrahymena_pyriformis
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:24 2025]
+Finished jobid: 196 (Rule: iqtree_build)
+225 of 234 steps (96%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:24 2025]
+localrule iqtree_build:
+    input: results/aligned/Bacillus_stearothermophilus.aln.fasta
+    output: results/trees/Bacillus_stearothermophilus.treefile, results/trees/Bacillus_stearothermophilus.iqtree, results/trees/Bacillus_stearothermophilus.log
+    log: logs/iqtree_Bacillus_stearothermophilus.log
+    jobid: 12
+    benchmark: benchmarks/iqtree_Bacillus_stearothermophilus.txt
+    reason: Forced execution
+    wildcards: species=Bacillus_stearothermophilus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:24 2025]
+Finished jobid: 12 (Rule: iqtree_build)
+226 of 234 steps (97%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:24 2025]
+localrule iqtree_build:
+    input: results/aligned/Sulfolobus_solfataricus.aln.fasta
+    output: results/trees/Sulfolobus_solfataricus.treefile, results/trees/Sulfolobus_solfataricus.iqtree, results/trees/Sulfolobus_solfataricus.log
+    log: logs/iqtree_Sulfolobus_solfataricus.log
+    jobid: 188
+    benchmark: benchmarks/iqtree_Sulfolobus_solfataricus.txt
+    reason: Forced execution
+    wildcards: species=Sulfolobus_solfataricus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:24 2025]
+Finished jobid: 188 (Rule: iqtree_build)
+227 of 234 steps (97%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:24 2025]
+localrule iqtree_build:
+    input: results/aligned/Archaeoglobus_fulgidus.aln.fasta
+    output: results/trees/Archaeoglobus_fulgidus.treefile, results/trees/Archaeoglobus_fulgidus.iqtree, results/trees/Archaeoglobus_fulgidus.log
+    log: logs/iqtree_Archaeoglobus_fulgidus.log
+    jobid: 8
+    benchmark: benchmarks/iqtree_Archaeoglobus_fulgidus.txt
+    reason: Forced execution
+    wildcards: species=Archaeoglobus_fulgidus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:24 2025]
+Finished jobid: 8 (Rule: iqtree_build)
+228 of 234 steps (97%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:24 2025]
+localrule iqtree_build:
+    input: results/aligned/Chloroplast_Nicotiana_tabacum.aln.fasta
+    output: results/trees/Chloroplast_Nicotiana_tabacum.treefile, results/trees/Chloroplast_Nicotiana_tabacum.iqtree, results/trees/Chloroplast_Nicotiana_tabacum.log
+    log: logs/iqtree_Chloroplast_Nicotiana_tabacum.log
+    jobid: 44
+    benchmark: benchmarks/iqtree_Chloroplast_Nicotiana_tabacum.txt
+    reason: Forced execution
+    wildcards: species=Chloroplast_Nicotiana_tabacum
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:24 2025]
+Finished jobid: 44 (Rule: iqtree_build)
+229 of 234 steps (98%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Haloferax_volcanii.aln.fasta
+    output: results/trees/Haloferax_volcanii.treefile, results/trees/Haloferax_volcanii.iqtree, results/trees/Haloferax_volcanii.log
+    log: logs/iqtree_Haloferax_volcanii.log
+    jobid: 104
+    benchmark: benchmarks/iqtree_Haloferax_volcanii.txt
+    reason: Forced execution
+    wildcards: species=Haloferax_volcanii
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:25 2025]
+Finished jobid: 104 (Rule: iqtree_build)
+230 of 234 steps (98%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Rhodobacter_capsulatus.aln.fasta
+    output: results/trees/Rhodobacter_capsulatus.treefile, results/trees/Rhodobacter_capsulatus.iqtree, results/trees/Rhodobacter_capsulatus.log
+    log: logs/iqtree_Rhodobacter_capsulatus.log
+    jobid: 164
+    benchmark: benchmarks/iqtree_Rhodobacter_capsulatus.txt
+    reason: Forced execution
+    wildcards: species=Rhodobacter_capsulatus
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+Select jobs to execute...
+[Sun Nov 23 20:00:25 2025]
+Finished jobid: 164 (Rule: iqtree_build)
+231 of 234 steps (99%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Halobacterium_marismortui.aln.fasta
+    output: results/trees/Halobacterium_marismortui.treefile, results/trees/Halobacterium_marismortui.iqtree, results/trees/Halobacterium_marismortui.log
+    log: logs/iqtree_Halobacterium_marismortui.log
+    jobid: 96
+    benchmark: benchmarks/iqtree_Halobacterium_marismortui.txt
+    reason: Forced execution
+    wildcards: species=Halobacterium_marismortui
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:25 2025]
+Finished jobid: 96 (Rule: iqtree_build)
+232 of 234 steps (99%) done
+Execute 1 jobs...
+[Sun Nov 23 20:00:25 2025]
+localrule iqtree_build:
+    input: results/aligned/Thermus_thermophilus_HB8.aln.fasta
+    output: results/trees/Thermus_thermophilus_HB8.treefile, results/trees/Thermus_thermophilus_HB8.iqtree, results/trees/Thermus_thermophilus_HB8.log
+    log: logs/iqtree_Thermus_thermophilus_HB8.log
+    jobid: 224
+    benchmark: benchmarks/iqtree_Thermus_thermophilus_HB8.txt
+    reason: Forced execution
+    wildcards: species=Thermus_thermophilus_HB8
+    threads: 4
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Sun Nov 23 20:00:25 2025]
+Finished jobid: 224 (Rule: iqtree_build)
+233 of 234 steps (99.6%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 20:00:25 2025]
+localrule all:
+    input: results/trees/Arabidopsis_thaliana.treefile, results/trees/Archaeoglobus_fulgidus.treefile, results/trees/Bacillus_stearothermophilus.treefile, results/trees/Bacillus_subtilis_23S.treefile, results/trees/Caenorhabditis_elegans.treefile, results/trees/Chloroplast_Astasia_longa.treefile, results/trees/Chloroplast_Chlorella_ellipsoidea.treefile, results/trees/Chloroplast_Conopholis_americana.treefile, results/trees/Chloroplast_Euglena_gracilis.treefile, results/trees/Chloroplast_Marchantia_polymorpha.treefile, results/trees/Chloroplast_Nicotiana_tabacum.treefile, results/trees/Chloroplast_Oryza_sativa.treefile, results/trees/Chloroplast_Pisum_sativum.treefile, results/trees/Chloroplast_Zea_mays.treefile, results/trees/Crithidia_fasciculata.treefile, results/trees/Desulfurococcus_mobilis.treefile, results/trees/Drosophila_melanogaster.treefile, results/trees/Escherichia_coli.treefile, results/trees/Euglena_gracilis.treefile, results/trees/Flexibacter_flexilis.treefile, results/trees/Fragaria_ananassa.treefile, results/trees/Frankia_sp.treefile, results/trees/Halobacterium_halobium.treefile, results/trees/Halobacterium_marismortui.treefile, results/trees/Halococcus_morrhuae.treefile, results/trees/Haloferax_volcanii.treefile, results/trees/Herdmania_momus.treefile, results/trees/Homo_sapien.treefile, results/trees/Methanobacterium_thermoautotrophicum.treefile, results/trees/Methanospirillum_hungatii.treefile, results/trees/Micrococcus_luteus.treefile, results/trees/Mus_musculus.treefile, results/trees/Mycobacterium_leprae.treefile, results/trees/Oryza_sativa.treefile, results/trees/Physarum_polycephalum.treefile, results/trees/Pirellula_marina.treefile, results/trees/Prorocentrum_micans.treefile, results/trees/Pseudomonas_aeruginosa.treefile, results/trees/Pseudomonas_cepacia.treefile, results/trees/Rattus_norvegicus.treefile, results/trees/Rhodobacter_capsulatus.treefile, results/trees/Rhodobacter_sphaeroides.treefile, results/trees/Ruminobacter_amylophilus.treefile, results/trees/Saccharomyces_cerevisiae.treefile, results/trees/Streptomyces_ambofaciens.treefile, results/trees/Streptomyces_griseus.treefile, results/trees/Sulfolobus_solfataricus.treefile, results/trees/Synechococcus_sp_str_CIP_6301.treefile, results/trees/Tetrahymena_pyriformis.treefile, results/trees/Tetrahymena_thermophila.treefile, results/trees/Thermococcus_celer.treefile, results/trees/Thermofilum_pendens.treefile, results/trees/Thermoplasma_acidophilum.treefile, results/trees/Thermoproteus_tenax.treefile, results/trees/Thermotoga_maritima.treefile, results/trees/Thermus_thermophilus_HB8.treefile, results/trees/Trypanosoma_brucei.treefile, results/trees/Xenopus_laevis.treefile
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 20:00:25 2025]
+Finished jobid: 0 (Rule: all)
+234 of 234 steps (100%) done
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T195900.527978.snakemake.log

@@ -1,0 +1,5 @@
+Species=Micrococcus_luteus
+Sequences=1
+Min_len=3093
+Max_len=3093
+Mean_len=3093.00

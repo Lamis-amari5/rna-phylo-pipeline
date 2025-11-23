@@ -1,0 +1,5 @@
+Species=Saccharomyces_cerevisiae
+Sequences=1
+Min_len=3550
+Max_len=3550
+Mean_len=3550.00

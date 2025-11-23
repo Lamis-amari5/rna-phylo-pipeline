@@ -1,0 +1,5 @@
+Species=Herdmania_momus
+Sequences=1
+Min_len=3721
+Max_len=3721
+Mean_len=3721.00

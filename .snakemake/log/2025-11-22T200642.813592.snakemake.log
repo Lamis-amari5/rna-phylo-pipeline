@@ -1,0 +1,3 @@
+ModuleNotFoundError in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 3:
+No module named 'Bio'
+  File "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 3, in <module>

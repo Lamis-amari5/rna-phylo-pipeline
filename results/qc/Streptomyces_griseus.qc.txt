@@ -1,0 +1,5 @@
+Species=Streptomyces_griseus
+Sequences=1
+Min_len=3129
+Max_len=3129
+Mean_len=3129.00

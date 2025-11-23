@@ -1,0 +1,272 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+annotate            58
+iqtree_build        58
+mafft_align         58
+quality_check       58
+total              233
+
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 02:07:10 2025]
+localrule annotate:
+    input: results/per_species/Archaeoglobus_fulgidus.fasta
+    output: results/annotated/Archaeoglobus_fulgidus.fasta
+    jobid: 60
+    reason: Missing output files: results/annotated/Archaeoglobus_fulgidus.fasta
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule quality_check:
+    input: results/per_species/Methanospirillum_hungatii.fasta
+    output: results/qc/Methanospirillum_hungatii.qc.txt
+    jobid: 30
+    reason: Missing output files: results/qc/Methanospirillum_hungatii.qc.txt
+    wildcards: species=Methanospirillum_hungatii
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule quality_check:
+    input: results/per_species/Bacillus_stearothermophilus.fasta
+    output: results/qc/Bacillus_stearothermophilus.qc.txt
+    jobid: 3
+    reason: Missing output files: results/qc/Bacillus_stearothermophilus.qc.txt
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule quality_check:
+    input: results/per_species/Thermotoga_maritima.fasta
+    output: results/qc/Thermotoga_maritima.qc.txt
+    jobid: 55
+    reason: Missing output files: results/qc/Thermotoga_maritima.qc.txt
+    wildcards: species=Thermotoga_maritima
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 60 (Rule: annotate)
+1 of 233 steps (0.4%) done
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 3 (Rule: quality_check)
+2 of 233 steps (1%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 02:07:10 2025]
+localrule annotate:
+    input: results/per_species/Mus_musculus.fasta
+    output: results/annotated/Mus_musculus.fasta
+    jobid: 90
+    reason: Missing output files: results/annotated/Mus_musculus.fasta
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_stearothermophilus.fasta
+    output: results/annotated/Bacillus_stearothermophilus.fasta
+    jobid: 61
+    reason: Missing output files: results/annotated/Bacillus_stearothermophilus.fasta
+    wildcards: species=Bacillus_stearothermophilus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 55 (Rule: quality_check)
+3 of 233 steps (1%) done
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 30 (Rule: quality_check)
+4 of 233 steps (2%) done
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 90 (Rule: annotate)
+5 of 233 steps (2%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 02:07:10 2025]
+localrule quality_check:
+    input: results/per_species/Micrococcus_luteus.fasta
+    output: results/qc/Micrococcus_luteus.qc.txt
+    jobid: 31
+    reason: Missing output files: results/qc/Micrococcus_luteus.qc.txt
+    wildcards: species=Micrococcus_luteus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule annotate:
+    input: results/per_species/Mycobacterium_leprae.fasta
+    output: results/annotated/Mycobacterium_leprae.fasta
+    jobid: 91
+    reason: Missing output files: results/annotated/Mycobacterium_leprae.fasta
+    wildcards: species=Mycobacterium_leprae
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Astasia_longa.fasta
+    output: results/annotated/Chloroplast_Astasia_longa.fasta
+    jobid: 64
+    reason: Missing output files: results/annotated/Chloroplast_Astasia_longa.fasta
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 61 (Rule: annotate)
+6 of 233 steps (3%) done
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 31 (Rule: quality_check)
+7 of 233 steps (3%) done
+[Sun Nov 23 02:07:10 2025]
+Finished jobid: 91 (Rule: annotate)
+8 of 233 steps (3%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Sun Nov 23 02:07:10 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_subtilis_23S.fasta
+    output: results/annotated/Bacillus_subtilis_23S.fasta
+    jobid: 62
+    reason: Missing output files: results/annotated/Bacillus_subtilis_23S.fasta
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule quality_check:
+    input: results/per_species/Archaeoglobus_fulgidus.fasta
+    output: results/qc/Archaeoglobus_fulgidus.qc.txt
+    jobid: 2
+    reason: Missing output files: results/qc/Archaeoglobus_fulgidus.qc.txt
+    wildcards: species=Archaeoglobus_fulgidus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:10 2025]
+localrule quality_check:
+    input: results/per_species/Caenorhabditis_elegans.fasta
+    output: results/qc/Caenorhabditis_elegans.qc.txt
+    jobid: 5
+    reason: Missing output files: results/qc/Caenorhabditis_elegans.qc.txt
+    wildcards: species=Caenorhabditis_elegans
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 64 (Rule: annotate)
+9 of 233 steps (4%) done
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 62 (Rule: annotate)
+10 of 233 steps (4%) done
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 2 (Rule: quality_check)
+11 of 233 steps (5%) done
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 5 (Rule: quality_check)
+12 of 233 steps (5%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 02:07:11 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_subtilis_23S.fasta
+    output: results/aligned/Bacillus_subtilis_23S.aln.fasta
+    jobid: 120
+    benchmark: benchmarks/mafft_Bacillus_subtilis_23S.txt
+    reason: Missing output files: results/aligned/Bacillus_subtilis_23S.aln.fasta; Input files updated by another job: results/annotated/Bacillus_subtilis_23S.fasta
+    wildcards: species=Bacillus_subtilis_23S
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+localrule mafft_align:
+    input: results/annotated/Chloroplast_Astasia_longa.fasta
+    output: results/aligned/Chloroplast_Astasia_longa.aln.fasta
+    jobid: 122
+    benchmark: benchmarks/mafft_Chloroplast_Astasia_longa.txt
+    reason: Missing output files: results/aligned/Chloroplast_Astasia_longa.aln.fasta; Input files updated by another job: results/annotated/Chloroplast_Astasia_longa.fasta
+    wildcards: species=Chloroplast_Astasia_longa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Chlorella_ellipsoidea.fasta
+    output: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    jobid: 65
+    reason: Missing output files: results/annotated/Chloroplast_Chlorella_ellipsoidea.fasta
+    wildcards: species=Chloroplast_Chlorella_ellipsoidea
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+localrule quality_check:
+    input: results/per_species/Homo_sapien.fasta
+    output: results/qc/Homo_sapien.qc.txt
+    jobid: 28
+    reason: Missing output files: results/qc/Homo_sapien.qc.txt
+    wildcards: species=Homo_sapien
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 28 (Rule: quality_check)
+13 of 233 steps (6%) done
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=14088)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=16856)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 02:07:11 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 120
+    input: results/annotated/Bacillus_subtilis_23S.fasta
+    output: results/aligned/Bacillus_subtilis_23S.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Bacillus_subtilis_23S.fasta" > "results/aligned/Bacillus_subtilis_23S.aln.fasta"
+        (command exited with non-zero exit code)
+[Sun Nov 23 02:07:11 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 122
+    input: results/annotated/Chloroplast_Astasia_longa.fasta
+    output: results/aligned/Chloroplast_Astasia_longa.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Chloroplast_Astasia_longa.fasta" > "results/aligned/Chloroplast_Astasia_longa.aln.fasta"
+        (command exited with non-zero exit code)
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 65 (Rule: annotate)
+14 of 233 steps (6%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Sun Nov 23 02:07:11 2025]
+localrule annotate:
+    input: results/per_species/Oryza_sativa.fasta
+    output: results/annotated/Oryza_sativa.fasta
+    jobid: 92
+    reason: Missing output files: results/annotated/Oryza_sativa.fasta
+    wildcards: species=Oryza_sativa
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+localrule quality_check:
+    input: results/per_species/Mus_musculus.fasta
+    output: results/qc/Mus_musculus.qc.txt
+    jobid: 32
+    reason: Missing output files: results/qc/Mus_musculus.qc.txt
+    wildcards: species=Mus_musculus
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 92 (Rule: annotate)
+15 of 233 steps (6%) done
+[Sun Nov 23 02:07:11 2025]
+Finished jobid: 32 (Rule: quality_check)
+16 of 233 steps (7%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 02:07:11 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 120
+    input: results/annotated/Bacillus_subtilis_23S.fasta
+    output: results/aligned/Bacillus_subtilis_23S.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Bacillus_subtilis_23S.fasta" > "results/aligned/Bacillus_subtilis_23S.aln.fasta"
+        (command exited with non-zero exit code)
+[Sun Nov 23 02:07:11 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 122
+    input: results/annotated/Chloroplast_Astasia_longa.fasta
+    output: results/aligned/Chloroplast_Astasia_longa.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Chloroplast_Astasia_longa.fasta" > "results/aligned/Chloroplast_Astasia_longa.aln.fasta"
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T020710.055920.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

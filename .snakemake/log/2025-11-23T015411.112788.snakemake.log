@@ -1,0 +1,144 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+annotate            52
+iqtree_build        58
+mafft_align         58
+quality_check       51
+total              220
+
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 01:54:12 2025]
+localrule mafft_align:
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    jobid: 120
+    benchmark: benchmarks/mafft_Bacillus_subtilis_23S_.txt
+    reason: Missing output files: results/aligned/Bacillus_subtilis_23S_.aln.fasta; Code has changed since last execution
+    wildcards: species=Bacillus_subtilis_23S_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:54:12 2025]
+localrule mafft_align:
+    input: results/annotated/Physarum_polycephalum_.fasta
+    output: results/aligned/Physarum_polycephalum_.aln.fasta
+    jobid: 151
+    benchmark: benchmarks/mafft_Physarum_polycephalum_.txt
+    reason: Missing output files: results/aligned/Physarum_polycephalum_.aln.fasta; Code has changed since last execution
+    wildcards: species=Physarum_polycephalum_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:54:12 2025]
+localrule quality_check:
+    input: results/per_species/Physarum_polycephalum_.fasta
+    output: results/qc/Physarum_polycephalum_.qc.txt
+    jobid: 35
+    reason: Missing output files: results/qc/Physarum_polycephalum_.qc.txt
+    wildcards: species=Physarum_polycephalum_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:54:12 2025]
+localrule annotate:
+    input: results/per_species/Methanospirillum_hungatii_.fasta
+    output: results/annotated/Methanospirillum_hungatii_.fasta
+    jobid: 88
+    reason: Missing output files: results/annotated/Methanospirillum_hungatii_.fasta
+    wildcards: species=Methanospirillum_hungatii_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:54:12 2025]
+Finished jobid: 35 (Rule: quality_check)
+1 of 220 steps (0.5%) done
+[Sun Nov 23 01:54:12 2025]
+Finished jobid: 88 (Rule: annotate)
+2 of 220 steps (1%) done
+Select jobs to execute...
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 76:
+process PID not found (pid=11116)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 76:
+process PID not found (pid=14168)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 01:54:12 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 120
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    shell:
+        
+        if not exist results\aligned mkdir results\aligned
+        mafft --auto results/annotated/Bacillus_subtilis_23S_.fasta > results/aligned/Bacillus_subtilis_23S_.aln.fasta
+        
+        (command exited with non-zero exit code)
+[Sun Nov 23 01:54:12 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 151
+    input: results/annotated/Physarum_polycephalum_.fasta
+    output: results/aligned/Physarum_polycephalum_.aln.fasta
+    shell:
+        
+        if not exist results\aligned mkdir results\aligned
+        mafft --auto results/annotated/Physarum_polycephalum_.fasta > results/aligned/Physarum_polycephalum_.aln.fasta
+        
+        (command exited with non-zero exit code)
+Execute 2 jobs...
+[Sun Nov 23 01:54:12 2025]
+localrule quality_check:
+    input: results/per_species/Mus_musculus_.fasta
+    output: results/qc/Mus_musculus_.qc.txt
+    jobid: 32
+    reason: Missing output files: results/qc/Mus_musculus_.qc.txt
+    wildcards: species=Mus_musculus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:54:12 2025]
+localrule annotate:
+    input: results/per_species/Oryza_sativa_.fasta
+    output: results/annotated/Oryza_sativa_.fasta
+    jobid: 92
+    reason: Missing output files: results/annotated/Oryza_sativa_.fasta
+    wildcards: species=Oryza_sativa_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:54:12 2025]
+Finished jobid: 32 (Rule: quality_check)
+3 of 220 steps (1%) done
+[Sun Nov 23 01:54:12 2025]
+Finished jobid: 92 (Rule: annotate)
+4 of 220 steps (2%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 01:54:12 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 120
+    input: results/annotated/Bacillus_subtilis_23S_.fasta
+    output: results/aligned/Bacillus_subtilis_23S_.aln.fasta
+    shell:
+        
+        if not exist results\aligned mkdir results\aligned
+        mafft --auto results/annotated/Bacillus_subtilis_23S_.fasta > results/aligned/Bacillus_subtilis_23S_.aln.fasta
+        
+        (command exited with non-zero exit code)
+[Sun Nov 23 01:54:12 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 151
+    input: results/annotated/Physarum_polycephalum_.fasta
+    output: results/aligned/Physarum_polycephalum_.aln.fasta
+    shell:
+        
+        if not exist results\aligned mkdir results\aligned
+        mafft --auto results/annotated/Physarum_polycephalum_.fasta > results/aligned/Physarum_polycephalum_.aln.fasta
+        
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T015411.112788.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

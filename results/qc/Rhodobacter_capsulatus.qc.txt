@@ -1,0 +1,5 @@
+Species=Rhodobacter_capsulatus
+Sequences=1
+Min_len=2889
+Max_len=2889
+Mean_len=2889.00

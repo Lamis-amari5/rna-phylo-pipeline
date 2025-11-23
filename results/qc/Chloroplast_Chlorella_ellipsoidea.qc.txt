@@ -1,0 +1,5 @@
+Species=Chloroplast_Chlorella_ellipsoidea
+Sequences=1
+Min_len=3207
+Max_len=3207
+Mean_len=3207.00

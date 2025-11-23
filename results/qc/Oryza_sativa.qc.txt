@@ -1,0 +1,5 @@
+Species=Oryza_sativa
+Sequences=1
+Min_len=3546
+Max_len=3546
+Mean_len=3546.00

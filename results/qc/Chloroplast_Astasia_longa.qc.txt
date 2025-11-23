@@ -1,0 +1,5 @@
+Species=Chloroplast_Astasia_longa
+Sequences=1
+Min_len=3104
+Max_len=3104
+Mean_len=3104.00

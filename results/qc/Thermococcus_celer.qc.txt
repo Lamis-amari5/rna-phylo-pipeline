@@ -1,0 +1,5 @@
+Species=Thermococcus_celer
+Sequences=1
+Min_len=3029
+Max_len=3029
+Mean_len=3029.00

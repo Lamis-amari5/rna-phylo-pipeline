@@ -1,0 +1,5 @@
+Species=Desulfurococcus_mobilis
+Sequences=1
+Min_len=3077
+Max_len=3077
+Mean_len=3077.00

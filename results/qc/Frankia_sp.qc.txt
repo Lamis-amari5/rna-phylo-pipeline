@@ -1,0 +1,5 @@
+Species=Frankia_sp
+Sequences=1
+Min_len=3099
+Max_len=3099
+Mean_len=3099.00

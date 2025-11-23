@@ -1,0 +1,5 @@
+Species=Archaeoglobus_fulgidus
+Sequences=1
+Min_len=2933
+Max_len=2933
+Mean_len=2933.00

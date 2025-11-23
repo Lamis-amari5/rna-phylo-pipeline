@@ -1,0 +1,5 @@
+Species=Caenorhabditis_elegans
+Sequences=1
+Min_len=3661
+Max_len=3661
+Mean_len=3661.00

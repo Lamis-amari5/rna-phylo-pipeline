@@ -1,0 +1,132 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+annotate            50
+iqtree_build        58
+mafft_align         58
+quality_check       46
+total              213
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:16 2025]
+localrule quality_check:
+    input: results/per_species/Haloferax_volcanii_.fasta
+    output: results/qc/Haloferax_volcanii_.qc.txt
+    jobid: 26
+    reason: Missing output files: results/qc/Haloferax_volcanii_.qc.txt
+    wildcards: species=Haloferax_volcanii_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:56:16 2025]
+Finished jobid: 26 (Rule: quality_check)
+1 of 213 steps (0.5%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:16 2025]
+localrule annotate:
+    input: results/per_species/Homo_sapien_.fasta
+    output: results/annotated/Homo_sapien_.fasta
+    jobid: 86
+    reason: Missing output files: results/annotated/Homo_sapien_.fasta
+    wildcards: species=Homo_sapien_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:56:16 2025]
+Finished jobid: 86 (Rule: annotate)
+2 of 213 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:16 2025]
+localrule annotate:
+    input: results/per_species/Trypanosoma_brucei_.fasta
+    output: results/annotated/Trypanosoma_brucei_.fasta
+    jobid: 115
+    reason: Missing output files: results/annotated/Trypanosoma_brucei_.fasta
+    wildcards: species=Trypanosoma_brucei_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:56:16 2025]
+Finished jobid: 115 (Rule: annotate)
+3 of 213 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:16 2025]
+localrule annotate:
+    input: results/per_species/Herdmania_momus_.fasta
+    output: results/annotated/Herdmania_momus_.fasta
+    jobid: 85
+    reason: Missing output files: results/annotated/Herdmania_momus_.fasta
+    wildcards: species=Herdmania_momus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:56:16 2025]
+Finished jobid: 85 (Rule: annotate)
+4 of 213 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:16 2025]
+localrule quality_check:
+    input: results/per_species/Halococcus_morrhuae_.fasta
+    output: results/qc/Halococcus_morrhuae_.qc.txt
+    jobid: 25
+    reason: Missing output files: results/qc/Halococcus_morrhuae_.qc.txt
+    wildcards: species=Halococcus_morrhuae_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:56:16 2025]
+Finished jobid: 25 (Rule: quality_check)
+5 of 213 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:16 2025]
+localrule annotate:
+    input: results/per_species/Xenopus_laevis_.fasta
+    output: results/annotated/Xenopus_laevis_.fasta
+    jobid: 116
+    reason: Missing output files: results/annotated/Xenopus_laevis_.fasta
+    wildcards: species=Xenopus_laevis_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 01:56:16 2025]
+Finished jobid: 116 (Rule: annotate)
+6 of 213 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Nov 23 01:56:17 2025]
+localrule mafft_align:
+    input: results/annotated/Methanospirillum_hungatii_.fasta
+    output: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    jobid: 146
+    benchmark: benchmarks/mafft_Methanospirillum_hungatii_.txt
+    reason: Missing output files: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    wildcards: species=Methanospirillum_hungatii_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=3676)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 01:56:17 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 146
+    input: results/annotated/Methanospirillum_hungatii_.fasta
+    output: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    shell:
+        if not exist results\aligned mkdir results\aligned && mafft --auto results/annotated/Methanospirillum_hungatii_.fasta > results/aligned/Methanospirillum_hungatii_.aln.fasta
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 01:56:17 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 146
+    input: results/annotated/Methanospirillum_hungatii_.fasta
+    output: results/aligned/Methanospirillum_hungatii_.aln.fasta
+    shell:
+        if not exist results\aligned mkdir results\aligned && mafft --auto results/annotated/Methanospirillum_hungatii_.fasta > results/aligned/Methanospirillum_hungatii_.aln.fasta
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T015616.045360.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

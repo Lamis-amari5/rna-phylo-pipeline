@@ -1,0 +1,5 @@
+Species=Euglena_gracilis
+Sequences=1
+Min_len=4057
+Max_len=4057
+Mean_len=4057.00

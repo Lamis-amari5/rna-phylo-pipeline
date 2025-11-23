@@ -1,0 +1,215 @@
+Assuming unrestricted shared filesystem usage.
+host: LAPTOP-E6EUI1RK
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+annotate               58
+iqtree_build           58
+mafft_align            58
+quality_check          58
+split_by_species        1
+total                 234
+
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Archaeoglobus_fulgidus_.fasta
+    output: results/annotated/Archaeoglobus_fulgidus_.fasta
+    jobid: 60
+    reason: Missing output files: results/annotated/Archaeoglobus_fulgidus_.fasta
+    wildcards: species=Archaeoglobus_fulgidus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule quality_check:
+    input: results/per_species/Methanospirillum_hungatii_.fasta
+    output: results/qc/Methanospirillum_hungatii_.qc.txt
+    jobid: 30
+    reason: Missing output files: results/qc/Methanospirillum_hungatii_.qc.txt
+    wildcards: species=Methanospirillum_hungatii_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule quality_check:
+    input: results/per_species/Bacillus_stearothermophilus_.fasta
+    output: results/qc/Bacillus_stearothermophilus_.qc.txt
+    jobid: 3
+    reason: Missing output files: results/qc/Bacillus_stearothermophilus_.qc.txt
+    wildcards: species=Bacillus_stearothermophilus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Herdmania_momus_.fasta
+    output: results/annotated/Herdmania_momus_.fasta
+    jobid: 85
+    reason: Missing output files: results/annotated/Herdmania_momus_.fasta
+    wildcards: species=Herdmania_momus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 60 (Rule: annotate)
+1 of 234 steps (0.4%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 30 (Rule: quality_check)
+2 of 234 steps (1%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 3 (Rule: quality_check)
+3 of 234 steps (1%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 85 (Rule: annotate)
+4 of 234 steps (2%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Mus_musculus_.fasta
+    output: results/annotated/Mus_musculus_.fasta
+    jobid: 90
+    reason: Missing output files: results/annotated/Mus_musculus_.fasta
+    wildcards: species=Mus_musculus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_stearothermophilus_.fasta
+    output: results/annotated/Bacillus_stearothermophilus_.fasta
+    jobid: 61
+    reason: Missing output files: results/annotated/Bacillus_stearothermophilus_.fasta
+    wildcards: species=Bacillus_stearothermophilus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Physarum_polycephalum_.fasta
+    output: results/annotated/Physarum_polycephalum_.fasta
+    jobid: 93
+    reason: Missing output files: results/annotated/Physarum_polycephalum_.fasta
+    wildcards: species=Physarum_polycephalum_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule quality_check:
+    input: results/per_species/Haloferax_volcanii_.fasta
+    output: results/qc/Haloferax_volcanii_.qc.txt
+    jobid: 26
+    reason: Missing output files: results/qc/Haloferax_volcanii_.qc.txt
+    wildcards: species=Haloferax_volcanii_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 90 (Rule: annotate)
+5 of 234 steps (2%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 61 (Rule: annotate)
+6 of 234 steps (3%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 93 (Rule: annotate)
+7 of 234 steps (3%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 26 (Rule: quality_check)
+8 of 234 steps (3%) done
+Select jobs to execute...
+Execute 4 jobs...
+[Sun Nov 23 02:05:22 2025]
+localrule mafft_align:
+    input: results/annotated/Physarum_polycephalum_.fasta
+    output: results/aligned/Physarum_polycephalum_.aln.fasta
+    jobid: 151
+    benchmark: benchmarks/mafft_Physarum_polycephalum_.txt
+    reason: Missing output files: results/aligned/Physarum_polycephalum_.aln.fasta; Input files updated by another job: results/annotated/Physarum_polycephalum_.fasta; Code has changed since last execution
+    wildcards: species=Physarum_polycephalum_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule quality_check:
+    input: results/per_species/Micrococcus_luteus_.fasta
+    output: results/qc/Micrococcus_luteus_.qc.txt
+    jobid: 31
+    reason: Missing output files: results/qc/Micrococcus_luteus_.qc.txt
+    wildcards: species=Micrococcus_luteus_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Chloroplast_Astasia_longa_.fasta
+    output: results/annotated/Chloroplast_Astasia_longa_.fasta
+    jobid: 64
+    reason: Missing output files: results/annotated/Chloroplast_Astasia_longa_.fasta
+    wildcards: species=Chloroplast_Astasia_longa_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Xenopus_laevis_.fasta
+    output: results/annotated/Xenopus_laevis_.fasta
+    jobid: 116
+    reason: Missing output files: results/annotated/Xenopus_laevis_.fasta
+    wildcards: species=Xenopus_laevis_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 31 (Rule: quality_check)
+9 of 234 steps (4%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 64 (Rule: annotate)
+10 of 234 steps (4%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 116 (Rule: annotate)
+11 of 234 steps (5%) done
+Select jobs to execute...
+RuleException:
+NoSuchProcess in file "C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\Snakefile", line 77:
+process PID not found (pid=856)
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 313, in __init__
+  File "C:\Users\Micro\miniconda3\envs\snakemake-env\Lib\site-packages\psutil\__init__.py", line 359, in _init
+[Sun Nov 23 02:05:22 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 151
+    input: results/annotated/Physarum_polycephalum_.fasta
+    output: results/aligned/Physarum_polycephalum_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Physarum_polycephalum_.fasta" > "results/aligned/Physarum_polycephalum_.aln.fasta"
+        (command exited with non-zero exit code)
+Execute 3 jobs...
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Mycobacterium_leprae_.fasta
+    output: results/annotated/Mycobacterium_leprae_.fasta
+    jobid: 91
+    reason: Missing output files: results/annotated/Mycobacterium_leprae_.fasta
+    wildcards: species=Mycobacterium_leprae_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Bacillus_subtilis_23S_.fasta
+    output: results/annotated/Bacillus_subtilis_23S_.fasta
+    jobid: 62
+    reason: Missing output files: results/annotated/Bacillus_subtilis_23S_.fasta
+    wildcards: species=Bacillus_subtilis_23S_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+localrule annotate:
+    input: results/per_species/Pirellula_marina_.fasta
+    output: results/annotated/Pirellula_marina_.fasta
+    jobid: 94
+    reason: Missing output files: results/annotated/Pirellula_marina_.fasta
+    wildcards: species=Pirellula_marina_
+    resources: tmpdir=C:\Users\Micro\AppData\Local\Temp
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 91 (Rule: annotate)
+12 of 234 steps (5%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 62 (Rule: annotate)
+13 of 234 steps (6%) done
+[Sun Nov 23 02:05:22 2025]
+Finished jobid: 94 (Rule: annotate)
+14 of 234 steps (6%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Nov 23 02:05:22 2025]
+Error in rule mafft_align:
+    message: None
+    jobid: 151
+    input: results/annotated/Physarum_polycephalum_.fasta
+    output: results/aligned/Physarum_polycephalum_.aln.fasta
+    shell:
+        if not exist "results\aligned" mkdir "results\aligned" && mafft --auto "results/annotated/Physarum_polycephalum_.fasta" > "results/aligned/Physarum_polycephalum_.aln.fasta"
+        (command exited with non-zero exit code)
+Complete log(s): C:\Users\Micro\OneDrive\Documents\AMARI LAMIS\Bio info\Tp Hpc\Tp2\.snakemake\log\2025-11-23T020521.457592.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

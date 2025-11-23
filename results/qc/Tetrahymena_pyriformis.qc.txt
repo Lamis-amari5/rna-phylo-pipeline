@@ -1,0 +1,5 @@
+Species=Tetrahymena_pyriformis
+Sequences=1
+Min_len=3495
+Max_len=3495
+Mean_len=3495.00

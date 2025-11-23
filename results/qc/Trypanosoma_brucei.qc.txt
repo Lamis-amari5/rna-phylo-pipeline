@@ -1,0 +1,5 @@
+Species=Trypanosoma_brucei
+Sequences=1
+Min_len=4681
+Max_len=4681
+Mean_len=4681.00
